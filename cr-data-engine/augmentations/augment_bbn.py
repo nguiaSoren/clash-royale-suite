@@ -6,8 +6,6 @@ Brightness: 7 levels (50% to 150% in 16.67% steps)
 Blur:       6 levels (radius 1 to 6)
 Noise:      6 levels (sigma 5 to 30 in steps of 5)
 
-Run with:
-  /Users/soren/environments/openai/bin/python3 augment_bbn.py
 """
 
 import os
