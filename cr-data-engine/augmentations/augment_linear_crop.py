@@ -14,9 +14,6 @@ This is intentional and acceptable for ML training because:
   - The dataset is large enough that these edge cases get drowned out
 Manually tuning crop limits per card per direction would be too much work
 for marginal ML benefit.
-
-Run with:
-  /Users/soren/environments/openai/bin/python3 augment_crop.py
 """
 
 import os
