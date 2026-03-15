@@ -34,7 +34,7 @@ import os
 import urllib.request
 
 # ── Config ──────────────────────────────────────────────────────────────────
-API_TOKEN   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjEwODI1MTViLTBjMzEtNDkwNi04MjIxLTYyZTZlMzg2NDZjYiIsImlhdCI6MTc3MzQ2Nzk5NCwic3ViIjoiZGV2ZWxvcGVyLzNjOGE0YTA5LTc4YTMtMTczOS02MGYxLTUxZWY2MTYxMDUzNCIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyIyMTguMjMzLjcwLjE3NSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.rWWMY56P7axRwC1soRaglAlVAqodhOj8bzp42LOH6drPzD5WueW--6w7KYYOqMB-SUA_pbhLPqFwMRP-pOxD9w"   # ← replace with your real token
+API_TOKEN   = ""   # ← replace with your real token
 API_URL     = "https://api.clashroyale.com/v1/cards"
 OUTPUT_ROOT = "/Users/soren/Desktop/Clash Royale/Hand Card"
 
