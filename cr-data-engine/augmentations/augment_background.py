@@ -3,8 +3,6 @@ Clash Royale - Background Augmentation Script
 Composites each base card onto a programmatically generated
 Clash Royale hand slot background.
 
-Run with:
-  /Users/soren/environments/openai/bin/python3 augment_background.py
 """
 
 import os
