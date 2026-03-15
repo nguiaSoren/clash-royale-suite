@@ -1,10 +1,6 @@
 """
 Clash Royale - Loading State Augmentation Script
 Generates 36 radial loading states (0° to 350° in steps of 10°).
-
-Run with:
-  /Users/soren/environments/openai/bin/python3 augment_loading.py
-
 """
 
 import os
