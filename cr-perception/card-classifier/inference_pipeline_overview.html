@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-Time Card Classification Pipeline — Rust + ONNX Runtime + CoreML</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --fg2: #555; --fg3: #888;
+  --accent: #2563eb; --success: #16a34a; --danger: #dc2626; --warn: #d97706;
+  --border: #e5e5e5; --surface: #f8f8f8; --code-bg: #f3f4f6;
+  --blue-fill: #dbeafe; --blue-stroke: #3b82f6; --blue-text: #1e40af;
+  --teal-fill: #ccfbf1; --teal-stroke: #14b8a6; --teal-text: #0f766e;
+  --coral-fill: #ffe4e6; --coral-stroke: #f43f5e; --coral-text: #9f1239;
+  --amber-fill: #fef3c7; --amber-stroke: #f59e0b; --amber-text: #92400e;
+  --purple-fill: #ede9fe; --purple-stroke: #8b5cf6; --purple-text: #5b21b6;
+  --gray-fill: #f3f4f6; --gray-stroke: #9ca3af; --gray-text: #374151;
+  --green-fill: #dcfce7; --green-stroke: #22c55e; --green-text: #166534;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111; --fg: #e5e5e5; --fg2: #aaa; --fg3: #777;
+    --border: #333; --surface: #1a1a1a; --code-bg: #1e1e1e;
+    --blue-fill: #1e3a5f; --blue-stroke: #60a5fa; --blue-text: #93c5fd;
+    --teal-fill: #134e4a; --teal-stroke: #5eead4; --teal-text: #99f6e4;
+    --coral-fill: #4c1d28; --coral-stroke: #fb7185; --coral-text: #fda4af;
+    --amber-fill: #451a03; --amber-stroke: #fbbf24; --amber-text: #fde68a;
+    --purple-fill: #2e1065; --purple-stroke: #a78bfa; --purple-text: #c4b5fd;
+    --gray-fill: #1f2937; --gray-stroke: #6b7280; --gray-text: #d1d5db;
+    --green-fill: #14532d; --green-stroke: #4ade80; --green-text: #bbf7d0;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; max-width: 880px; margin: 0 auto; padding: 2rem 1.5rem; }
+h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p { margin: 0.5rem 0; color: var(--fg); }
+.subtitle { color: var(--fg2); font-size: 0.95rem; margin-bottom: 2rem; }
+code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85em; background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 4px; }
+pre { background: var(--code-bg); padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 0.75rem 0; font-size: 0.82rem; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+.diagram { margin: 1.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; background: var(--surface); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram-caption { font-size: 0.82rem; color: var(--fg3); text-align: center; margin-top: 0.5rem; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; background: var(--surface); }
+.tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; border-radius: 4px; vertical-align: middle; margin-left: 0.3rem; }
+.tag-perf { background: var(--purple-fill); color: var(--purple-text); }
+.tag-sys { background: var(--blue-fill); color: var(--blue-text); }
+.tag-ml { background: var(--teal-fill); color: var(--teal-text); }
+.tag-opt { background: var(--green-fill); color: var(--green-text); }
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.eq { text-align: center; margin: 1rem 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9rem; color: var(--fg2); }
+.video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.video-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.video-card video { width: 100%; display: block; }
+.video-card .video-label { padding: 0.5rem 0.75rem; font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.dot-white { background: #888; border: 1.5px solid #555; }
+.dot-green { background: var(--green-stroke); }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1.5rem 0; }
+.metric-card { border: 1px solid var(--border); border-radius: 10px; padding: 0.75rem; background: var(--surface); text-align: center; }
+.metric-value { font-size: 1.4rem; font-weight: 700; font-family: 'SF Mono', 'Fira Code', monospace; }
+.metric-label { font-size: 0.72rem; color: var(--fg3); margin-top: 0.15rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.metric-card.blue .metric-value { color: var(--blue-text); }
+.metric-card.purple .metric-value { color: var(--purple-text); }
+.metric-card.green .metric-value { color: var(--green-text); }
+.metric-card.teal .metric-value { color: var(--teal-text); }
+.legend-row { display: flex; gap: 1.5rem; margin: 0.75rem 0; font-size: 0.85rem; }
+.legend-item { display: flex; align-items: center; gap: 0.35rem; }
+.legend-swatch { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid; }
+@media (max-width: 600px) {
+  .video-grid { grid-template-columns: 1fr; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<h1>Real-time card classification pipeline</h1>
+<p class="subtitle">Rust + ONNX Runtime + CoreML/ANE — batched inference and stateful gatekeeper for Clash Royale hand tracking</p>
+
+<p>A high-performance video inference pipeline that classifies the 5 cards in a Clash Royale player's hand in real-time. Originally prototyped in Python (PyTorch + OpenCV), then <b>rewritten from scratch in Rust</b> to maximize throughput through systems-level optimizations: batched ONNX inference, parallel preprocessing via Rayon, and hardware-accelerated execution on Apple's Neural Engine via CoreML.</p>
+
+<p>The pipeline ships as <b>two binaries with distinct architectures</b>. <b>Batch mode</b> (<code>batch.rs</code>) runs all 5 card slots every frame — maximum throughput, fixed tensor shape, ideal for offline processing. <b>Gatekeeper mode</b> (<code>gatekeeper.rs</code>) adds a per-slot state machine that monitors pixel-level changes and skips inference on unchanged cards — designed for real-time deployment where compute is constrained or inference calls have cost.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Architecture <span class="tag tag-sys">two modes</span></h2>
+
+<p>Both modes share the same core stages — decode, preprocess, ONNX batched inference, overlay — but diverge on <b>what gets sent to the model</b>. Batch mode always sends all 5 slots. Gatekeeper mode filters through a per-slot state machine first, sending only the slots whose cards have visually changed.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 840 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ══ SHARED: Video Decode (top center) ══ -->
+  <rect x="310" y="15" width="220" height="50" rx="8" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="1.5"/>
+  <text x="420" y="37" text-anchor="middle" font-size="12" font-weight="600" fill="var(--gray-text)">OpenCV VideoCapture</text>
+  <text x="420" y="53" text-anchor="middle" font-size="9.5" fill="var(--gray-text)">decode frame → BGR Mat → RgbImage</text>
+
+  <!-- Source info callout -->
+  <rect x="600" y="15" width="150" height="50" rx="6" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="1"/>
+  <text x="675" y="34" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--amber-text)">iPhone Recording</text>
+  <text x="675" y="48" text-anchor="middle" font-size="8.5" fill="var(--amber-text)">5 fixed ROIs · 8,702 frames</text>
+  <line x1="600" y1="40" x2="533" y2="40" stroke="var(--amber-stroke)" stroke-width="1" stroke-dasharray="4 2"/>
+
+  <!-- Split from decode -->
+  <line x1="420" y1="65" x2="420" y2="85" stroke="var(--fg3)" stroke-width="1.5"/>
+  <line x1="420" y1="85" x2="195" y2="85" stroke="var(--fg3)" stroke-width="1.5"/>
+  <line x1="195" y1="85" x2="195" y2="105" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="420" y1="85" x2="630" y2="85" stroke="var(--fg3)" stroke-width="1.5"/>
+  <line x1="630" y1="85" x2="630" y2="105" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ LEFT: BATCH MODE ══ -->
+  <rect x="30" y="110" width="330" height="30" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text x="195" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="var(--purple-text)">BATCH MODE · batch.rs</text>
+
+  <rect x="70" y="158" width="250" height="42" rx="7" fill="var(--bg)" stroke="var(--purple-stroke)" stroke-width="1.2"/>
+  <text x="195" y="176" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--purple-text)">All 5 slots → always inferred</text>
+  <text x="195" y="192" text-anchor="middle" font-size="9" fill="var(--fg3)">no filtering, no state tracking</text>
+
+  <line x1="195" y1="200" x2="195" y2="225" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="50" y="230" width="290" height="65" rx="7" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.2"/>
+  <text x="195" y="250" text-anchor="middle" font-size="10" font-weight="600" fill="var(--blue-text)">Rayon Parallel Preprocessing</text>
+  <rect x="66" y="258" width="48" height="25" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="90" y="275" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 1</text>
+  <rect x="120" y="258" width="48" height="25" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="144" y="275" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 2</text>
+  <rect x="174" y="258" width="48" height="25" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="198" y="275" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 3</text>
+  <rect x="228" y="258" width="48" height="25" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="252" y="275" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 4</text>
+  <rect x="282" y="258" width="48" height="25" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="306" y="275" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 5</text>
+
+  <line x1="195" y1="295" x2="195" y2="318" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="195" y="312" text-anchor="middle" font-size="8" fill="var(--fg3)">[5, 3, 224, 224] fixed</text>
+
+  <rect x="55" y="323" width="280" height="50" rx="7" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.2"/>
+  <text x="195" y="344" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--purple-text)">ONNX Runtime — Batched Forward</text>
+  <text x="195" y="360" text-anchor="middle" font-size="9" fill="var(--purple-text)">CoreML EP → Apple Neural Engine</text>
+
+  <line x1="195" y1="373" x2="195" y2="398" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="70" y="403" width="250" height="38" rx="7" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="1.2"/>
+  <text x="195" y="426" text-anchor="middle" font-size="10" fill="var(--gray-text)">Draw overlays + VideoWriter</text>
+
+  <line x1="195" y1="441" x2="195" y2="466" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Result: batch -->
+  <rect x="60" y="471" width="270" height="70" rx="8" fill="var(--bg)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <rect x="72" y="484" width="12" height="12" rx="2" fill="#fff" stroke="#888" stroke-width="1.5"/>
+  <text x="92" y="495" font-size="10" font-weight="600" fill="var(--purple-text)">All overlays white</text>
+  <text x="72" y="515" font-size="9.5" fill="var(--fg2)">22.3 FPS · 44.9 ms/frame</text>
+  <text x="72" y="530" font-size="9.5" fill="var(--fg2)">43,510 inferences · 0 skipped</text>
+
+  <!-- ══ RIGHT: GATEKEEPER MODE ══ -->
+  <rect x="465" y="110" width="340" height="30" rx="6" fill="var(--green-fill)" stroke="var(--green-stroke)" stroke-width="1.5"/>
+  <text x="635" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="var(--green-text)">GATEKEEPER MODE · gatekeeper.rs</text>
+
+  <!-- State machine -->
+  <rect x="475" y="152" width="320" height="140" rx="8" fill="var(--green-fill)" stroke="var(--green-stroke)" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.5"/>
+  <rect x="475" y="152" width="320" height="140" rx="8" fill="none" stroke="var(--green-stroke)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="635" y="170" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--green-text)" letter-spacing="0.06em">PER-SLOT STATE MACHINE</text>
+
+  <rect x="498" y="182" width="100" height="44" rx="6" fill="var(--bg)" stroke="var(--green-stroke)" stroke-width="1.3"/>
+  <text x="548" y="200" text-anchor="middle" font-size="10" font-weight="600" fill="var(--green-text)">LOCKED</text>
+  <text x="548" y="214" text-anchor="middle" font-size="8" fill="var(--fg3)">skip inference</text>
+
+  <rect x="668" y="182" width="108" height="44" rx="6" fill="var(--bg)" stroke="var(--coral-stroke)" stroke-width="1.3"/>
+  <text x="722" y="200" text-anchor="middle" font-size="10" font-weight="600" fill="var(--coral-text)">UNLOCKED</text>
+  <text x="722" y="214" text-anchor="middle" font-size="8" fill="var(--fg3)">run inference</text>
+
+  <line x1="598" y1="197" x2="665" y2="197" stroke="#f43f5e" stroke-width="1.2" marker-end="url(#arr-coral)"/>
+  <text x="632" y="190" text-anchor="middle" font-size="7.5" fill="var(--coral-text)">pixels Δ &gt; 6%</text>
+
+  <line x1="668" y1="216" x2="601" y2="216" stroke="#22c55e" stroke-width="1.2" marker-end="url(#arr-green)"/>
+  <text x="632" y="237" text-anchor="middle" font-size="7.5" fill="var(--green-text)">softmax ≥ 90%</text>
+
+  <rect x="505" y="252" width="260" height="28" rx="5" fill="var(--surface)" stroke="var(--border)" stroke-width="0.8"/>
+  <text x="635" y="270" text-anchor="middle" font-size="8.5" fill="var(--fg3)">Fingerprint: 8×8 RGB grid · 192 floats · &lt;1 μs compare</text>
+
+  <line x1="635" y1="292" x2="635" y2="318" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="635" y="310" text-anchor="middle" font-size="8" fill="var(--fg3)">unlocked slots only</text>
+
+  <rect x="490" y="323" width="290" height="55" rx="7" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.2"/>
+  <text x="635" y="343" text-anchor="middle" font-size="10" font-weight="600" fill="var(--blue-text)">Rayon Parallel Preprocessing</text>
+  <rect x="518" y="352" width="48" height="20" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="542" y="366" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 2</text>
+  <rect x="573" y="352" width="48" height="20" rx="4" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="597" y="366" text-anchor="middle" font-size="7.5" fill="var(--blue-text)">slot 4</text>
+  <rect x="628" y="352" width="48" height="20" rx="4" fill="var(--gray-fill)" stroke="var(--border)" stroke-width="0.8" stroke-dasharray="2 2"/>
+  <text x="652" y="366" text-anchor="middle" font-size="7.5" fill="var(--fg3)">1,3,5</text>
+  <text x="700" y="366" font-size="7.5" fill="var(--fg3)" font-style="italic">skipped</text>
+
+  <line x1="635" y1="378" x2="635" y2="403" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="635" y="396" text-anchor="middle" font-size="8" fill="var(--fg3)">[N, 3, 224, 224] variable</text>
+
+  <rect x="495" y="408" width="280" height="50" rx="7" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.2"/>
+  <text x="635" y="429" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--purple-text)">ONNX Runtime — Batched Forward</text>
+  <text x="635" y="445" text-anchor="middle" font-size="9" fill="var(--purple-text)">CoreML EP → Apple Neural Engine</text>
+
+  <line x1="635" y1="458" x2="635" y2="483" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="510" y="488" width="250" height="38" rx="7" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="1.2"/>
+  <text x="635" y="511" text-anchor="middle" font-size="10" fill="var(--gray-text)">Draw overlays + VideoWriter</text>
+
+  <line x1="635" y1="526" x2="635" y2="551" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Result: gatekeeper -->
+  <rect x="500" y="556" width="270" height="70" rx="8" fill="var(--bg)" stroke="var(--green-stroke)" stroke-width="1.5"/>
+  <rect x="512" y="569" width="12" height="12" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="532" y="580" font-size="10" font-weight="600" fill="var(--green-text)">Green = locked (cached)</text>
+  <rect x="512" y="586" width="12" height="12" rx="2" fill="#fff" stroke="#888" stroke-width="1.5"/>
+  <text x="532" y="597" font-size="10" fill="var(--fg2)">White = unlocked (inferred)</text>
+  <text x="512" y="616" font-size="9.5" fill="var(--fg2)">22,206 run · 21,304 skipped (49%)</text>
+
+  <!-- ══ SHARED: Model (bottom center) ══ -->
+  <rect x="305" y="650" width="230" height="42" rx="7" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.2"/>
+  <text x="420" y="668" text-anchor="middle" font-size="10" font-weight="600" fill="var(--teal-text)">MobileNetV3-Small · ONNX (~2.1 MB)</text>
+  <text x="420" y="683" text-anchor="middle" font-size="9" fill="var(--teal-text)">97.89% val accuracy · 15 epochs</text>
+
+  <line x1="360" y1="650" x2="275" y2="373" stroke="var(--teal-stroke)" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="480" y1="650" x2="565" y2="458" stroke="var(--teal-stroke)" stroke-width="0.8" stroke-dasharray="4 3"/>
+
+  <!-- Divider -->
+  <line x1="420" y1="95" x2="420" y2="640" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+  <rect x="403" y="300" width="34" height="20" rx="10" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
+  <text x="420" y="314" text-anchor="middle" font-size="9" font-weight="700" fill="var(--fg3)">VS</text>
+</svg>
+<div class="diagram-caption">Figure 1 — Two pipeline architectures side by side. Left: batch mode sends all 5 slots every frame with a fixed tensor shape. Right: gatekeeper mode filters through a per-slot state machine, sending only changed slots with a variable batch size. Both share the same model, preprocessing, and output stages.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Key performance metrics <span class="tag tag-perf">measured</span></h2>
+
+<div class="metrics">
+  <div class="metric-card purple">
+    <div class="metric-value">22.3</div>
+    <div class="metric-label">FPS (batch)</div>
+  </div>
+  <div class="metric-card green">
+    <div class="metric-value">49%</div>
+    <div class="metric-label">Inference skipped</div>
+  </div>
+  <div class="metric-card teal">
+    <div class="metric-value">97.89%</div>
+    <div class="metric-label">Val accuracy</div>
+  </div>
+  <div class="metric-card blue">
+    <div class="metric-value">~9ms</div>
+    <div class="metric-label">Per-card latency</div>
+  </div>
+</div>
+
+<p>All measurements on Apple M-series silicon with CoreML/ANE acceleration, processing 8,702 frames of recorded gameplay.</p>
+
+<table>
+<tr><th>Metric</th><th>Batch Mode</th><th>Gatekeeper Mode</th></tr>
+<tr><td>Wall time (inference)</td><td>6 min 31 s</td><td>12 min 27 s</td></tr>
+<tr><td>ms / frame</td><td>44.9 ms</td><td>85.8 ms</td></tr>
+<tr><td>Throughput</td><td>22.3 FPS</td><td>11.6 FPS</td></tr>
+<tr><td>Inferences run</td><td>43,510</td><td>22,206</td></tr>
+<tr><td>Inferences skipped</td><td>0</td><td>21,304 (49%)</td></tr>
+</table>
+
+<h3>Why the gatekeeper is slower for offline video</h3>
+
+<p>CoreML's execution provider compiles optimized execution plans for fixed tensor shapes. In batch mode, every frame sends a consistent <code>[5, 3, 224, 224]</code> tensor that CoreML compiles once and runs on the ANE. With the gatekeeper, batch sizes vary dynamically (<code>[1,…]</code>, <code>[2,…]</code>, <code>[3,…]</code>, etc.), forcing CoreML to recompile or fall back to CPU for unfamiliar shapes. The dynamic dispatch overhead more than cancels the 49% reduction in inference calls.</p>
+
+<p><b>Where the gatekeeper wins:</b> in a live real-time stream — where you're GPU-constrained, paying per API call, or sharing compute with other workloads — skipping 49% of inference calls is a meaningful reduction. The design targets <b>real-time deployment</b>, not batch video processing.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Demo recordings <span class="tag tag-ml">live results</span></h2>
+
+<p>Each mode was run on 3 different Clash Royale matches. The overlay border colors show the pipeline state in real time:</p>
+
+<div class="legend-row">
+  <div class="legend-item"><div class="legend-swatch" style="background: #fff; border-color: #888;"></div> <span><b>White border</b> — UNLOCKED: inference running this frame</span></div>
+  <div class="legend-item"><div class="legend-swatch" style="background: var(--green-fill); border-color: var(--green-stroke);"></div> <span><b>Green border</b> — LOCKED: inference skipped, cached label reused</span></div>
+</div>
+
+<p style="font-size: 0.85rem; color: var(--fg3); margin-top: 0.25rem;">In batch mode, all overlays are always white (every slot runs inference every frame). In gatekeeper mode, slots transition between white and green as cards change.</p>
+
+<h3>Batch mode — fixed [5, 3, 224, 224], all slots every frame</h3>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="batch_track_1.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-white"></span> Batch Track 1</div>
+  </div>
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="batch_track_2.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-white"></span> Batch Track 2</div>
+  </div>
+</div>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="batch_track_3.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-white"></span> Batch Track 3</div>
+  </div>
+  <div style="display:flex; align-items:center; justify-content:center; padding: 1rem;">
+    <div style="text-align:center; color: var(--fg3); font-size: 0.85rem;">
+      <div style="font-size: 2rem; margin-bottom: 0.25rem;">⚡</div>
+      All overlays white<br>
+      <b>22.3 FPS</b> · 5 inferences/frame
+    </div>
+  </div>
+</div>
+
+<h3>Gatekeeper mode — stateful inference skipping</h3>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="gatekeeper_track_1.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-green"></span> Gatekeeper Track 1</div>
+  </div>
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="gatekeeper_track_2.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-green"></span> Gatekeeper Track 2</div>
+  </div>
+</div>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="gatekeeper_track_3.mp4" type="video/mp4">
+    </video>
+    <div class="video-label"><span class="dot dot-green"></span> Gatekeeper Track 3</div>
+  </div>
+  <div style="display:flex; align-items:center; justify-content:center; padding: 1rem;">
+    <div style="text-align:center; color: var(--fg3); font-size: 0.85rem;">
+      <div style="font-size: 2rem; margin-bottom: 0.25rem;">🚪</div>
+      Green = locked (cached)<br>
+      <b>49% inferences skipped</b>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Model performance <span class="tag tag-ml">training</span></h2>
+
+<p>Architecture: <b>MobileNetV3-Small</b> with a fine-tuned classifier head. Trained for 15 epochs with learning rate step-down at epoch 11. Best validation accuracy: <b>97.89%</b> (epoch 11).</p>
+
+<table>
+<tr><th>Epoch</th><th>Train Loss</th><th>Train Acc</th><th>Val Loss</th><th>Val Acc</th></tr>
+<tr><td>1</td><td>0.509</td><td>90.85%</td><td>0.177</td><td>96.32%</td></tr>
+<tr><td>5</td><td>0.100</td><td>97.69%</td><td>0.484</td><td>94.22%</td></tr>
+<tr style="font-weight: 600;"><td>11</td><td>0.089</td><td>97.94%</td><td>0.092</td><td>97.89%</td></tr>
+<tr><td>15</td><td>0.086</td><td>98.00%</td><td>0.091</td><td>97.89%</td></tr>
+</table>
+
+<p>The LR step-down at epoch 11 stabilizes validation loss and closes the train-val gap. The model is exported to ONNX format with dynamic batch axes, enabling both single and batched inference from the same file.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Systems optimizations (Python → Rust) <span class="tag tag-opt">engineering</span></h2>
+
+<h3>1. Batched inference</h3>
+<p>The Python prototype ran <b>5 separate forward passes</b> per frame. The Rust version stacks all preprocessed crops into a single NCHW tensor and executes <b>one batched forward pass</b>, eliminating per-call dispatch overhead, redundant kernel launches, and repeated memory allocation.</p>
+
+<h3>2. Parallel preprocessing with Rayon</h3>
+<p>Crop → resize → normalize is embarrassingly parallel — each operation reads from the shared source frame (read-only) and writes to its own contiguous buffer. Rayon's work-stealing thread pool distributes these across available cores with zero contention.</p>
+
+<h3>3. Hardware-accelerated execution (CoreML / ANE)</h3>
+<p>The ONNX Runtime session is configured with the CoreML Execution Provider, mapping supported operations to Apple's Neural Engine — a dedicated inference accelerator that runs independently of CPU and GPU, enabling ~9 ms per-card classification.</p>
+
+<h3>4. Gatekeeper state machine (inference pre-filter)</h3>
+<p>A per-slot state machine eliminates redundant compute. Each slot is reduced to a compact pixel <b>fingerprint</b> — an 8×8 grid of sampled RGB values (192 floats). Comparing two fingerprints is O(192) and takes sub-microsecond, vs the ~9 ms cost of a full inference call. Slots lock when confidence exceeds 90% and unlock when pixel delta exceeds 6%.</p>
+
+<div class="eq">fingerprint = sample_8×8_grid(card_crop) → 192 floats → MAD comparison in &lt;1 μs</div>
+
+<h3>5. Zero-overhead abstractions</h3>
+<p>Pixel rectangles precomputed once at startup via <code>std::array::from_fn</code>. Batch tensor assembled from contiguous <code>Vec&lt;f32&gt;</code> in CHW layout matching ONNX Runtime's expected memory format — no transposition or copying. Direct BGR→RGB via OpenCV's <code>cvt_color</code> with a single copy to <code>RgbImage</code>.</p>
+
+<h3>6. Model format conversion</h3>
+<p>PyTorch models cannot be loaded in Rust. The model is exported to ONNX format (Open Neural Network Exchange), an open standard that enables runtime-agnostic inference. The export preserves dynamic batch axes, allowing the same model file to handle both fixed <code>[5,…]</code> and variable <code>[N,…]</code> batch sizes.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Dependencies &amp; build <span class="tag tag-sys">setup</span></h2>
+
+<table>
+<tr><th>Crate</th><th>Purpose</th></tr>
+<tr><td><code>opencv</code></td><td>Video decode/encode, frame drawing</td></tr>
+<tr><td><code>ort</code></td><td>ONNX Runtime bindings (with CoreML EP)</td></tr>
+<tr><td><code>ndarray</code></td><td>Tensor construction</td></tr>
+<tr><td><code>rayon</code></td><td>Data-parallel preprocessing</td></tr>
+<tr><td><code>image</code></td><td>Crop and resize operations</td></tr>
+<tr><td><code>indicatif</code></td><td>Terminal progress bar</td></tr>
+<tr><td><code>serde_json</code></td><td>Class label loading</td></tr>
+<tr><td><code>anyhow</code></td><td>Error handling</td></tr>
+</table>
+
+<pre><code># Build both binaries
+cargo build --release
+
+# Run batch mode (max throughput, fixed [5,3,224,224])
+cargo run --release --bin batch
+
+# Run gatekeeper mode (stateful inference skipping)
+cargo run --release --bin gatekeeper</code></pre>
+
+<hr>
+<p style="font-size: 0.82rem; color: var(--fg3);">Part of <a href="https://github.com/nguiaSoren/clash-royale-suite" style="color: var(--accent);">clash-royale-suite</a> — a research-oriented framework combining high-performance systems programming and deep learning for autonomous game intelligence.</p>
+
+</body>
+</html>

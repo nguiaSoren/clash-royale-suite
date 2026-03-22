@@ -29,7 +29,7 @@ from sklearn.preprocessing import LabelEncoder
 import json
 
 # ── Config ───────────────────────────────────────────────────────────────────
-ROOT_DIR    = "/Volumes/Extreme SSD/Hand Card"   # change to RunPod path when needed
+'''ROOT_DIR    = "/Volumes/Extreme SSD/Hand Card"   # change to RunPod path when needed
 CSV_PATH    = os.path.join(ROOT_DIR, "labels.csv")
 SAVE_DIR    = os.path.join(ROOT_DIR, "checkpoints")
 
@@ -39,9 +39,22 @@ NUM_EPOCHS  = 2       ## set to 30 for full RunPod training
 NUM_WORKERS = 4        # reduce to 0 if DataLoader errors
 IMG_SIZE    = 224      # MobileNetV3 input size
 VAL_SPLIT   = 0.15     # 15% validation
-SEED        = 42
+SEED        = 42'''
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ── RTX 5090 & 32 vCPU OPTIMIZED CONFIG ──────────────────────────────────────
+ROOT_DIR    = "/workspace/data"   
+CSV_PATH    = os.path.join(ROOT_DIR, "labels.csv")
+SAVE_DIR    = "/workspace/checkpoints" 
+
+BATCH_SIZE  = 1024      # Slightly smaller to save RAM
+NUM_WORKERS = 8         # Lowering this prevents the "Killed" / OOM error
+LR          = 5e-4      # Cut in half to stop accuracy from "bouncing"
+NUM_EPOCHS  = 15        # 15 epochs will take ~65 mins and is likely enough
+VAL_SPLIT   = 0.10
+SEED        = 42
+IMG_SIZE    = 224       # Required for MobileNetV3
+# ─────────────────────────────────────────────────────────────────────────────
 
 def get_device():
     if torch.cuda.is_available():

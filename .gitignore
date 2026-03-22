@@ -12,4 +12,5 @@ __pycache__/
 # KEEP the high-value files
 !cr-perception/card-classifier/checkpoints/best_model.pth
 !cr-perception/card-classifier/checkpoints/classes.json
-!cr-data-engine/weights/RealESRGAN_x4.pth
+!cr-data-engine/weights/RealESRGAN_x4.pth*.onnx
+*.pth
