@@ -5,6 +5,8 @@ A research-oriented framework combining high-performance systems programming and
 ## 🚀 Key Technical Pillars
 
 * **High-Performance Systems (Rust):** Engineered a multi-threaded data engine in Rust for bit-level temporal deduplication and redundancy filtering. Processed a **430,000-frame dataset** with a 10x throughput increase over Python-based baseline implementations.
+* High-Performance System Programming (Rust): Engineered a high-speed data processing engine in Rust to perform bit-level deduplication and temporal redundancy filtering on a 440,000-frame dataset, achieving a 10x performance increase over Python-based alternatives and a 61% dataset reduction through zero-copy memory management and multi-threaded I/O.<img width="468" height="81" alt="image" src="https://github.com/user-attachments/assets/5461302e-fc39-4a17-a0f0-5235ec81a7db" />
+
 * **Neural Perception Pipeline:** Multi-stage vision system featuring a **MobileNetV3-Small** classifier optimized for edge inference. Achieved **97.4% validation accuracy** across 175 card variants and game states.
 * **Deterministic Simulation (In-Dev):** Architecting a high-throughput game logic core in **Rust**, leveraging memory safety and concurrency to target **10,000+ simulated steps per second** for Reinforcement Learning (RL).
 * **Generative Data Engineering:** Utilized **Super-Resolution (Real-ESRGAN)** to enhance low-fidelity API assets to $1200\text{px}$, followed by a 4-stage augmentation pipeline (radial loading, 8-directional occlusion, domain-invariant compositing) to synthesize a **295k+ image training set**.
