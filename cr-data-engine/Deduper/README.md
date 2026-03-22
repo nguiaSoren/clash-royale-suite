@@ -1,6 +1,6 @@
 # Batch Processor — Temporal Deduplication Engine
 
-📄 **[View the full writeup →](../data_engine_writeup.html)**
+📄 **[View the full writeup →](https://nguiasoren.github.io/clash-royale-suite/cr-data-engine/data_engine_writeup.html)**
 
 High-throughput Rust engine for eliminating temporal redundancy from large-scale CV datasets.
 
