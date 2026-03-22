@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High-Throughput Temporal Deduplication Engine — Rust Batch Processor</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --fg2: #555; --fg3: #888;
+  --accent: #2563eb; --success: #16a34a; --danger: #dc2626; --warn: #d97706;
+  --border: #e5e5e5; --surface: #f8f8f8; --code-bg: #f3f4f6;
+  --blue-fill: #dbeafe; --blue-stroke: #3b82f6; --blue-text: #1e40af;
+  --teal-fill: #ccfbf1; --teal-stroke: #14b8a6; --teal-text: #0f766e;
+  --coral-fill: #ffe4e6; --coral-stroke: #f43f5e; --coral-text: #9f1239;
+  --amber-fill: #fef3c7; --amber-stroke: #f59e0b; --amber-text: #92400e;
+  --purple-fill: #ede9fe; --purple-stroke: #8b5cf6; --purple-text: #5b21b6;
+  --gray-fill: #f3f4f6; --gray-stroke: #9ca3af; --gray-text: #374151;
+  --green-fill: #dcfce7; --green-stroke: #22c55e; --green-text: #166534;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111; --fg: #e5e5e5; --fg2: #aaa; --fg3: #777;
+    --border: #333; --surface: #1a1a1a; --code-bg: #1e1e1e;
+    --blue-fill: #1e3a5f; --blue-stroke: #60a5fa; --blue-text: #93c5fd;
+    --teal-fill: #134e4a; --teal-stroke: #5eead4; --teal-text: #99f6e4;
+    --coral-fill: #4c1d28; --coral-stroke: #fb7185; --coral-text: #fda4af;
+    --amber-fill: #451a03; --amber-stroke: #fbbf24; --amber-text: #fde68a;
+    --purple-fill: #2e1065; --purple-stroke: #a78bfa; --purple-text: #c4b5fd;
+    --gray-fill: #1f2937; --gray-stroke: #6b7280; --gray-text: #d1d5db;
+    --green-fill: #14532d; --green-stroke: #4ade80; --green-text: #bbf7d0;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; max-width: 880px; margin: 0 auto; padding: 2rem 1.5rem; }
+h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p { margin: 0.5rem 0; color: var(--fg); }
+.subtitle { color: var(--fg2); font-size: 0.95rem; margin-bottom: 2rem; }
+code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85em; background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 4px; }
+pre { background: var(--code-bg); padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 0.75rem 0; font-size: 0.82rem; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+.diagram { margin: 1.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; background: var(--surface); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram-caption { font-size: 0.82rem; color: var(--fg3); text-align: center; margin-top: 0.5rem; font-style: italic; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; background: var(--surface); }
+.tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; border-radius: 4px; vertical-align: middle; margin-left: 0.3rem; }
+.tag-perf { background: var(--purple-fill); color: var(--purple-text); }
+.tag-sys { background: var(--blue-fill); color: var(--blue-text); }
+.tag-data { background: var(--teal-fill); color: var(--teal-text); }
+.tag-opt { background: var(--green-fill); color: var(--green-text); }
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.eq { text-align: center; margin: 1rem 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9rem; color: var(--fg2); }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1.5rem 0; }
+.metric-card { border: 1px solid var(--border); border-radius: 10px; padding: 0.75rem; background: var(--surface); text-align: center; }
+.metric-value { font-size: 1.4rem; font-weight: 700; font-family: 'SF Mono', 'Fira Code', monospace; }
+.metric-label { font-size: 0.72rem; color: var(--fg3); margin-top: 0.15rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.metric-card.blue .metric-value { color: var(--blue-text); }
+.metric-card.purple .metric-value { color: var(--purple-text); }
+.metric-card.green .metric-value { color: var(--green-text); }
+.metric-card.teal .metric-value { color: var(--teal-text); }
+.metric-card.coral .metric-value { color: var(--coral-text); }
+@media (max-width: 600px) {
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<h1>High-throughput temporal deduplication engine</h1>
+<p class="subtitle">Rust — multi-threaded batch processing for large-scale CV dataset sanitization</p>
+
+<p>A data processing engine written in Rust that eliminates temporal redundancy from massive video-frame datasets. Raw gameplay footage produces hundreds of thousands of frames, but consecutive frames where the card hand hasn't changed are identical from a training perspective — they add storage cost and training noise without adding information. This engine identifies and removes those duplicates at <b>221 FPS</b> across 440,000 frames.</p>
+
+<p>The problem is simple: compare each frame's card slots to the previous frame's, and keep only the frames where something changed. The engineering challenge is doing this across <b>440,000 images spanning 268 directories</b> on an external SSD, fast enough that disk I/O — not compute — is the bottleneck.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Architecture <span class="tag tag-sys">pipeline</span></h2>
+
+<p>The engine has four stages: recursive directory discovery, parallel feature extraction across all CPU cores, sequential temporal comparison within each video folder, and zero-copy file output at native SSD bandwidth.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Stage 1: Directory Walk -->
+  <rect x="20" y="20" width="760" height="75" rx="8" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="1.5"/>
+  <text x="40" y="42" font-size="10" font-weight="700" fill="var(--gray-text)" letter-spacing="0.06em">STAGE 1</text>
+  <text x="110" y="42" font-size="11" font-weight="600" fill="var(--gray-text)">Recursive Directory Discovery</text>
+  <text x="40" y="62" font-size="9.5" fill="var(--fg3)">WalkDir crawls the dataset tree → groups JPEGs by parent folder → preserves per-video temporal ordering</text>
+  <text x="40" y="78" font-size="9.5" fill="var(--fg3)">268 directories · 440,056 frames · iPhone + iPad mixed aspect ratios</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="95" x2="400" y2="125" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="115" font-size="8" fill="var(--fg3)">HashMap&lt;PathBuf, Vec&lt;PathBuf&gt;&gt;</text>
+
+  <!-- Stage 2: Parallel Feature Extraction -->
+  <rect x="20" y="130" width="760" height="110" rx="8" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+  <text x="40" y="152" font-size="10" font-weight="700" fill="var(--blue-text)" letter-spacing="0.06em">STAGE 2</text>
+  <text x="110" y="152" font-size="11" font-weight="600" fill="var(--blue-text)">Parallel Feature Extraction (Rayon)</text>
+  <text x="40" y="172" font-size="9.5" fill="var(--fg3)">Each frame processed on a rayon thread: detect aspect ratio → select device layout → crop 5 card slots → average RGB per slot</text>
+
+  <!-- Parallel lanes -->
+  <rect x="45" y="185" width="135" height="40" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="1"/>
+  <text x="112" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="var(--blue-text)">Thread 1</text>
+  <text x="112" y="215" text-anchor="middle" font-size="8" fill="var(--fg3)">crop_imm → avg_color</text>
+
+  <rect x="195" y="185" width="135" height="40" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="1"/>
+  <text x="262" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="var(--blue-text)">Thread 2</text>
+  <text x="262" y="215" text-anchor="middle" font-size="8" fill="var(--fg3)">crop_imm → avg_color</text>
+
+  <rect x="345" y="185" width="135" height="40" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="1"/>
+  <text x="412" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="var(--blue-text)">Thread 3</text>
+  <text x="412" y="215" text-anchor="middle" font-size="8" fill="var(--fg3)">crop_imm → avg_color</text>
+
+  <rect x="495" y="185" width="50" height="40" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="1"/>
+  <text x="520" y="209" text-anchor="middle" font-size="10" fill="var(--blue-text)">…</text>
+
+  <rect x="560" y="185" width="135" height="40" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="1"/>
+  <text x="627" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="var(--blue-text)">Thread N</text>
+  <text x="627" y="215" text-anchor="middle" font-size="8" fill="var(--fg3)">crop_imm → avg_color</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="240" x2="400" y2="270" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="260" font-size="8" fill="var(--fg3)">Vec&lt;FrameData&gt; sorted by frame_number</text>
+
+  <!-- Stage 3: Temporal Filter -->
+  <rect x="20" y="275" width="760" height="80" rx="8" fill="var(--coral-fill)" stroke="var(--coral-stroke)" stroke-width="1.5"/>
+  <text x="40" y="297" font-size="10" font-weight="700" fill="var(--coral-text)" letter-spacing="0.06em">STAGE 3</text>
+  <text x="110" y="297" font-size="11" font-weight="600" fill="var(--coral-text)">Temporal Redundancy Filter (sequential)</text>
+  <text x="40" y="317" font-size="9.5" fill="var(--fg3)">Compare frame N to frame N−1: Manhattan distance across all 5 card slots. If total Δ ≤ threshold → drop as duplicate.</text>
+  <text x="40" y="337" font-size="9.5" fill="var(--fg3)">Per-folder isolation ensures frames from different videos are never compared. Threshold: 50 (RGB Manhattan distance).</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="355" x2="400" y2="385" stroke="var(--fg3)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="375" font-size="8" fill="var(--fg3)">Vec&lt;usize&gt; unique frame indices</text>
+
+  <!-- Stage 4: Zero-Copy Output -->
+  <rect x="20" y="390" width="760" height="75" rx="8" fill="var(--green-fill)" stroke="var(--green-stroke)" stroke-width="1.5"/>
+  <text x="40" y="412" font-size="10" font-weight="700" fill="var(--green-text)" letter-spacing="0.06em">STAGE 4</text>
+  <text x="110" y="412" font-size="11" font-weight="600" fill="var(--green-text)">Zero-Copy File Output</text>
+  <text x="40" y="432" font-size="9.5" fill="var(--fg3)">std::fs::copy issues direct OS-level syscalls — no JPEG decode/re-encode. Raw binary blob duplicated at max SSD bandwidth.</text>
+  <text x="40" y="449" font-size="9.5" fill="var(--fg3)">Directory tree structure preserved in output. 170,842 unique frames written to {dataset}_cleaned/.</text>
+
+  <!-- Side callouts -->
+  <!-- Zero-copy note -->
+  <rect x="570" y="130" width="195" height="28" rx="5" fill="var(--bg)" stroke="var(--blue-stroke)" stroke-width="0.8"/>
+  <text x="667" y="148" text-anchor="middle" font-size="8.5" fill="var(--blue-text)">crop_imm = zero-copy view into RAM</text>
+
+  <!-- Device detection -->
+  <rect x="570" y="278" width="195" height="28" rx="5" fill="var(--bg)" stroke="var(--coral-stroke)" stroke-width="0.8"/>
+  <text x="667" y="296" text-anchor="middle" font-size="8.5" fill="var(--coral-text)">61% of all frames dropped as duplicates</text>
+</svg>
+<div class="diagram-caption">Figure 1 — Four-stage pipeline. Stage 2 is embarrassingly parallel (rayon); Stage 3 is sequential per-folder to preserve temporal ordering; Stage 4 bypasses image codecs entirely.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Performance <span class="tag tag-perf">measured</span></h2>
+
+<div class="metrics">
+  <div class="metric-card purple">
+    <div class="metric-value">440K</div>
+    <div class="metric-label">Frames processed</div>
+  </div>
+  <div class="metric-card coral">
+    <div class="metric-value">61.1%</div>
+    <div class="metric-label">Duplicates dropped</div>
+  </div>
+  <div class="metric-card teal">
+    <div class="metric-value">221</div>
+    <div class="metric-label">FPS throughput</div>
+  </div>
+  <div class="metric-card blue">
+    <div class="metric-value">33min</div>
+    <div class="metric-label">Wall time</div>
+  </div>
+</div>
+
+<p>Benchmark executed on a dataset of raw gameplay footage spanning <b>268 directories</b> on an external SSD, including mixed iPhone and iPad aspect ratios.</p>
+
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Total frames analyzed</td><td>440,056</td></tr>
+<tr><td>Processing time</td><td>33 minutes (1,990 seconds)</td></tr>
+<tr><td>Throughput</td><td>~221 FPS (including disk I/O)</td></tr>
+<tr><td>Temporal duplicates dropped</td><td>269,214 (61.1%)</td></tr>
+<tr><td>Unique frames saved</td><td>170,842</td></tr>
+<tr><td>Directories traversed</td><td>268</td></tr>
+</table>
+
+<p>The 221 FPS throughput includes the full pipeline: image decode from SSD, pixel-level feature extraction, temporal comparison, and file copy back to SSD. The bottleneck is disk I/O on the external SSD, not CPU — Rayon keeps all cores saturated while individual threads block on reads.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Systems engineering <span class="tag tag-opt">optimizations</span></h2>
+
+<h3>1. Zero-copy memory management</h3>
+<p>Standard Python pipelines allocate new memory for every image crop. The engine uses <code>image::crop_imm</code>, which creates lightweight immutable views into the original image buffer — a mathematical window, not a copy. Across 440K frames × 5 crops each, this eliminates <b>2.2 million unnecessary allocations</b> and prevents RAM thrashing.</p>
+
+<h3>2. Work-stealing multi-threading (Rayon)</h3>
+<p>Python's Global Interpreter Lock (GIL) restricts image processing to a single core. Rayon's <code>.par_iter()</code> distributes frames across all logical cores using a work-stealing scheduler. When one thread blocks on an SSD read, others continue processing — maintaining near-100% CPU utilization throughout the run.</p>
+
+<h3>3. Per-folder temporal isolation</h3>
+<p>Frames are grouped by parent directory (via <code>HashMap&lt;PathBuf, Vec&lt;PathBuf&gt;&gt;</code>) before temporal filtering. This ensures the N-to-N−1 comparison only happens between frames from the <b>same video</b>. Without this, a match-ending frame from one video could be incorrectly compared to the opening frame of the next, corrupting the deduplication logic.</p>
+
+<h3>4. OS-level file copy</h3>
+<p>Unique frames are written to the output directory using <code>std::fs::copy</code>, which issues a direct syscall to duplicate the raw binary blob on disk. The engine never decodes or re-encodes a JPEG — it operates at the maximum bandwidth of the storage hardware. The output directory tree mirrors the input structure.</p>
+
+<h3>5. Adaptive device layout detection</h3>
+<p>The dataset contains mixed iPhone (0.46 aspect ratio) and iPad (0.75 aspect ratio) recordings. Rather than hardcoding pixel coordinates, the engine computes the input aspect ratio and selects the closest matching device layout at runtime. Card slot ROIs are defined as percentage-based bounding boxes, making the system resolution-independent.</p>
+
+<div class="eq">layout = argmin(|aspect_ratio(frame) − aspect_ratio(device)|) over {iPhone, iPad}</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Deduplication logic <span class="tag tag-data">algorithm</span></h2>
+
+<p>The core comparison reduces each frame to a <b>5-element color fingerprint</b>: the average RGB value of each card slot. Two consecutive frames are considered duplicates if the Manhattan distance across all 5 slots falls below a threshold.</p>
+
+<div class="eq">duplicate(N, N−1) = Σ<sub>slot=1..5</sub> |R<sub>N</sub> − R<sub>N−1</sub>| + |G<sub>N</sub> − G<sub>N−1</sub>| + |B<sub>N</sub> − B<sub>N−1</sub>| ≤ 50</div>
+
+<p>The threshold of 50 was tuned empirically. Lower values (stricter) preserve more frames but miss duplicates caused by video compression artifacts. Higher values (looser) over-prune and risk dropping genuine card changes. At 50, the engine achieves a 61% reduction while preserving all visually distinct hand states.</p>
+
+<p>This is deliberately a lightweight feature — average color, not a neural embedding or perceptual hash. The goal is to run at SSD speed, not model accuracy. Downstream, the MobileNetV3 classifier handles the actual card identification; this engine just ensures it trains on non-redundant data.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Build &amp; run <span class="tag tag-sys">setup</span></h2>
+
+<table>
+<tr><th>Crate</th><th>Purpose</th></tr>
+<tr><td><code>image</code></td><td>JPEG decode, zero-copy cropping, pixel access</td></tr>
+<tr><td><code>rayon</code></td><td>Work-stealing parallel iteration</td></tr>
+<tr><td><code>walkdir</code></td><td>Recursive directory traversal</td></tr>
+</table>
+
+<pre><code># Build in release mode (critical for performance — debug builds are 10-20x slower)
+cargo build --release
+
+# Run the deduplication engine
+cargo run --release</code></pre>
+
+<p>Configure input/output paths at the top of <code>src/main.rs</code>. The engine creates a <code>{input_dir}_cleaned/</code> output directory automatically, preserving the full subfolder structure.</p>
+
+<hr>
+<p style="font-size: 0.82rem; color: var(--fg3);">Part of <a href="https://github.com/nguiaSoren/clash-royale-suite" style="color: var(--accent);">clash-royale-suite</a> — the data-centric AI core responsible for dataset sanitization, super-resolution upscaling (Real-ESRGAN), and multi-stage augmentation.</p>
+
+</body>
+</html>

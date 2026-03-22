@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="480" fill="#ffffff" rx="0"/>
+
+  <!-- Stage 1: Directory Walk -->
+  <rect x="20" y="20" width="760" height="75" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="40" y="42" font-size="10" font-weight="700" fill="#374151" letter-spacing="0.06em">STAGE 1</text>
+  <text x="110" y="42" font-size="11" font-weight="600" fill="#374151">Recursive Directory Discovery</text>
+  <text x="40" y="62" font-size="9.5" fill="#888">WalkDir crawls the dataset tree → groups JPEGs by parent folder → preserves per-video temporal ordering</text>
+  <text x="40" y="78" font-size="9.5" fill="#888">268 directories · 440,056 frames · iPhone + iPad mixed aspect ratios</text>
+
+  <line x1="400" y1="95" x2="400" y2="125" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="115" font-size="8" fill="#888">HashMap&lt;PathBuf, Vec&lt;PathBuf&gt;&gt;</text>
+
+  <!-- Stage 2: Parallel Feature Extraction -->
+  <rect x="20" y="130" width="760" height="110" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="40" y="152" font-size="10" font-weight="700" fill="#1e40af" letter-spacing="0.06em">STAGE 2</text>
+  <text x="110" y="152" font-size="11" font-weight="600" fill="#1e40af">Parallel Feature Extraction (Rayon)</text>
+  <text x="40" y="172" font-size="9.5" fill="#888">Each frame on a rayon thread: detect aspect ratio → select device layout → crop 5 card slots → average RGB per slot</text>
+
+  <rect x="45" y="185" width="135" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="112" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="#1e40af">Thread 1</text>
+  <text x="112" y="215" text-anchor="middle" font-size="8" fill="#888">crop_imm → avg_color</text>
+
+  <rect x="195" y="185" width="135" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="262" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="#1e40af">Thread 2</text>
+  <text x="262" y="215" text-anchor="middle" font-size="8" fill="#888">crop_imm → avg_color</text>
+
+  <rect x="345" y="185" width="135" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="412" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="#1e40af">Thread 3</text>
+  <text x="412" y="215" text-anchor="middle" font-size="8" fill="#888">crop_imm → avg_color</text>
+
+  <rect x="495" y="185" width="50" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="520" y="209" text-anchor="middle" font-size="10" fill="#1e40af">…</text>
+
+  <rect x="560" y="185" width="135" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="627" y="201" text-anchor="middle" font-size="9" font-weight="600" fill="#1e40af">Thread N</text>
+  <text x="627" y="215" text-anchor="middle" font-size="8" fill="#888">crop_imm → avg_color</text>
+
+  <line x1="400" y1="240" x2="400" y2="270" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="260" font-size="8" fill="#888">Vec&lt;FrameData&gt; sorted by frame_number</text>
+
+  <!-- Stage 3: Temporal Filter -->
+  <rect x="20" y="275" width="760" height="80" rx="8" fill="#ffe4e6" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="40" y="297" font-size="10" font-weight="700" fill="#9f1239" letter-spacing="0.06em">STAGE 3</text>
+  <text x="110" y="297" font-size="11" font-weight="600" fill="#9f1239">Temporal Redundancy Filter (sequential)</text>
+  <text x="40" y="317" font-size="9.5" fill="#888">Compare frame N to frame N−1: Manhattan distance across all 5 card slots. If total Δ ≤ threshold → drop as duplicate.</text>
+  <text x="40" y="337" font-size="9.5" fill="#888">Per-folder isolation ensures frames from different videos are never compared. Threshold: 50 (RGB Manhattan distance).</text>
+
+  <line x1="400" y1="355" x2="400" y2="385" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="408" y="375" font-size="8" fill="#888">Vec&lt;usize&gt; unique frame indices</text>
+
+  <!-- Stage 4: Zero-Copy Output -->
+  <rect x="20" y="390" width="760" height="75" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="40" y="412" font-size="10" font-weight="700" fill="#166534" letter-spacing="0.06em">STAGE 4</text>
+  <text x="110" y="412" font-size="11" font-weight="600" fill="#166534">Zero-Copy File Output</text>
+  <text x="40" y="432" font-size="9.5" fill="#888">std::fs::copy issues direct OS-level syscalls — no JPEG decode/re-encode. Raw binary blob duplicated at max SSD bandwidth.</text>
+  <text x="40" y="449" font-size="9.5" fill="#888">Directory tree structure preserved in output. 170,842 unique frames written to {dataset}_cleaned/.</text>
+
+  <!-- Side callouts -->
+  <rect x="570" y="130" width="195" height="28" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="0.8"/>
+  <text x="667" y="148" text-anchor="middle" font-size="8.5" fill="#1e40af">crop_imm = zero-copy view into RAM</text>
+
+  <rect x="570" y="278" width="195" height="28" rx="5" fill="#ffffff" stroke="#f43f5e" stroke-width="0.8"/>
+  <text x="667" y="296" text-anchor="middle" font-size="8.5" fill="#9f1239">61% of all frames dropped as duplicates</text>
+</svg>

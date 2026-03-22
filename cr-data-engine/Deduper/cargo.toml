@@ -1,0 +1,9 @@
+[package]
+name = "clash_deduper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.24"
+rayon = "1.8"
+walkdir = "2.3"
