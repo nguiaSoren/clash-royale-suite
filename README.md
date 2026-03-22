@@ -28,9 +28,9 @@ Two Rust binaries, same model — different strategies for when to run inference
 
 <table>
 <tr>
-<td width="33%"><video src="https://github.com/user-attachments/assets/99d556de-8513-4536-8132-c6b4dec98c4f" controls width="100%"></video></td>
-<td width="33%"><video src="https://github.com/user-attachments/assets/c0de3247-554d-4ede-805c-eccfa86f4518" controls width="100%"></video></td>
-<td width="33%"><video src="https://github.com/user-attachments/assets/316dfd0c-1f8a-4ce9-a64f-16bfa29d9b1d" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/e869e69b-d055-49ce-9bf2-c193fcf846eb" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/fa5cef9b-18c6-49e6-918d-63eb2224b1c6" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/402b80de-c4b6-4f6e-82b4-d607ad4a5c89" controls width="100%"></video></td>
 </tr>
 <tr>
 <td align="center"><sub>Batch Track 1</sub></td>
@@ -43,9 +43,9 @@ Two Rust binaries, same model — different strategies for when to run inference
 
 <table>
 <tr>
-<td width="33%"><video src="https://github.com/user-attachments/assets/f1d86efd-b1e3-471a-984a-b04f781d3dfa" controls width="100%"></video></td>
-<td width="33%"><video src="https://github.com/user-attachments/assets/6bbe885e-cf29-4a23-bf2a-af867c9d1965" controls width="100%"></video></td>
-<td width="33%"><video src="https://github.com/user-attachments/assets/11fba19c-9516-49bd-bc4f-168e594e9363" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/a3843b9f-512e-4940-8874-01b35d492f02" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/9b073c9b-8dc6-4d94-9411-87d7b6c65136" controls width="100%"></video></td>
+<td width="33%"><video src="https://github.com/user-attachments/assets/e100ea60-4cf4-43b4-9e81-7deadf61da4c" controls width="100%"></video></td>
 </tr>
 <tr>
 <td align="center"><sub>Gatekeeper Track 1</sub></td>
