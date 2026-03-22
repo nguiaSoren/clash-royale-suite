@@ -14,3 +14,4 @@ __pycache__/
 !cr-perception/card-classifier/checkpoints/classes.json
 !cr-data-engine/weights/RealESRGAN_x4.pth*.onnx
 *.pth
+target/
