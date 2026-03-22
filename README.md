@@ -11,9 +11,9 @@ A research-oriented framework combining high-performance systems programming and
 
 <!-- ═══ INFERENCE PIPELINE SECTION (paste into your top-level README.md) ═══ -->
 
-### [Real-Time Inference Pipeline →](cr-perception/card-classifier/rust-inference-pipeline/inference_pipeline_overview.html)
+### [Real-Time Inference Pipeline →](cr-perception/card-classifier/inference_pipeline_overview.html)
 
-![Pipeline Architecture](cr-perception/card-classifier/rust-inference-pipeline/pipeline_architecture.svg)
+![Pipeline Architecture](cr-perception/card-classifier/pipeline_architecture.svg)
 
 Two Rust binaries, same model — different strategies for when to run inference. **Batch mode** classifies all 5 card slots every frame. **Gatekeeper mode** tracks pixel-level changes per slot and skips inference on cards that haven't changed.
 
