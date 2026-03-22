@@ -11,9 +11,10 @@ A research-oriented framework combining high-performance systems programming and
 
 <!-- ═══ INFERENCE PIPELINE SECTION (paste into your top-level README.md) ═══ -->
 
-### [Real-Time Inference Pipeline →](cr-perception/card-classifier/rust-inference-pipeline/inference_pipeline_overview.html)
+### [Real-Time Inference Pipeline →](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)
 
-![Pipeline Architecture](cr-perception/card-classifier/rust-inference-pipeline/pipeline_architecture.svg)
+
+![Pipeline Architecture](cr-perception/card-classifier/pipeline_architecture.svg)
 
 Two Rust binaries, same model — different strategies for when to run inference. **Batch mode** classifies all 5 card slots every frame. **Gatekeeper mode** tracks pixel-level changes per slot and skips inference on cards that haven't changed.
 
@@ -56,7 +57,7 @@ Two Rust binaries, same model — different strategies for when to run inference
 
 > **Why is gatekeeper slower for offline video?** CoreML compiles optimized execution plans for fixed tensor shapes. Batch mode sends a consistent `[5, 3, 224, 224]` every frame — compiled once, runs on the ANE. Gatekeeper varies the batch size dynamically, forcing recompilation. The gatekeeper targets **live real-time streams** where skipping 49% of inference calls saves compute, not batch processing.
 
-📄 **[Full writeup →](cr-perception/rust-inference-pipeline/inference_pipeline_overview.html)** — architecture details, model training history, systems optimizations (Python → Rust), and build instructions.
+📄 **[Full writeup →](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)** — architecture details, model training history, systems optimizations (Python → Rust), and build instructions.
 
 
 ## 📂 Repository Structure
