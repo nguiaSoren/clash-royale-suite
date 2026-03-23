@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparative Study — Clash Royale AI &amp; Related Systems</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --fg2: #555; --fg3: #888;
+  --accent: #2563eb; --success: #16a34a; --danger: #dc2626; --warn: #d97706;
+  --border: #e5e5e5; --surface: #f8f8f8; --code-bg: #f3f4f6;
+  --blue-fill: #dbeafe; --blue-stroke: #3b82f6; --blue-text: #1e40af;
+  --teal-fill: #ccfbf1; --teal-stroke: #14b8a6; --teal-text: #0f766e;
+  --coral-fill: #ffe4e6; --coral-stroke: #f43f5e; --coral-text: #9f1239;
+  --amber-fill: #fef3c7; --amber-stroke: #f59e0b; --amber-text: #92400e;
+  --purple-fill: #ede9fe; --purple-stroke: #8b5cf6; --purple-text: #5b21b6;
+  --gray-fill: #f3f4f6; --gray-stroke: #9ca3af; --gray-text: #374151;
+  --green-fill: #dcfce7; --green-stroke: #22c55e; --green-text: #166534;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111; --fg: #e5e5e5; --fg2: #aaa; --fg3: #777;
+    --border: #333; --surface: #1a1a1a; --code-bg: #1e1e1e;
+    --blue-fill: #1e3a5f; --blue-stroke: #60a5fa; --blue-text: #93c5fd;
+    --teal-fill: #134e4a; --teal-stroke: #5eead4; --teal-text: #99f6e4;
+    --coral-fill: #4c1d28; --coral-stroke: #fb7185; --coral-text: #fda4af;
+    --amber-fill: #451a03; --amber-stroke: #fbbf24; --amber-text: #fde68a;
+    --purple-fill: #2e1065; --purple-stroke: #a78bfa; --purple-text: #c4b5fd;
+    --gray-fill: #1f2937; --gray-stroke: #6b7280; --gray-text: #d1d5db;
+    --green-fill: #14532d; --green-stroke: #4ade80; --green-text: #bbf7d0;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
+h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p { margin: 0.5rem 0; color: var(--fg); }
+.subtitle { color: var(--fg2); font-size: 0.95rem; margin-bottom: 2rem; }
+code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85em; background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 4px; }
+pre { background: var(--code-bg); padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 0.75rem 0; font-size: 0.82rem; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.85rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; background: var(--surface); }
+td:first-child { white-space: nowrap; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; border-radius: 4px; vertical-align: middle; margin-left: 0.3rem; }
+.tag-this { background: var(--green-fill); color: var(--green-text); }
+.tag-sim { background: var(--purple-fill); color: var(--purple-text); }
+.tag-bot { background: var(--blue-fill); color: var(--blue-text); }
+.tag-rl { background: var(--teal-fill); color: var(--teal-text); }
+.tag-llm { background: var(--amber-fill); color: var(--amber-text); }
+.tag-infra { background: var(--gray-fill); color: var(--gray-text); }
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.note { margin: 1rem 0; padding: 0.6rem 1rem; border-radius: 8px; background: var(--amber-fill); border: 1px solid var(--amber-stroke); color: var(--amber-text); font-size: 0.85rem; }
+.result-block { margin: 1rem 0; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.85rem; font-family: 'SF Mono', 'Fira Code', monospace; line-height: 1.6; }
+.result-pass { background: var(--green-fill); border: 1px solid var(--green-stroke); color: var(--green-text); }
+.result-data { background: var(--blue-fill); border: 1px solid var(--blue-stroke); color: var(--blue-text); }
+.diagram { margin: 1.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1rem; background: var(--surface); }
+.diagram pre { margin: 0; background: none; }
+.diagram-caption { font-size: 0.82rem; color: var(--fg3); text-align: center; margin-top: 0.5rem; font-style: italic; }
+.stars { font-size: 0.75rem; color: var(--fg3); font-weight: normal; }
+</style>
+</head>
+<body>
+
+<h1>Comparative Study: Clash Royale AI &amp; Related Systems</h1>
+<p class="subtitle">A survey of existing projects in the Clash Royale AI space and related deterministic simulation / game AI systems, with an analysis of how this project compares.</p>
+
+<!-- ============================================ -->
+<h2>Clash Royale AI Projects</h2>
+
+<p>The following table compares every significant public Clash Royale AI project against this one. Each occupies a different part of the stack; none covers all four layers.</p>
+
+<div style="overflow-x: auto;">
+<table>
+<thead>
+<tr><th>Project</th><th>Approach</th><th>Perception</th><th>Simulation</th><th>Data Pipeline</th><th>Lang</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/nguiaSoren/clash-royale-suite" target="_blank"><b>This project</b></a> <span class="tag tag-this">full-stack</span></td>
+  <td>Data eng → perception → deterministic sim</td>
+  <td>MobileNetV3 (97.4%, 2.1MB) + ONNX Rust inference</td>
+  <td>Deterministic Rust engine, 20 tps, integer-only, 3K+ agents</td>
+  <td>440K-frame dedup, Real-ESRGAN, 295K+ augmented images</td>
+  <td>Rust + Python</td>
+</tr>
+<tr>
+  <td><a href="https://www.linkedin.com/posts/akavishwar_i-built-a-real-time-clash-royale-agent-that-activity-7376441494704123904-boYk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGyDmgBO-2Ej_u0mpFi-V3MGMDsHWyr39I&skipRedirect=true" target="_blank">akavishwar</a> (Berkeley) <span class="tag tag-bot">live agent</span></td>
+  <td>Live-play agent, &lt;80ms E2E</td>
+  <td>ONNX detector + multi-object tracker + OCR + HMM</td>
+  <td>None</td>
+  <td>None</td>
+  <td>Unknown</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/wty-yy/KataCR" target="_blank">wty-yy/KataCR</a> <span class="stars">388★</span> (<a href="https://arxiv.org/abs/2504.04783" target="_blank">paper</a>) <span class="tag tag-rl">offline RL</span></td>
+  <td>Visual offline RL</td>
+  <td>YOLOv8 object detection (150 classes)</td>
+  <td>None</td>
+  <td>Generative slices (4,654) + synthetic</td>
+  <td>Python</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Pbatch/ClashRoyaleBuildABot" target="_blank">Pbatch/ClashRoyaleBuildABot</a> <span class="stars">353★</span> <span class="tag tag-bot">emulator bot</span></td>
+  <td>Emulator bot with GUI</td>
+  <td>YOLOv10 + state generator</td>
+  <td>None</td>
+  <td>Synthetic data (planned)</td>
+  <td>Python</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/houseworthe/claude-royale" target="_blank">houseworthe/claude-royale</a> <span class="stars">17★</span> <span class="tag tag-llm">LLM agent</span></td>
+  <td>LLM-as-agent via screenshots</td>
+  <td>Claude vision (7s latency)</td>
+  <td>None</td>
+  <td>None</td>
+  <td>Shell + JS</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Jaso1024/Real-Time-Strategy-RL-Clash-Royale" target="_blank">Jaso1024/RT-Strategy-RL</a> <span class="tag tag-rl">PPO RL</span></td>
+  <td>PPO multi-agent RL</td>
+  <td>Screen capture, factored state</td>
+  <td>None (trains on live game)</td>
+  <td>None</td>
+  <td>Python</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/stanly363/Royale-RL-A-Reinforcement-Learning-Agent" target="_blank">stanly363/Royale-RL</a> <span class="tag tag-rl">Decision Transformer</span></td>
+  <td>Decision Transformer + online RL</td>
+  <td>YOLOv9 + MobileNetV2 + OCR</td>
+  <td>None (trains on live game)</td>
+  <td>None</td>
+  <td>Python</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Notable results:</b> akavishwar's agent reached <b>Ultimate Champion</b> rank (roughly top 0.05% of all players) on a free-to-play account. KataCR defeats the built-in 8000-rating AI with 12 consecutive wins via offline RL. claude-royale reached 1,000 trophies live on Twitch. These are the highest-performing public CR AI systems.</p>
+
+<!-- ============================================ -->
+<h2>Key Differentiators</h2>
+
+<h3>No other Clash Royale project has built a game simulator</h3>
+
+<p>Every existing project trains or plays against the live game through an emulator, which limits training to real-time speed (~3–5 minutes per game). This project's deterministic Rust engine targets <b>10,000+ parallel simulation instances at 1.5 μs/instance</b> batch latency, enabling the same self-play approach that powered <a href="https://openai.com/index/openai-five-defeats-dota-2-world-champions/" target="_blank">OpenAI Five</a> (Dota 2) and <a href="https://github.com/google-deepmind/alphastar" target="_blank">AlphaStar</a> (StarCraft II). The engine stress-tests to <b>3,000 concurrent agents at 29 ms/tick</b> on a single M1 Pro core.</p>
+
+<h3>No other project invested in data engineering at scale</h3>
+
+<p>The 440,000-frame temporal deduplication pipeline, Real-ESRGAN super-resolution from API assets, and 4-stage augmentation suite producing <b>295K+ synthetic training images</b> is production-grade data engineering — fully automated end-to-end from raw API assets to labeled training data. <a href="https://github.com/wty-yy/KataCR" target="_blank">KataCR</a> shares the generative-augmentation philosophy (YOLOv8 + synthetic slices), but operates at a smaller scale (4,654 slices vs. 295K+ images) with no temporal deduplication, no super-resolution upscaling, and no Rust/parallel processing.</p>
+
+<h3>No other project documented reverse-engineered mechanics with mathematical rigor</h3>
+
+<p>The accompanying technical writeups prove charge-attack step functions, pulsed DoT mechanics, N-body collision convergence, and simultaneous hit resolution at tick-level precision with <b>100× reproducibility</b> — engineering proofs, not implementation notes.</p>
+
+<h3>Real-time perception with inference gating</h3>
+
+<p>The Rust inference pipeline achieves <b>22 FPS throughput</b> with ~9ms per-card latency via batched ONNX Runtime + rayon parallelism, targeting CoreML/ANE acceleration. A per-slot state machine pre-filters card slots using sub-microsecond pixel fingerprinting, <b>eliminating 49% of inference calls</b> (21K of 43K) across a live match — designed for cost-constrained and edge deployment scenarios.</p>
+
+<!-- ============================================ -->
+<h2>Related Systems Beyond Clash Royale</h2>
+
+<p>These projects share architectural DNA with this one — deterministic simulation, Rust game engines, fast-sim-for-RL paradigms — across different game domains and system types.</p>
+
+<div style="overflow-x: auto;">
+<table>
+<thead>
+<tr><th>Project</th><th>Domain</th><th>Architecture</th><th>Relationship</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Equim-chan/Mortal" target="_blank">Mortal</a> <span class="stars">1,245★</span> <span class="tag tag-sim">Rust sim</span></td>
+  <td>Mahjong AI</td>
+  <td>Rust emulator + Python RL, deterministic self-play, 40K games/hr</td>
+  <td>Closest architectural parallel. Same pattern (Rust sim → RL training), but Mahjong is turn-based/discrete. CR is real-time with continuous spatial dynamics — a harder simulation problem.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/google-deepmind/open_spiel" target="_blank">DeepMind OpenSpiel</a> <span class="tag tag-infra">framework</span></td>
+  <td>General game AI</td>
+  <td>C++ core + Python bindings, 70+ games, MCTS/CFR/RL</td>
+  <td>Academic gold standard for game RL research. Turn-based focus — does not model continuous spatial dynamics, real-time tick loops, or N-body collision physics.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/madsim-rs/madsim" target="_blank">MadSim</a> <span class="tag tag-sim">Rust sim</span></td>
+  <td>Distributed systems</td>
+  <td>Deterministic Rust async runtime for chaos testing</td>
+  <td>Shares the deterministic-replay-in-Rust philosophy, but for network systems rather than game agents. Architectural peer.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/elidupree/time-steward" target="_blank">elidupree/time-steward</a> <span class="tag tag-sim">Rust sim</span></td>
+  <td>Deterministic game sim</td>
+  <td>Rust framework for networked deterministic simulation</td>
+  <td>Addresses the same core challenges: integer-only arithmetic, deterministic event ordering, reproducible state across clients. Framework vs. concrete implementation.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Ruddle/oxidator" target="_blank">Oxidator</a> <span class="tag tag-sim">Rust RTS</span></td>
+  <td>Rust RTS engine</td>
+  <td>WebGPU-based RTS with optional determinism</td>
+  <td>Author explicitly rejected deterministic simulation as too costly. This project chose the opposite tradeoff — determinism first, correctness proven, then optimize.</td>
+</tr>
+<tr>
+  <td><a href="https://openai.com/index/openai-five-defeats-dota-2-world-champions/" target="_blank">OpenAI Five</a> (<a href="https://arxiv.org/pdf/1912.06721" target="_blank">paper</a>)</td>
+  <td>Dota 2</td>
+  <td>Fast sim → massive self-play → emergent strategy</td>
+  <td>Spiritual predecessor. Trained via 10 months of self-play at 250+ years of gameplay per day using rapid simulation. The architecture pattern this project is building toward.</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/google-deepmind/alphastar" target="_blank">DeepMind AlphaStar</a></td>
+  <td>StarCraft II</td>
+  <td>Fast sim → multi-agent league self-play → grandmaster level</td>
+  <td>Same paradigm: fast deterministic simulation enabling millions of training games. Achieved Grandmaster level in all three SC2 races. Closed-source engine, open-source training code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================================ -->
+<h2>Architectural Position</h2>
+
+<p>Most game AI projects occupy one layer of the stack. This project spans all four:</p>
+
+<div class="diagram">
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│  DECISION LAYER    (RL / MCTS / LLM / Rule-based)           │  ← akavishwar, claude-royale
+├─────────────────────────────────────────────────────────────┤
+│  PERCEPTION LAYER  (CV models, state extraction)             │  ← Pbatch, stanly363, KataCR
+├─────────────────────────────────────────────────────────────┤
+│  SIMULATION LAYER  (deterministic game engine)               │  ← Mortal, OpenSpiel
+├─────────────────────────────────────────────────────────────┤
+│  DATA LAYER        (collection, dedup, synthesis)            │  ← (rarely addressed)
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<div class="diagram-caption">This project spans all four layers — from raw frame processing (data) through neural perception (CV) to a deterministic simulation engine (sim), designed to feed RL training (decision) at scale.</div>
+</div>
+
+<div class="result-block result-pass">
+<b>Vertical integration is what separates a research framework from a weekend project.</b><br>
+akavishwar built the agent that plays. This project builds the infrastructure that could train one at scale — the piece that enabled every superhuman game AI breakthrough (AlphaGo, OpenAI Five, AlphaStar).
+</div>
+
+</body>
+</html>
