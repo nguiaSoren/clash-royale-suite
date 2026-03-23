@@ -1,0 +1,148 @@
+Evolved Wall BreakersElixir Cost2Cycle Cost2RarityEpicTypeTroopArenaSpooky TownRelease Date14 February 2024
+
+## Evolved Wall Breakers
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Wall Breakers' Evolution is anEpiccardthat is unlocked with 6 Evolution Shards. It spawns 2 Wall Breakers with identical stats to the originals. When defeated, they will explode, dealing high damage (but less againstCrown Towers) and will spawn a Runner each, which is an area-damage,building-targeting, melee, groundtroopwith low hitpoints and moderate damage. They drop their dynamite at their target when attacking, destroying themselves on impact. They resembleSkeletonsdonning purple bandanas and gloves with golden cuffs, along with a team-colored belt with theCard Evolutionsymbol in the center, have purple eyes and a nose, ride larger, purple-spiked explosive barrels, and carry sticks of dynamite in their hands. The Wall Breakers' Evolution costs 2Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - For just 2 Elixir, the Evolved Wall Breakers deal incredibly high damage to theCrown Towersand apply immense pressure, making them good for distracting the opponent from building up or defending a push.
+  - The Evolved Wall Breakers have incredible synergy with theMineras it will take the Crown Tower's attacks, allowing for the Evolved Wall Breakers to easily connect.
+  - The Evolved Wall Breakers can be situationally ignored if they’re attacking a significantly higher health Crown Tower than the other.
+  - Due to the Evolved Wall Breakers being in pairs, the player can split them into separate lanes by deploying them in the middle of theArena. This is an effective way to divide their attacks, as fully countering this attack with only 2 Elixir is nearly impossible.
+  - Unlike the regularWall Breakers, theCannoneerisn't recommended nearly as much to deal the Evolved Wall Breakers. If left alone, both Runners and one of the Evolved Wall Breakers' death damage will connect to the Cannoneer.
+  - At the expense of most of her daggers, theDagger Duchesscan mostly counter the Evolved Wall Breakers by herself, causing only 1 Runner to connect to the Crown Tower.
+  - Single damagespells, like theFireball,Rocket,Zap,The LogandGiant Snowballare mostly ineffective at dealing with the Evolved Wall Breakers as their Barrel will act as a shield, shifting them into their Runner form.Although, if the player has theEvolved ZaporArrows, they can fully counter the Evolved Wall Breakers for a neutral Elixir trade. The Zap must be played 2 tiles in front of where the Evolved Wall Breakers are to ensure they’re hit by all three zaps.
+  - Due to the Barrel's death damage, the Evolved Wall Breakers can be used to defend against medium hp units and swarms, such asMinion HordeandBarbariansfor a positive Elixir trade when placed directly on top.
+  - TheRascalscan be fully countered by the Evolved Wall Breakers with the help of the Cannoneer as the Evolved Wall Breakers will take out the Rascal Girls and do damage to the Rascal Boy while the Cannoneer finishes him off.
+  - Due to their significantly higher damage, it's heavily recommended to not deploy any units next to abuildingthat the Evolved Wall Breakers are going toward. Doing so will result in them being instantly destroyed, likeMinions,Mother Witch,Dart Goblin,Bomber, orMagic Archer, or taking a large amount of unnecessary damage.
+  - Buildings, such asCannonorGoblin Cage, placed directly on top are the best counters to the Evolved Wall Breakers, albeit for a negative Elixir trade.
+  - If placed quickly,Arrowsare a somewhat effective counter to the Evolved Wall Breakers as the spell with the help of theTower Princesscan fully counter them. However, Arrows used too late will result in a Runner connecting to the Crown Tower.Conversely, Arrows can be used to clear certain cards the opponent uses to defend the Evolved Wall Breakers, such asSkeleton ArmyandGoblins, allowing the Evolved Wall Breakers to connect instead of the Runners.
+  - TheSkeleton Barrelhas decent synergy with the Evolved Wall Breakers as the Skeleton Barrel can act as spell bait and a tank for your Evolved Wall Breakers, making it easier for them to deal their full damage to the Crown Tower.
+  - TheEvolved Royal Recruitshave great synergy with split Evolved Wall Breakers as the Recruits take hits for both of the Evolved Wall Breakers while applying equally high pressure to the opponent on both sides. Creating a deadly attack.
+  - The Evolved Wall Breaker’s death damage is not quite enough to kill Goblins. Knowing this, you can fully counter the Evolved Wall Breakers withGiant Snowballand Goblins, though it should only be used as a last resort.However, placing Goblins before one of the Barrels explodes will result in them being destroyed as they cannot take the death damage twice, allowing a Runner to connect.
+  - Similar to theBattle Ram, fatal damage caused by piercing splash cards likeThe Log,Executioner,Barbarian Barrel,Evolved Firecracker,Evolved Bomber, andBowlerwill also deal damage to the Runners, making them somewhat effective at dealing with them. However, make sure to place the latter at a distance to prevent death damage being dealt to it.
+  - For a negative Elixir trade, a properly timed and placedValkyriecan fully counter the Evolved Wall Breakers. She will also counter push, potentially forcing your opponent to respond, making up for the initial Elixir trade.
+  - TheIce Golemhas great synergy with the Evolved Wall Breakers as he can tank the Crown Tower and deplete the Dagger Duchess' daggers for a cheap cost. This might cause the Evolved Wall Breakers to connect to the Crown Tower if the opponent does not use a building to defend. Additionally, the Evolved Wall Breakers will push the Ice Golem to the Crown Tower, resulting in some minor chip damage.
+  - Combining the Evolved Wall Breakers withRagemakes them difficult to react to at the bridge and can result in both connecting to the tower if the opponent lacks area damage counters or buildings, but their damage won't be boosted, as Rage only increases attack speed and the Wall Breakers' damage is instant.
+  - When usingCloneon the Evolved Wall Breakers, it is most recommended to use it on the Evolved Wall Breakers themselves instead of the Runners. Even if the Clone produces regular Wall Breakers, they deal more damage than Runners do while also have the same 1 hitpoint, and both lack other attributes to justify using the Clone.
+  - Although, if the player has theEvolved ZaporArrows, they can fully counter the Evolved Wall Breakers for a neutral Elixir trade. The Zap must be played 2 tiles in front of where the Evolved Wall Breakers are to ensure they’re hit by all three zaps.
+  - Conversely, Arrows can be used to clear certain cards the opponent uses to defend the Evolved Wall Breakers, such asSkeleton ArmyandGoblins, allowing the Evolved Wall Breakers to connect instead of the Runners.
+  - However, placing Goblins before one of the Barrels explodes will result in them being destroyed as they cannot take the death damage twice, allowing a Runner to connect.
+
+## Statistics
+
+
+## Evolved Wall Breaker Attributes
+
+Cost | Speed | Deploy Time | Range | Splash Radius | Target | Count | Transport | Type | Rarity
+2 | Very Fast (120) | 1 sec | Melee: Short (0.5) | 1.5 | Buildings | x2 | Ground | Troop | Epic
+
+## Evolution Attributes
+
+Cycles
+2
+
+## Runner Attributes
+
+Speed | Deploy Time | Range | Splash Radius | Target | Count | Transport
+Very Fast (120) | 1 sec | Melee: Short (0.5) | 1.5 | Buildings | x2 | Ground
+
+## Card Statistics
+
+Level | Hitpoints | Area Damage | Death Damage | Crown Tower Death Damage | Runner Hitpoints | Runner Area Damage
+6 | 206 | 244 | 182 | 121 | 103 | 123
+7 | 227 | 269 | 200 | 132 | 113 | 135
+8 | 248 | 295 | 220 | 146 | 124 | 148
+9 | 273 | 324 | 241 | 160 | 136 | 163
+10 | 300 | 356 | 265 | 175 | 150 | 179
+11 | 330 | 391 | 291 | 193 | 164 | 196
+12 | 362 | 429 | 320 | 212 | 181 | 216
+13 | 398 | 472 | 352 | 233 | 198 | 237
+14 | 437 | 518 | 386 | 255 | 218 | 260
+15 | 479 | 569 | 424 | 280 | 238 | 286
+
+## History[]
+
+2024
+  - The Wall Breakers' Evolutioncardwas added to the game on 14/2/2024.
+  - On 14/5/2024, aBalance Updatedecreased Runner's damage by 50%, increased the Runner's movement speed to 120 (from 90), now classified as Very Fast, and removed the Evolved Wall Breaker's damage boost.
+  - On 16/12/2024, the2024 Quarter 4 Updateadded a sound effect to the Evolved Wall Breakers after death.
+2025
+  - On 8/1/2025, aBalance Updateincreased the Evolved Wall Breakers' death damage by 50%, but made it so that the Evolved Wall Breakers' death damage would deal 66% of its full damage toCrown Towers.
+  - On 31/3/2025, the2025 Quarter 1 Updatedecreased the Evolved Wall Breakers' hitpoints by 0.3%, and their damage by 0.25%.
+  - On 1/4/2025, amaintenance breakfixed a bug whereElectro Wizardcould nullify Wall Breakers' Evolutions' death effects.
+  - On 3/11/2025,  aBalance Update, decreased the Evolved Wall Breakers’ Runner’s death damage by 7%.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The Wall Breakers were the firstEpiccardto receive aCard Evolution.
+  - The Evolved Wall Breakers' design, locomotion (rolling on a large, explosive barrel), and the fact that the barrel deals death damage, are all based on the Super Wall Breaker from Clash of Clans.
+  - The Wall Breakers are 1 of 6 evolvedcardsassociated withSkeletons, with the others beingBomber,Skeleton Barrel,Witch,Skeleton Army, and of course,Skeletons.
+  - The Wall Breakers and Runners are 2 of 4 evolvedtroopsto die as part of its attack, the others being theIce Spiritand Skeleton Barrel.When the Evolved Wall Breakers are defeated before they connect to abuilding, the Runners will play the Wall Breakers' battle cry.
+  - The Wall Breakers and Runners are 2 of 5 evolved troops which can defeat themselves in one attack, the others being Skeletons,Firecracker, andDecoy Goblins.Unlike the others, the Evolved Wall Breakers and Runners cannot target other Evolved Wall Breakers or Runners respectively.The Wall Breakers and Runners are 2 of 3 evolved troops with more damage than hitpoints, with the other being Decoy Goblins.
+  - In the French, Korean, Arabic, Chinese, Malaysian, Thai, and Vietnamese language settings of the game, the Wall Breakers' name translates to "Sappers", "Skeleton Assault", "Wall Destroyers", "Siege Bombers", "Fortress Breakers", "Wall Bombers", and "Siege Soldiers" respectively.
+  - The dynamite used by the Evolved Wall Breakers is the same held by theGoblin Demolisher.
+  - Unlike other evolved troops, the Runners do not disintegrate intoDark Elixirwhen defeated. Instead, they disintegrate intoElixir. This trait is shared with the Decoy Goblins.
+  - The Wall Breakers' Evolution is the subject of 2Emotes.
+  - Before the Wall Breakers' Evolution card was released, the Evolved Wall Breaker's death damage was decreased by 50%, the Runners' damage was increased by 100%, and the Runners' speed was decreased to 90 (from 120), now classified as Fast.
+  - When the Evolved Wall Breakers are defeated before they connect to abuilding, the Runners will play the Wall Breakers' battle cry.
+  - Unlike the others, the Evolved Wall Breakers and Runners cannot target other Evolved Wall Breakers or Runners respectively.
+  - The Wall Breakers and Runners are 2 of 3 evolved troops with more damage than hitpoints, with the other being Decoy Goblins.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

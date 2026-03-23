@@ -1,0 +1,147 @@
+Evolved SkeletonsElixir Cost1Cycle Cost2RarityCommonTypeTroopArenaBone PitRelease Date19 June 2023
+
+## Evolved Skeletons
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Skeletons' Evolution is aCommoncardthat is unlocked with 6 Evolution Shards. It spawns 3 Skeletons, with identical stats to the originals, in a triangle formation. Every time they attack, an additional Evolved Skeleton will spawn, for a maximum total of 8 Skeletons. They resemble small undead creatures with a skull that lacks a lower jaw, have purple eyes and a nose and a scar on their left eye, wield short purple swords, and wear a purple ushanka and a belt around their chests. The Skeletons' Evolution costs 1Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - Even though they require 2 cycles to evolve, due to their 1 Elixir cost, you can at least get Evolved Skeletons twice a match. It is recommended that you think about your placement and use of the Evolved Skeletons. Using them as a defense against cards likeGiant,Royal Giant,Elixir Golem, and other tanks is when they should be used as they will be getting immense value when left alone.If you're desperate to defend something, cycle spam your cheapest cards to obtain their Evolution quicker.
+  - Their ability makes them very effective against aP.E.K.K.A,Mini P.E.K.K.A,Boss Bandit, Prince,Mighty Miner,Giant Skeleton, or any other slow or single-target troop for that matter, as the Skeletons will overwhelm the seven with the spawns, causing infinite stalling of them. This will grant a massive positive Elixir trade of up to 3, 4, 5 and 6, although the player needs to have already played the Skeletons 2 times and this counter is vulnerable to a quick weakspell, such asZap, Giant Snowball, andThe Log.
+  - Alone, the Skeletons will not connect to theTower Princess, and even with support, it is very unlikely and even if they do, they will be addressed. The Evolved Skeletons, very much like regular Skeletons, are meant for defense.However, if the opponent is usingCannoneeror all 8 of them have spawned, the Evolved Skeletons will connect to anyCrown Tower. Defense is necessary in this case as they will be the deciding factor between a win and a loss.
+  - Their respawning mechanic makes them much more viable on defense as these will act like a perpetualTombstone, infinitely stalling most units unless addressed with a weak spell or facing a 360° splash unit like a jumpingMega Knight, a chargingDark Prince, or aValkyrie.
+  - To allow them to accumulate, they should be placed on top of ranged troops like the Musketeer, to negate their range advantage. If the ranged troop also has area damage, they should be placed in such a way that the Skeletons surround the ranged troop, to prevent them from dying immediately.
+  - If placed early enough, they can fully stop a centeredGoblin Barrel. Placed under the bottom Goblin, two Evolved Skeletons will attack the bottom Goblin, allowing them to multiply, which will reach the top Goblins. The top Goblins will be distracted by the Skeletons that appear from the multiplication, preventing them from dealing damage to the Crown Tower. Beware of spells such asZapandGiant Snowballthat may accompany the Goblin Barrel.
+  - Evolved Skeletons can fully counter aBandit. Before the Bandit is about to dash, place the Evolved Skeletons on the third tile vertically from theKing's Towerand the third tile horizontally from the Crown Tower. After she dashes and kills one of the Evolved Skeletons, the others will attack her and multiply themselves, fully defeating her. This works better than placing them directly on top of the Bandit, as she will be further away from ranged support troops. A similar strategy also works against thePrince.
+  - The Evolved Skeletons have great synergy with other swarms as your opponent might use their spells on them instead of the Evolved Skeletons, leaving you with a 1 Elixir high pressure card on defense and offense. Alternatively, they can bait those spells for those other units to wreck havoc, which works just as well, as every spell is a negative Elixir trade against them.
+  - They pair well withRoyal Hogs. They can both be split, forcing the opponent to use their spells on only one of the two lanes, allowing the Evolved Skeletons on the other lane to multiple with less resistance.
+  - It is a good idea to use cards with stun effects like theIce Spirit,Electro Dragon,Goblinstein, Zap, Electro Spirit,Zappies,Electro Wizard, andFreezealongside the Evolved Skeletons. This will give them a larger chance of them to attack and accumulate for a threatening push or for a forced response from the opponent.
+  - Evolved Skeletons have very high DPS/Cost ratio. A strategy is to place anIce Golemto distract a troop, and Skeletons behind the attacking troop to severely cripple them, if not, destroy them.
+  - Ice Golem itself is a situationally good counter to the Evolved Skeletons as its death damage is nearly guaranteed to wipe out most if not all Skeletons that surround it.
+  - Try to avoid using them against aMother Witch. She will keep destroying each Evolved Skeleton, spawning Cursed Hogs from them which will allow for more Skeletons to attack them and spawn. Eventually, the Cursed Hogs will have accumulated enough to pass through and generate damage to the Crown Towers. If ignored, this will go no perpetually until the King Tower is destroyed.
+  - Despite attacking anElectro Giant, Evolved Skeletons will not spawn once they die, causing them to deal very minimal damage.
+  - Since they only cost 1 Elixir, they can shuffle the player'sdeckquickly and add a significant damage boost to an attack. Better yet, since they are also easily defeated by many cards and the Tower Princess when unmultiplied, not many players are willing to play cards to only take out the Evolved Skeletons alone, given that their 1 Elixir cost will almost always result in a negative Elixir trade for them. They are very good to be split behind the King Tower as this will shuffle the player's deck and greatly discourages the opponent from immediately attacking either lane as if they do connect to their attack, it will be very likely that it will be stopped.
+  - TheElectro Spiritis the best counter to the Evolved Skeletons as its 1 Elixir cost and ability to chain onto all the Skeletons, even when multiplied allows it to easily stop them. However, the player can mitigate this by spliting the Evolved Skeletons, preventing the Electro Spirit from hitting all of them.
+  - If you're desperate to defend something, cycle spam your cheapest cards to obtain their Evolution quicker.
+  - However, if the opponent is usingCannoneeror all 8 of them have spawned, the Evolved Skeletons will connect to anyCrown Tower. Defense is necessary in this case as they will be the deciding factor between a win and a loss.
+
+## Statistics
+
+
+## Evolved Skeletons Attributes
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Target | Count | Transport | Type | Rarity
+1 | 1.1 sec | 0.5 sec | Fast (90) | 1 sec | Melee: Short (0.5) | Ground | x3 | Ground | Troop | Common
+
+## Evolution Attributes
+
+Cycles | Max Count
+2 | 8
+
+## Card Statistics
+
+Level | Hitpoints | Damage | Damage per second
+1 | 32 | 32 | 32
+2 | 35 | 35 | 35
+3 | 38 | 38 | 38
+4 | 42 | 42 | 42
+5 | 46 | 46 | 46
+6 | 51 | 51 | 51
+7 | 56 | 56 | 56
+8 | 61 | 61 | 61
+9 | 67 | 67 | 67
+10 | 74 | 74 | 74
+11 | 81 | 81 | 81
+12 | 89 | 89 | 89
+13 | 98 | 98 | 98
+14 | 108 | 108 | 108
+15 | 119 | 119 | 119
+
+## History[]
+
+2023
+  - The Skeletons' Evolutioncardwas added to the game on 19/6/2023, in theCard Evolution Update.
+  - On 30/6/2023, amaintenance break, increased the maximum number of Evolved Skeletons to 8 (from 6).
+  - On 8/8/2023, aBalance Update, decreased the cycles required to 2 (from 3) and decreased the maximum number of Evolved Skeletons to 6 (from 8).
+  - On 3/10/2023, aBalance Update, increased the maximum number of Evolved Skeletons to 8 (from 6).
+  - On 13/11/2023, aMinor Update, decreased the Evolved Skeletons’ first attack time interval to 0.4 seconds (from 0.5 seconds).
+2024
+  - On 18/3/2024, theLucky Drops Update, made it so that Evolved Skeletons would multiply after attacking instead of simultaneously.
+  - On 14/5/2024, aBalance Update, increased the Evolved Skeletons’ first attack time interval to 0.5 seconds (from 0.4 seconds).
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Skeletons after death.
+2025
+  - On 8/1/2025, aBalance Update, decreased the number of Evolved Skeletons spawned to 3 (from 4).
+  - On 4/8/2025, theAugust 2025 Updatemade it so that theEvolved Witchwould no longer be healed by defeated Evolved Skeletons.
+  - On 6/10/2025, aBalance Updateincreased the Evolved Skeleton's attack time interval to 1.1 seconds (from 1.0 seconds).
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The word "Skeleton" comes from the Greek "σκελετός" (skeletós), meaning dried up or withered.The Skeletons are 1 of 6 evolvedcardsassociated withSkeletons, with the others beingBomber,Skeleton Barrel,Witch,Wall Breakers, andSkeleton Army.
+  - The beginning of the Skeletons' Evolution description, "When there's no room in Spooky Town, the dead will walk the Arena!", references the famous quote, "When there's no more room in Hell, the dead will walk the Earth." from Dawn of the Dead.
+  - The Skeletons' Evolution is tied with theIce Spiritfor the cheapestEvolutionto be placed, costing 3Elixir(excluding Elixir from using other cards).
+  - The Skeletons' Evolution was one of the first Evolutions to be added in the game, alongside theBarbarians,Royal Giant, andFirecracker. It is also one of the first evolvedtroopsto be featured in aLoading Screen, alongside the Barbarians, Royal Giant, and Firecracker.
+  - The Skeletons' Evolution is 1 of 5cardsthat has had its Cycles required changed, the others beingBomber, Ice Spirit,Lumberjack, andBaby Dragon.
+  - Even though the card spawns 3 Skeletons, the card render displays only 1 Skeleton.
+  - The Skeletons' Evolution are 1 of 5 evolved troops which can defeat themselves in one attack, the others being Firecracker,Wall Breakers, Runners, andDecoy Goblins.
+  - The Skeletons' Evolution are the only evolved swarm card whose members spawn all at the exact same time.
+  - In the Korean language settings of the game, the Skeletons' name translates to "Skeleton Soldiers".
+  - The Skeletons' Evolution is the subject of anEmote.
+  - Before the Skeletons' Evolution's release, the cycles required was increased to 3 (from 2), and the maximum number of Evolved Skeletons was decreased to 6 (from 8).
+  - The Skeletons are 1 of 6 evolvedcardsassociated withSkeletons, with the others beingBomber,Skeleton Barrel,Witch,Wall Breakers, andSkeleton Army.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

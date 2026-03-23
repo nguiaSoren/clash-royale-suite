@@ -1,0 +1,117 @@
+Evolved Dart GoblinElixir Cost3Cycle Cost2RarityRareTypeTroopArenaJungle ArenaRelease Date6 January 2025
+
+## Evolved Dart Goblin
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Dart Goblin Evolution is aRarecardthat is unlocked with 6 Evolution shards. It spawns a Dart Goblin with identical stats to the original. When attacking a target, he will leave an area of effect poison, becoming stronger after multiple attacks. He resembles aGoblin, but wears a voodoo mask with purple eyes, team-colored face paint and a rope behind, leaves with circles and purple tips, and aCard Evolutionsymbol on top, purple pants, team-colored bands on his arm, and brown shoes, carries a purple potion, and holds a blowgun with purple paint. The Dart Goblin's Evolution costs 3Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - Even if the Evolved Dart Goblin is defeated, the poison will stay until that unit is defeated. So shooting high-hitpoint units like theGolem,Giant,P.E.K.K.A,Giant Skeleton,Electro Giant,Mega Knight,Goblin Giant,Royal Giant, orLava Houndwill make sure that a lot of poison will be made for a long time.
+  - Against Crown Towers, the poison will only remain for 1 second, and he will only deal 25% of its damage.
+  - Troops that spawn other troops after death will not carry over the poison to their sub troops if the parent troop is poisoned.
+  - The poison effect does not stack. For example, if two Evolved Dart Goblins attack the same troop, the second one will not increase the poison damage of the first one. Instead, both poison effects will affect the troop individually.
+
+## Statistics
+
+
+## Evolved Dart Goblin Attributes
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Projectile Speed | Target | Count | Transport | Type | Rarity
+3 | 0.8 sec | 0.35 sec | Very Fast (120) | 1 sec | 6.5 | 800 | Air & Ground | x1 | Ground | Troop | Rare
+
+## Evolution Attributes
+
+Cycles | Poison Radius | Poison Duration | Number Darts for Poison
+2 | 1.5 | 1 sec | 1-4-7
+
+## Card Statistics
+
+Level | Hitpoints | Damage | Damage per second | Poison Damage per second (Stage 1) | Poison Damage per second (Stage 2) | Poison Damage per second (Stage 3) | Poison Crown Tower Damage per second (Stage 1) | Poison Crown Tower Damage per second (Stage 2) | Poison Crown Tower Damage per second (Stage 3)
+3 | 123 | 67 | 83 | 24 | 54 | 145 | 6 | 14 | 37
+4 | 135 | 75 | 93 | 26 | 59 | 159 | 7 | 15 | 40
+5 | 148 | 83 | 103 | 29 | 65 | 175 | 8 | 17 | 44
+6 | 163 | 92 | 115 | 32 | 72 | 192 | 8 | 18 | 48
+7 | 179 | 102 | 127 | 35 | 79 | 211 | 9 | 20 | 53
+8 | 196 | 114 | 142 | 38 | 86 | 231 | 10 | 22 | 58
+9 | 216 | 126 | 157 | 42 | 95 | 254 | 11 | 24 | 64
+10 | 237 | 140 | 175 | 46 | 104 | 279 | 12 | 26 | 70
+11 | 260 | 156 | 195 | 51 | 115 | 307 | 13 | 29 | 77
+12 | 286 | 172 | 215 | 56 | 126 | 337 | 14 | 32 | 85
+13 | 315 | 189 | 236 | 61 | 139 | 370 | 16 | 35 | 93
+14 | 345 | 208 | 260 | 67 | 152 | 406 | 17 | 38 | 102
+15 | 380 | 228 | 285 | 74 | 167 | 446 | 19 | 42 | 112
+
+## History[]
+
+2025
+  - The Dart Goblin's Evolution card was added to the game on 6/1/2025, in theJanuary 2025 Update.
+  - On 4/2/2025, aBalance Update, decreased the Evolved Dart Goblin's damage by 5%.
+  - On 31/3/2025, the2025 Quarter 1 Update, increased the Dart Goblin's hitpoints by 0.38%, and decreased his damage by 1.48%.
+  - On 4/8/2025, theAugust 2025 Updateincreased the Evolved Dart Goblin's Damage by 17%, increased his attack time interval to 0.8 seconds (from 0.7 seconds), and decreased the Poisonm's Duration to 1 second (from 4 seconds).
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - Goblins are small, grotesque, monstrous creatures that appear in the folklore of multiple European cultures. First attested in stories from the Middle Ages, they are ascribed conflicting abilities, temperaments, and appearances depending on the story and country of origin, ranging from mischievous household spirits to malicious, bestial thieves. They often have magical abilities similar to a fairy or demon, such as the ability to shapeshift. Similar creatures includeduendes,kobolds,leprechauns, andghouls.In the Italian and Japanese language setting of the game, the Dart Goblin's name translates to "Blowgun Goblin". In the French, German, Spanish, Dutch, Norwegian. Arabic, Persian, Malaysian, and Vietnamese language setting of the game, the Dart Goblin's name translates to "Blowpipe Goblin", "Blowgun Kobold", "Dart-throwing Duende", "Blowpipe Kobold", "Blowing Goblin", "Arrow-blowing Ghoul", "Blow Dart Goblin", "Greedy Goblin", and "Dart-throwing Leprechauns" respectively.The Dart Goblin is 1 of 6 evolvedcardsassociated withGoblins, with the others beingMortar,Goblin Cage,Goblin Giant,Goblin Barrel, andGoblin Drill.
+  - The Dart Goblin's Evolution might be based off thePoison Attackbuffthat the Dart Goblin has been featured with in the10/6/2024 Goblin Buffs Challenge.
+  - The poison clouds change color depending on the number of darts hit on the target. The first stage has a blue color, the second stage changes to a purple color, and the third stage changes to an orange color. In addition, skulls appear after the second stage.
+  - The Dart Goblin’s Evolution is the subject of anEmote.
+  - The Evolved Dart Goblin was created when a Dart Goblin fell into aMiner's tunnel and stumbled upon a poisonous mask in a Goblin temple, as seen in ashort.
+  - In the Italian and Japanese language setting of the game, the Dart Goblin's name translates to "Blowgun Goblin". In the French, German, Spanish, Dutch, Norwegian. Arabic, Persian, Malaysian, and Vietnamese language setting of the game, the Dart Goblin's name translates to "Blowpipe Goblin", "Blowgun Kobold", "Dart-throwing Duende", "Blowpipe Kobold", "Blowing Goblin", "Arrow-blowing Ghoul", "Blow Dart Goblin", "Greedy Goblin", and "Dart-throwing Leprechauns" respectively.
+  - The Dart Goblin is 1 of 6 evolvedcardsassociated withGoblins, with the others beingMortar,Goblin Cage,Goblin Giant,Goblin Barrel, andGoblin Drill.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

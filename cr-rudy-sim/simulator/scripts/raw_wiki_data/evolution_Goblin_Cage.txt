@@ -1,0 +1,156 @@
+Evolved Goblin CageElixir Cost4Cycle Cost1RarityRareTypeBuildingArenaGoblin StadiumRelease Date5 August 2024
+
+## Evolved Goblin Cage
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Goblin Cage's Evolution is aRarecardthat is unlocked with 6 Evolution Shards. It spawns a Goblin Cage with identical stats to the original. Once a ground troop comes within 3 tiles of the building, they get pulled into the cage and they are attacked directly by the Goblin Cage, and any troop pulled will be freed. When defeated, it spawns a Goblin Brawler with identical stats to the original. It appears to be a wooden cage with four dark violet metal supports with a golden spike on them, a lock on the front with theCard Evolutionsymbol on it, and a pair of bars at each side, while the Goblin Brawler appears as a large, bulkyGoblinwith violet eyes, mohawk and unibrow with a golden piercing, has tattoos printed on his back and arms, and sports a striped white shirt and a gold chain with the Card Evolution symbol, along with violet pants and bands tied on his hands which extends till his lower arms. The Goblin Cage’s Evolution costs 4Elixirand requires 1 cycle to deploy.
+
+## Strategy[]
+
+  - When the Evolved Goblin Cage pulls a unit into the cage, it won't be targeted by other units. This is especially helpful at separating win conditions, likeGiantorGolemfrom their support troops, likeWitchorNight Witch, to make defending easier.
+  - If a troop is already on the Crown Tower, the user can deploy the Evolved Goblin Cage next to them to pull them into the cage. This can result in the Crown Tower taking significantly less damage if done properly.Done to theGiant Skeleton, the death bomb will spawn in front of the cage, leaving the Crown Tower just outside its radius while the cage itself takes the damage for the Evolved Goblin Brawler, allowing the Brawler to leave at full health for a counterpush.
+  - If the cage is destroyed while a troop is still inside, the troop will exit the cage with its remaining hitpoints and become targetable again.
+  - Under most circumstances, theEarthquakeis a mostly ineffective counter to the Evolved Goblin Cage. Only the cage will be destroyed, leaving the Evolved Goblin Brawler to assist in future pushes while you’re low on Elixir.Deckswith a fast cycle, such asHog Riderdecks, may still see the Earthquake as valuable since their cheap cards are able to dispose enemy pushes for large positive Elixir trades.
+  - When anEvolved Knightis pulled inside the cage, the shield will still be active. This can be used to tank for higher pressure cards, such as aRam Rider, Prince, or anEvolved Battle Ram, possibly preventing the Evolved Goblin Cage from getting too much defensive value.
+  - Despite the Evolved Goblin Brawler’s higher hitpoints, theSkeletons,Goblins,Guards,Archers, orEvolved Ice Spiritdeployed in the center of the arena with the help of the Crown Tower is enough to fully counter him, resulting in a large +3 Elixir trade.
+  - The Evolved Goblin Brawler’s higher hitpoints allows it to take one additional attack from aPrince,Mini P.E.K.K.A,P.E.K.K.A, orElite Barbarianswith no Crown Tower inference compared to the regular Goblin Brawler.
+  - The Evolved Goblin Cage is an amazing counter to theElectro Giant. The Electro Giant will be quickly pulled into the cage and if ignored, will be fully destroyed for a +3 Elixir trade before the Cage’s lifetime runs out, leaving the Goblin Brawler at full hitpoints for a counterattack. Interestingly, the reflection damage will not affect the cage itself nor the Goblin Brawler despite the Electro Giant taking damage.
+  - Unlike the regular Goblin Cage, the Evolved Goblin Cage can be effective at destroying troops when deployed at the bridge. Any fragile ranged troops, likeDart Goblin,Firecracker,Bomber,Magic Archer,Mother Witch, orPrincessplaced too close to the river can be pulled in and easily killed. Troops likeKnight,Ice Golem,Golden Knight, Giant,Elixir Golem,Battle Healer, Golem,Valkyrie, or Hog Rider used to tank the Crown Tower for certain win conditions, such asMiner,Goblin Barrel, orGraveyard, will no longer be targetable after being pulled in, allowing the Crown Tower to remain helpful.
+  - When defending aMega Knightwith the Evolved Goblin Cage, it’s recommended to not kite it very far as the Mega Knight won’t be pulled into the cage while jumping. Instead, deploy the card 3 tiles to the side of the Mega Knight. This will allow the Goblin Brawler to drag him into the cage without the Mega Knight jumping and will fully counter him if unchecked.
+  - Unlike the regular Goblin Cage, it is not a good idea to waste it on kamikaze troops like theWall Breakers, as it will remove any chances of utilizing the pull mechanic, and the Goblin Brawler isn’t much stronger than a regular one to be worth releasing prematurely.
+  - The 3 tile pull range of the Evolved Goblin Cage is longer than all cards with a charge, allowing them to be pulled into the cage while they’re charging without damaging it.This is especially effective with the Ram Rider,Dark Prince,Battle Ram, and Prince as these cards will be fully countered for a +1 Elixir trade and fail to break the cage, leaving the Goblin Brawler at full hitpoints.
+  - Done to theGiant Skeleton, the death bomb will spawn in front of the cage, leaving the Crown Tower just outside its radius while the cage itself takes the damage for the Evolved Goblin Brawler, allowing the Brawler to leave at full health for a counterpush.
+  - Deckswith a fast cycle, such asHog Riderdecks, may still see the Earthquake as valuable since their cheap cards are able to dispose enemy pushes for large positive Elixir trades.
+  - This is especially effective with the Ram Rider,Dark Prince,Battle Ram, and Prince as these cards will be fully countered for a +1 Elixir trade and fail to break the cage, leaving the Goblin Brawler at full hitpoints.
+
+## Statistics
+
+
+## Goblin Cage Attributes
+
+Cost | Deploy Time | Lifetime | Type | Rarity
+4 | 1 sec | 20 sec | Building | Rare
+
+## Evolution Attributes
+
+Cycles | Hit Speed | Range | Target
+1 | 1 sec | 3 | Ground
+
+## Evolved Goblin Brawler Attributes
+
+Hit Speed | First Hit Speed | Speed | Range | Target | Count | Transport
+1.1 sec | 0.2 sec | Fast (90) | Melee: Short (0.8) | Ground | x1 | Ground
+
+## Card Statistics
+
+Level | Goblin Cage Hitpoints | Goblin Cage Hitpoints lost per second | Goblin Cage Damage | Goblin Cage Damage per second | Goblin Brawler Hitpoints | Goblin Brawler Damage | Goblin Brawler Damage per second
+3 | 369 | 18.4 | 159 | 159 | 510 | 159 | 144
+4 | 405 | 20.2 | 175 | 175 | 561 | 175 | 159
+5 | 445 | 22.25 | 192 | 19 | 616 | 192 | 174
+6 | 488 | 24.45 | 211 | 211 | 675 | 211 | 191
+7 | 536 | 26.85 | 232 | 232 | 742 | 232 | 210
+8 | 588 | 29.4 | 254 | 254 | 814 | 254 | 230
+9 | 646 | 32.35 | 279 | 279 | 894 | 279 | 253
+10 | 710 | 35.5 | 307 | 307 | 983 | 307 | 279
+11 | 780 | 39 | 337 | 337 | 1,080 | 337 | 306
+12 | 857 | 42.85 | 370 | 370 | 1,185 | 370 | 336
+13 | 942 | 47.1 | 407 | 407 | 1,303 | 407 | 369
+14 | 1,033 | 51.7 | 447 | 447 | 1,430 | 447 | 406
+15 | 1,134 | 56.85 | 491 | 491 | 1,569 | 491 | 446
+16 | 1,247 | 62.35 | 539 | 539 | 1,725 | 539 | 490
+
+## Sound Effects[]
+
+
+## Current[]
+
+Sound Effect | Action | Description | Line
+https://clashroyale.fandom.com/wiki/File:GoblinCageEvoSpawn.mp3 | Deployment | Plays when the Evolved Goblin Cage is deployed. | "Goblin Cage!"
+https://clashroyale.fandom.com/wiki/File:GoblinCageEvoGrab.mp3 | Grab | Plays when the Evolved Goblin Cage grabs a troop.
+https://clashroyale.fandom.com/wiki/File:GoblinCageEvoDamageLoop.mp3 | Brawls | Plays when the Goblin Brawler inside the Evolved Goblin Cage is "brawling" a troop.
+https://clashroyale.fandom.com/wiki/File:GoblinCageEvoBreakout.mp3 | Breaking Out | Plays when the Goblin Brawler breaks out of his evolved cage. | "CAGE RAAAGE!
+https://clashroyale.fandom.com/wiki/File:GoblinCageHit1.mp3https://clashroyale.fandom.com/wiki/File:GoblinCageHit2.mp3https://clashroyale.fandom.com/wiki/File:GoblinCageHit3.mp3https://clashroyale.fandom.com/wiki/File:GoblinCageHit4.mp3https://clashroyale.fandom.com/wiki/File:GoblinCageHitImpact.mp3 | Hit | Plays when the Goblin Brawler hits his target.
+
+## History[]
+
+2024
+  - The Goblin Cage Evolutioncardwas added to the game on 5/8/2024, in theAugust 2024 Update.
+  - On 2/10/2024, theLucky Drops 2.0 Update, fixed a few bugs with the Goblin Cage's Evolution.
+  - On 8/10/2024, aBalance Update, decreased the Evolved Goblin Cage’s attack time interval to 1 second (from 1.1 seconds).
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Goblin Brawler after death.
+2025
+  - On 31/3/2025, the2025 Quarter 1 Update, decreased the Evolved Goblin Brawler's hitpoints by 0.16%. It also made it so thatRune Giantwould no longer be able to enchant troops if captured by Evolved Goblin Cage.
+  - On 6/10/2025, aBalance Updateremoved the Evolved Goblin Brawler's hitpoints boost.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - Goblins are small, grotesque, monstrous creatures that appear in the folklore of multiple European cultures. First attested in stories from the Middle Ages, they are ascribed conflicting abilities, temperaments, and appearances depending on the story and country of origin, ranging from mischievous household spirits to malicious, bestial thieves. They often have magical abilities similar to a fairy or demon, such as the ability to shapeshift. Similar creatures includeduendes,kobolds,leprechauns, andghouls.In the German and Dutch language setting of the game, the Goblin Cage's name translates to "Kobold Cage". In the Spanish, Italian, Russian, Arabic, and Vietnamese language settings of the game, the Goblin Cage's name translates to "Strongman's Cage", "Cage for Goblins", "Cage with Goblin", "Ghoul Cage", and "Leprechaun Cage" respectively.The Goblin Cage is 1 of 6 evolvedcardsassociated withGoblins, with the others beingMortar,Dart Goblin,Goblin Giant,Goblin Barrel, andGoblin Drill.
+  - The Evolved Goblin Brawler has a mohawk, similarly to the Goblin Brawler’sStar Level 3 Skin.
+  - The Evolved Goblin Cage is the cheapest 1-Cycle evolution, being 4 elixir.
+  - Gold Crateshave an appearance similar to the Evolved Goblin Cage.
+  - When deployed, a voice can be heard exclaiming "Goblin Cage!", and when the Evolved Goblin Cage is destroyed, the Evolved Goblin Brawler yells "Cage Rage!".The Goblin Cage is the only evolvedbuildingto speak distinct words when on the field.The Goblin Brawler is 1 of 9 evolvedtroopsthat speak distinct words when on the field, the others beingBomber,Wizard,Witch,P.E.K.K.A.,Hunter,Executioner,Mega Knight, andLumberjack.Also, the Goblin Brawler is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Witch, Hunter, Executioner, and Mega Knight.
+  - The Evolved Goblin Brawler has a weight of 87.5 kilograms according to the Clash Royale August 2024 event calendar.
+  - The Goblin Cage's Evolution is the subject of anEmote.
+  - The Goblin Cage's Evolution was featured in the winningdeckof theClash Royale League 2024 Tournament, by a player called Mohamed Light.
+  - The Goblin Brawler evolved due to training inside of the cage, as seen in ashort.
+  - In the German and Dutch language setting of the game, the Goblin Cage's name translates to "Kobold Cage". In the Spanish, Italian, Russian, Arabic, and Vietnamese language settings of the game, the Goblin Cage's name translates to "Strongman's Cage", "Cage for Goblins", "Cage with Goblin", "Ghoul Cage", and "Leprechaun Cage" respectively.
+  - The Goblin Cage is 1 of 6 evolvedcardsassociated withGoblins, with the others beingMortar,Dart Goblin,Goblin Giant,Goblin Barrel, andGoblin Drill.
+  - The Goblin Cage is the only evolvedbuildingto speak distinct words when on the field.
+  - The Goblin Brawler is 1 of 9 evolvedtroopsthat speak distinct words when on the field, the others beingBomber,Wizard,Witch,P.E.K.K.A.,Hunter,Executioner,Mega Knight, andLumberjack.Also, the Goblin Brawler is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Witch, Hunter, Executioner, and Mega Knight.
+  - Also, the Goblin Brawler is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Witch, Hunter, Executioner, and Mega Knight.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

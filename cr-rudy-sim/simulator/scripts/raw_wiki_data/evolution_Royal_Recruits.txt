@@ -1,0 +1,144 @@
+Evolved Royal RecruitsElixir Cost7Cycle Cost1RarityCommonTypeTroopArenaRoyal ArenaRelease Date4 September 2023
+
+## Evolved Royal Recruits
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Royal Recruits' Evolution is aCommoncardthat is unlocked with 6 Evolution Shards. It spawns 6 Royal Recruits with identical stats to the originals. After their shield is destroyed, they gain the ability to charge towards their target after traveling 2 tiles, dealing 2x damage if they hit the target whilst charging. They appear as men with large, round noses, wear wooden buckets with team-colored feathers, which cover their faces, metal gloves, an armor, a chainmail, a purple shirt, cape, pants and sandals, and a team-colored band on their right arm and belt with purple linings and aCard Evolutionsymbol in the center, and wield spears and wooden shields. The Royal Recruits' Evolution costs 7Elixirand requires 1 cycle to deploy.
+
+## Strategy[]
+
+  - The Evolved Royal Recruits are a powerful defensivecardbecause of how they are deployed, allowing good defensivetroopsto come from both lanes.
+  - The Evolved Royal Recruits should never be ignored as they will destroy bothCrown Towerswhen left alone. This goes for anytower troop.
+  - The Evolved Royal Recruits are best used when on defense because they can easily defend both lanes and apply a threatening counterpush when their shields are knocked off.
+  - Despite their horizontal formation, they can be split in slightly different ways by shifting the central tile of their deployment pattern to the left or right. This can cause 4 Evolved Royal Recruits to go in one lane and 2 in the other lane as opposed to the usual even formation. This makes them a good choice for split lane pushes.
+  - Unlike other cards, the Evolved Royal Recruits cannot be placed in the opponent's territory if one Crown Tower has been destroyed. Instead, they need both Crown Towers to be destroyed to be placed in the opponent's territory.
+  - The Evolved Royal Recruits have great synergy with theRoyal Hogsas the Royal Hogs will entice a strong spell, such asFireball, from the opponent, knocking off their shields and causing them to charge. The Evolved Royal Recruits can tank for the Royal Hogs after the Fireball, allowing them to get damage on the Crown Tower.
+  - The best way to counter the Evolved Royal Recruits is to use a card that deals area damage, such as anExecutioner,Wizard,Skeleton King,Sparky,Bomber, Valkyrie,Ice Wizard,Baby Dragon, Mega Knight,Magic Archer,Princess, FirecrackerRoyal Ghost,Goblin Demolisher, Dark Prince,Witch, or Bowler, and a tank, such as anPrince,Ice Golem,Monk, Valkyrie,Miner,Golden Knight, orKnight, in between your Crown Towers. This will make the Evolved Royal Recruits group up and make it easier to hit each Evolved Royal Recruit. Other cards, such as a combination ofBomb TowerandValkyrie, can achieve the same feat.
+  - Spellsare very situational counters to the Evolved Royal Recruits as their shields will absorb the spell's damage without harming the unit itself. Once the shields are knocked off, then a strong spell like Fireball, can be used to take them out as they charge.
+  - Arrowshave a great synergy with the Evolved Royal Recruits as the Arrows will easily take out any fragile swarm, such asSkeleton Army,Bats, andGoblin Gang, or ranged unit, such asFirecracker,Princess, Bomber,Archers,Spear Goblins, andDart Goblin, your opponent might place to counter them.
+  - Because of their horizontal formation, they can be used defensively even against splash units. This is especially useful against theMega Knightor theDark Prince, as their formation minimizes the number of Royal Recruits that are hit by a single attack from the Mega Knight or Dark Prince.
+  - Due to their shields absorbing the damage, the Evolved Royal Recruits are very strong at taking the Giant Bomb from aGiant Skeleton. Additionally, they will begin charging, putting the opponent in a difficult situation.
+  - Since they cannot attack air troops, they can be weakened by splitting air swarms, like theBats,Minion Horde, andSkeleton Dragons. However, note that this will allow them to charge due to their shields being destroyed, so only try this if the air swarms are supported with a ground distraction.
+  - The Evolved Royal Recruits have a slightly longer range than other melee troops, thus allowing them to safely attack distracted lower-range non-splash and splash cards alike, such as theEvolved Skeletonsand Valkyrie, without taking damage in return.
+  - Despite their charging, a loneBowlercan easily stop 1 lane of Evolved Royal Recruits when aligned with them. If he is placed in the center of the player's territory and combined with another card like an Ice Golem, he is able to fully stop both lanes.
+
+## Statistics
+
+
+## Evolved Royal Recruit Attributes
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Target | Count | Transport | Type | Rarity
+7 | 1.3 sec | 0.5 sec | Medium (60) | 1 sec | Melee: Long (1.6) | Ground | x6 | Ground | Troop | Common
+
+## Evolution Attributes
+
+Cycles | Charge Range
+1 | 2.5
+
+## Card Statistics
+
+Level | Hitpoints | Shield Hitpoints | Damage | Charge Damage | Damage per second
+1 | 214 | 94 | 52 | 104 | 40
+2 | 235 | 103 | 57 | 114 | 43
+3 | 258 | 113 | 62 | 125 | 47
+4 | 284 | 125 | 69 | 138 | 53
+5 | 312 | 137 | 75 | 151 | 57
+6 | 342 | 150 | 83 | 166 | 63
+7 | 376 | 165 | 91 | 183 | 70
+8 | 413 | 181 | 100 | 200 | 76
+9 | 453 | 199 | 110 | 220 | 84
+10 | 498 | 219 | 121 | 242 | 93
+11 | 547 | 240 | 133 | 266 | 102
+12 | 601 | 264 | 146 | 292 | 112
+13 | 661 | 290 | 160 | 321 | 123
+14 | 725 | 318 | 176 | 352 | 135
+15 | 796 | 349 | 193 | 386 | 148
+
+## History[]
+
+2023
+  - The Royal Recruits' Evolutioncardwas added to the game on 4/9/2023, in theSeptember 2023 Update.
+  - On 13/11/2023, aMinor Update, decreased the Evolved Royal Recruits' damage to 106% of the original's (from 112%).
+2024
+  - On 3/1/2024, aBalance Update, decreased the Evolved Royal Recruits' charge damage by 8%.
+  - On 5/3/2024, aBalance Update, removed the Evolved Royal Recruits’ damage boost.
+  - On 14/5/2024, aBalance Update, increased the Evolved Royal Recruits’ hitpoints by 3%, but removed their hitpoints boost.
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Royal Recruits after death.
+2025
+  - On 8/1/2025, aBalance Update, decreased the Evolved Royal Recruits' charge damage by 3% and increased the distance required for charging to 2 tiles (from 1.5 tiles).
+  - On 31/3/2025, the2025 Quarter 1 Update, made it so that Evolved Royal Recruits' spawn formation would be correctly mirrored depending on which side of theArenathey were placed.
+  - On 6/10/2025, aBalance Update, increased the distance required for charging to 2.5 tiles (from 2 tiles).
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The Royal Recruits' Evolution is tied with theP.E.K.K.AandMega Knightfor the most expensiveEvolutionto be placed, costing 14Elixir(excluding Elixir from using othercards).
+  - In the Turkish, Japanese, Korean, Chinese, Persian, Indonesian, Thai, Finnish, and Vietnamese language settings of the game, the Royal Recruits' name translates to "Guards", "Apprentice Bodyguards", "Royal Trainees", "Royal Guards", "Royal Soldiers", "Royal Army", "Royal Conscripts", "The King's Warriors", and "Royal Rookies" respectively.
+  - The Royal Recruits' Evolution is 1 of 2 evolved cards to have an alliterative name, the other beingGoblin Giant.
+  - The Royal Recruits' Evolution is 1 of 2 evolved troops with a charge, the other beingBattle Ram.The Royal Recruits' charge shares the same sound effects as thePrince's andRaging Prince's.
+  - The Royal Recruits' Evolution is the only evolved card that cannot be placed in the opponent's territory if only oneCrown Towerhas been destroyed.
+  - Even though the card spawns 6 Royal Recruits, the card render displays only 1 Royal Recruit.
+  - The deploy sound of the Evolved Royal Recruits is identical to the one spawned by theRoyal Delivery.
+  - The Royal Recruits' Evolution is tied with theP.E.K.K.A.and theMega Knightfor the most expensive1-CycleEvolution, costing 7Elixir. They are also the most expensive Evolution overall.
+  - The Royal Recruits' Evolution is the subject of anEmote.It is also 1 of 4 evolved cards whose regular card is not the subject of any Emote, the others beingZap,Giant Snowball, and Battle Ram.
+  - The Royal Recruits' Evolution was featured in the winningdeckof theClash Royale League 2023 Tournament, by a player called Mugi.
+  - The Royal Recruits' Evolution has had balance changes that were planned for it but were not added to the game. More specifically:The initial balance change for Evolved Royal Recruits on the3/1/2024 balance changeswas a removal of their damage boost, but it changed to a 6% charge damage decreaselast minute.The initial balance change for Evolved Royal Recruits on the8/1/2025 balance changeswas a 4% damage increase, a 1% charge damage increase, and a charge range increase to 2 tiles (from 1.5 tiles), but the charge damage increase was changed to a 3% decrease, and the damage increasewas pulled back last minute.
+  - The Royal Recruits' charge shares the same sound effects as thePrince's andRaging Prince's.
+  - It is also 1 of 4 evolved cards whose regular card is not the subject of any Emote, the others beingZap,Giant Snowball, and Battle Ram.
+  - The initial balance change for Evolved Royal Recruits on the3/1/2024 balance changeswas a removal of their damage boost, but it changed to a 6% charge damage decreaselast minute.
+  - The initial balance change for Evolved Royal Recruits on the8/1/2025 balance changeswas a 4% damage increase, a 1% charge damage increase, and a charge range increase to 2 tiles (from 1.5 tiles), but the charge damage increase was changed to a 3% decrease, and the damage increasewas pulled back last minute.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

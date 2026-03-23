@@ -1,0 +1,135 @@
+Evolved WizardElixir Cost5Cycle Cost1RarityRareTypeTroopArenaSpell ValleyRelease Date6 May 2024
+
+## Evolved Wizard
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Wizard's Evolution is aRarecardthat is unlocked with 6 Evolution Shards. It spawns a Wizard with identical stats to the original. Once deployed, a Fire Shield will appear around the Wizard, preventing him from dying in 1 attack. Once the shield is destroyed, all pushback capabletroopswithin 3 tiles of the Wizard will be pushed back by 3 tiles and take high damage. He takes the appearance of a man who has glowing pink eyes, brown eyebrows, and a goatee, and wears a violet cloak with brass-colored linings and boots, a team-colored shirt, pants and wristbands, and a golden belt chain with theCard Evolutionsymbol in the center. The Wizard's Evolution costs 5Elixirand requires 1 cycle to deploy.
+
+## Strategy[]
+
+  - The Evolved Wizard is a great defensive troop againstdecksutilizing many swarm cards due to his large amount of splash damage.Additionally, unlike the regularWizard, the Evolved Wizard’s shield does enough damage to destroyMinionsandGoblins, allowing the user to place him directly in the center of a massive group of these troops to instantly wipe them out.
+  - The Evolved Wizard can be situationally ignored depending on thetower troopused by the opponent. If theTower Princessis in use, the Evolved Wizard will do about half of theCrown Towerwhen left alone while theCannoneerandDagger Duchesswill reduce this from slightly less than half to slight chip damage of the Crown Tower respectively.
+  - The Evolved Wizard has good synergy with theGiant,Lava Hound, and theGolem. The Evolved Wizard’s high damage will cripple or even destroy tank killers, such asHunter,Lumberjack,Inferno Dragon,Three Musketeers,Elite Barbarians,Prince, andMini P.E.K.K.A, meant to defend the Giant/Lava Hound/Golem and his heavy splash damage will easily wipe out small and large swarms, such asGoblin Gang,Skeleton Army, Royal Recruits,Minion Horde,Evolved Bats, andBarbarians. Also, the Giant will be taking hits for the Evolved Wizard, keeping him alive longer to take out more defensive troops.
+  - With the help of any tower troop andGoblinsorSkeletons, the Evolved Wizard can fully counter theEvolved Royal Recruitsfor a +1 Elixir trade. Additionally, the Evolved Wizard will survive, setting up for a potential counterattack.
+  - Like the regular Wizard, the Evolved Wizard has great synergy when paired withTornadoandEvolved Valkyrie, The Tornado effect will pull opposing troops into the Wizard's splash radius, allowing him to hit more targets and deal more damage.
+  - Like theDark Prince,Royal Recruits,Cannon Cart, orGuards, the Evolved Wizard cannot be destroyed in one hit by anything due to his shield, making cards likeRocket,Lightning, andFireballalmost entirely ineffective against him until the shield is destroyed. Although, smallspellslikeThe Log,Giant Snowball, andZapcan destroy his shield. Therefore, small spells or a troop immune to pushback are ideal to safely destroy the shield and take out the Evolved Wizard.
+  - The Evolved Wizard is very effective against theLava Hound. The Lava Hound itself can be quickly dispatched by his high damage while the Lava Pups are easily destroyed by his splash damage, causing minimal damage to be done to the Crown Tower in most cases.
+  - With the help of a Crown Tower, theRoyal Deliverycan fully counter the Evolved Wizard for a +2 Elixir trade. The delivery should ideally be deployed on top of the Evolved Wizard, where theRoyal Recruitcan distract and help take it out after being knocked back by the Fire Shield.
+  - If aMineris placed on the inside corner of a Tower Princess, you can place the Evolved Wizard to get the Miner to knock himself into theKing Towerfrom the Fire Shield’s explosion, potentially activating it if set up properly.
+  - With the help of a Crown Tower and placed in the center of the user’s side, the Evolved Wizard can fully counter theElite Barbariansfor a +1 positive Elixir trade. This makes him ideal at countering decks that utilize the Elite Barbarians inside of a larger group of troops, such asElixir Golem.Conversely, the Evolved Wizard has great synergy with the Elixir Golem as his shield and high damage ranged attacks severely discourage the opponent from placing most units next to the Elixir Golem to take it out; doing so would likely cause their defense to be destroyed by the Evolved Wizard. Instead, they’ll be forced to defend the Evolved Wizard first, giving ample time for the Elixir Golem to deal significant damage to the Crown Tower.
+  - The Evolved Wizard may be substituted for otherCard Evolutionswith consistent splash damage, such as theEvolved FirecrackerandEvolved Bomber, based on the user's deck choices and other preferences.
+  - If the user is up Elixir, aMega Knightcan easily prevent a small push that includes the Evolved Wizard. His spawn damage instantly destroys the shield and weakens all troops within the push, allowing for his regular attacks to finish it off.
+  - Additionally, unlike the regularWizard, the Evolved Wizard’s shield does enough damage to destroyMinionsandGoblins, allowing the user to place him directly in the center of a massive group of these troops to instantly wipe them out.
+  - Conversely, the Evolved Wizard has great synergy with the Elixir Golem as his shield and high damage ranged attacks severely discourage the opponent from placing most units next to the Elixir Golem to take it out; doing so would likely cause their defense to be destroyed by the Evolved Wizard. Instead, they’ll be forced to defend the Evolved Wizard first, giving ample time for the Elixir Golem to deal significant damage to the Crown Tower.
+
+## Statistics
+
+
+## Evolved Wizard Attributes
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Splash Radius | Projectile Speed | Target | Count | Transport | Type | Rarity
+5 | 1.4 sec | 0.4 sec | Medium (60) | 1 sec | 5.5 | 1.5 | 600 | Air & Ground | x1 | Ground | Troop | Rare
+
+## Evolution Attributes
+
+Cycles | Shield Damage Splash Radius
+1 | 3
+
+## Card Statistics
+
+Level | Hitpoints | Shield Hitpoints | Area Damage | Damage per second | Shield Death Damage
+3 | 356 | 90 | 133 | 95 | 133
+4 | 392 | 99 | 146 | 104 | 146
+5 | 430 | 109 | 160 | 114 | 160
+6 | 472 | 120 | 176 | 125 | 176
+7 | 519 | 132 | 193 | 137 | 194
+8 | 569 | 144 | 212 | 151 | 212
+9 | 625 | 159 | 233 | 166 | 234
+10 | 687 | 174 | 256 | 182 | 256
+11 | 755 | 192 | 281 | 200 | 281
+12 | 828 | 210 | 309 | 220 | 309
+13 | 911 | 231 | 339 | 242 | 340
+14 | 1,000 | 254 | 372 | 265 | 373
+15 | 1,097 | 279 | 409 | 292 | 410
+
+## History[]
+
+2024
+  - The Wizard's Evolutioncardwas added to the game on 6/5/2024, in theMay 2024 Update.
+  - On 14/5/2024, aBalance Update, increased the Evolved Wizard's shield hitpoints by 18%.
+  - On 2/7/2024, aBalance Update, decreased the Evolved Wizard's shield hitpoints by 20.2%.
+  - On 6/8/2024, aBalance Update, decreased the Evolved Wizard's shield hitpoints by 35.8%, but increased the Evolved Wizard's hitpoints by 4.8%.
+  - On 8/10/2024, aBalance Update, decreased the Evolved Wizard's shield death pushback to 3 tiles (from 4 tiles).
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Wizard after death.
+2025
+  - On 31/3/2025, the2025 Quarter 1 Update, increased the Evolved Wizard's hitpoints by 0.13%, his shield hitpoints by 1.05%, and decreased his shield death damage by 0.43%.
+  - On 3/6/2025, aBalance Update, increased the Evolved Wizard's shield death damage by 22%.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The word "Wizard" comes from the Middle English "wys", meaning wise.In the German, Persian, and Vietnamese language settings of the game, the Wizard's name translates to "Magician". In the Chinese language settings of the game, the Wizard's name translates to "Mage". In the Italian language settings of the game, the Wizard's name translates to "Sorcerer".
+  - The Wizard’s Evolution somewhat resembles theSuper Wizardfrom Clash of Clans.
+  - When deployed, the Evolved Wizard exclaims "Evo Wizard!", and occasionally when attacking, he will say “Magic!”, “Fire!”, “Fireball!”, or "Evo Wizard!", referencing the Clash of ClansMagic commercial.There is aLoading Screen Hintthat says “The Wizard can control all elements, except his hair”. This is also a reference to the same commercial.The Wizard is 1 of 9 evolved troops that speak distinct words when on the field, the others beingBomber,Goblin Brawler,Witch,P.E.K.K.A.,Hunter,Executioner,Mega Knight, andLumberjack.
+  - The Evolved Wizard,Ice Wizard, andElectro Wizardare responsible for creating theVoid, according to the Clash RoyaleVoid intro video.
+  - The Evolved Wizard is featured on thecardrender of the Void.
+  - The Wizard’s Evolution is the subject of 4Emotes.
+  - Before the Wizard's Evolution's release, the Evolved Wizard's shield hitpoints were decreased by 15%.
+  - In the German, Persian, and Vietnamese language settings of the game, the Wizard's name translates to "Magician". In the Chinese language settings of the game, the Wizard's name translates to "Mage". In the Italian language settings of the game, the Wizard's name translates to "Sorcerer".
+  - There is aLoading Screen Hintthat says “The Wizard can control all elements, except his hair”. This is also a reference to the same commercial.
+  - The Wizard is 1 of 9 evolved troops that speak distinct words when on the field, the others beingBomber,Goblin Brawler,Witch,P.E.K.K.A.,Hunter,Executioner,Mega Knight, andLumberjack.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

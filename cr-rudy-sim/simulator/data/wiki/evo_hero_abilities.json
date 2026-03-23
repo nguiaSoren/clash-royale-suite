@@ -1,0 +1,2599 @@
+{
+  "evolutions": [
+    {
+      "id": "archers_evo",
+      "base_card_key": "archers",
+      "base_card_sc_key": "Archers",
+      "name": "Evolved Archers",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Power Shot",
+        "description": "When units are between 4 and 6 tiles away, shoots Power Shot dealing 50% bonus damage. Has 1 tile extended range.",
+        "type": "conditional",
+        "trigger": {
+          "condition": "when_enemies_in_range",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "damage_buff",
+            "target": "enemies_in_radius",
+            "radius": 6000,
+            "value": 50,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "baby-dragon_evo",
+      "base_card_key": "baby-dragon",
+      "base_card_sc_key": "BabyDragon",
+      "name": "Evolved Baby Dragon",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Wind Aura",
+        "description": "Produces an 8x9 area of wind that slows enemies by 30% and speeds up allies by 30%. Wind lingers for 2 seconds after death.",
+        "type": "continuous",
+        "trigger": {
+          "condition": "always_active",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "slow",
+            "target": "enemies_in_radius",
+            "radius": 4500,
+            "value": 30,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "speed_buff",
+            "target": "allies_in_radius",
+            "radius": 4500,
+            "value": 30,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "slow",
+            "target": "enemies_in_radius",
+            "radius": 4500,
+            "value": 30,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "speed_buff",
+            "target": "allies_in_radius",
+            "radius": 4500,
+            "value": 30,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "barbarians_evo",
+      "base_card_key": "barbarians",
+      "base_card_sc_key": "Barbarians",
+      "name": "Evolved Barbarians",
+      "cycle_cost": 1,
+      "elixir": 5,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": 1.1,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Berserker Rage",
+        "description": "Every attack, attack speed and movement speed increases by 30% for 3 seconds",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "hitspeed_buff",
+            "target": "self",
+            "radius": null,
+            "value": 30,
+            "duration_ms": 3000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          },
+          {
+            "effect_type": "speed_buff",
+            "target": "self",
+            "radius": null,
+            "value": 30,
+            "duration_ms": 3000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "bats_evo",
+      "base_card_key": "bats",
+      "base_card_sc_key": "Bats",
+      "name": "Evolved Bats",
+      "cycle_cost": 2,
+      "elixir": 2,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": 1.5,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Vampire Healing",
+        "description": "Every time they attack, they heal themselves with two healing pulses. The healing can overheal them, allowing their hitpoints to reach up to double of their initial ones.",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "heal",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": 1000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": 2,
+            "spawn_interval_ms": 500,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2024-05-14"
+    },
+    {
+      "id": "battle_ram_evo",
+      "base_card_key": "battle-ram",
+      "base_card_sc_key": "BattleRam",
+      "name": "Evolved Battle Ram",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Charge Damage and Knockback",
+        "description": "Once charging, deals damage to troops in path with knockback. Bounces back from buildings to repeatedly attack target.",
+        "type": "conditional",
+        "trigger": {
+          "condition": "while_charging",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "knockback",
+            "target": "enemies_in_radius",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "EvolvedBarbarian",
+            "spawn_count": 2,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "bomber_evo",
+      "base_card_key": "bomber",
+      "base_card_sc_key": "Bomber",
+      "name": "Evolved Bomber",
+      "cycle_cost": 2,
+      "elixir": 2,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Bouncing Bomb",
+        "description": "After the initial throw, the bomb bounces twice, 2.5 tiles apart in a straight line, dealing the same damage as the initial hit",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "projectile_bounce",
+            "target": "ground_and_air",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": {
+              "bounce_count": 2,
+              "bounce_distance": 2500
+            },
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "cannon_evo",
+      "base_card_key": "cannon",
+      "base_card_sc_key": "Cannon",
+      "name": "Evolved Cannon",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Barrage",
+        "description": "After deployment, shoots 9 cannonballs in 2 rows dealing area damage and knockback",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": null,
+            "damage": 304,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": {
+              "projectile_count": 9,
+              "pattern": "2_rows"
+            },
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "knockback",
+            "target": "enemies_in_radius",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "dart_goblin_evo",
+      "base_card_key": "dart-goblin",
+      "base_card_sc_key": "DartGoblin",
+      "name": "Evolved Dart Goblin",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Poison Darts",
+        "description": "When attacking a target, leaves an area of poison that gets stronger after multiple attacks (1-4-7 darts for stages)",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 1500,
+            "value": null,
+            "duration_ms": 1000,
+            "damage": 51,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-08-04"
+    },
+    {
+      "id": "electro-dragon_evo",
+      "base_card_key": "electro-dragon",
+      "base_card_sc_key": "ElectroDragon",
+      "name": "Evolved Electro Dragon",
+      "cycle_cost": 1,
+      "elixir": 5,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Infinite Chain Lightning",
+        "description": "Attack chains to up to 2 targets within 4 tiles, then infinitely bounces between all remaining troops with reduced damage and speed",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "stun",
+            "target": "enemies_in_radius",
+            "radius": 4000,
+            "value": null,
+            "duration_ms": 500,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": {
+              "chain_count": 2,
+              "initial_targets": 3,
+              "infinite_bounce": true,
+              "bounce_damage_reduction": 33,
+              "bounce_speed_reduction": 80,
+              "bounce_removes_stun": true
+            },
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "executioner_evo",
+      "base_card_key": "executioner",
+      "base_card_sc_key": "Executioner",
+      "name": "Evolved Executioner",
+      "cycle_cost": 1,
+      "elixir": 5,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Axe Smash",
+        "description": "Units within 3.5 tiles receive extra damage and are knocked back",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 3500,
+            "value": null,
+            "duration_ms": null,
+            "damage": 294,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "knockback",
+            "target": "enemies_in_radius",
+            "radius": 3500,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-04-07"
+    },
+    {
+      "id": "firecracker_evo",
+      "base_card_key": "firecracker",
+      "base_card_sc_key": "Firecracker",
+      "name": "Evolved Firecracker",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Shrapnel Sparks",
+        "description": "Projectile breaks into 5 shrapnel pieces that leave sparks dealing damage over time",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "projectile_chain",
+            "target": "ground_and_air",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": {
+              "shrapnel_count": 5,
+              "pierce": true
+            },
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": 250,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "knockback",
+            "target": "self",
+            "radius": null,
+            "value": 1500,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "furnace_evo",
+      "base_card_key": "furnace",
+      "base_card_sc_key": "Furnace",
+      "name": "Evolved Furnace",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Hot Spawns",
+        "description": "When attacking, spawn speed decreases to 2.4 seconds and spawns Fire Spirits to the sides instead of front",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "FireSpirit",
+            "spawn_count": 1,
+            "spawn_interval_ms": 2400,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-09-01"
+    },
+    {
+      "id": "giant-snowball_evo",
+      "base_card_key": "giant-snowball",
+      "base_card_sc_key": "GiantSnowball",
+      "name": "Evolved Giant Snowball",
+      "cycle_cost": 2,
+      "elixir": 2,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Rolling Snowball",
+        "description": "Extends slow duration by 1 second, pulls affected troops inside and rolls 4.5 tiles on ground, making trapped troops untargetable during roll",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "slow",
+            "target": "enemies_in_radius",
+            "radius": 2500,
+            "value": 30,
+            "duration_ms": 4000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "area_pull",
+            "target": "enemies_in_radius",
+            "radius": 2500,
+            "value": 4500,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": 4500,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-10-06"
+    },
+    {
+      "id": "goblin-barrel_evo",
+      "base_card_key": "goblin-barrel",
+      "base_card_sc_key": "GoblinBarrel",
+      "name": "Evolved Goblin Barrel",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Mirror Barrel",
+        "description": "Launches a second barrel to the mirroring tile in the other lane that spawns 3 Decoy Goblins",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "ground_and_air",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "DecoyGoblin",
+            "spawn_count": 3,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2024-07-08"
+    },
+    {
+      "id": "goblin-cage_evo",
+      "base_card_key": "goblin-cage",
+      "base_card_sc_key": "GoblinCage",
+      "name": "Evolved Goblin Cage",
+      "cycle_cost": 1,
+      "elixir": 4,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Cage Trap",
+        "description": "Pulls ground troops within 3 tiles into the cage where they are attacked directly and become untargetable",
+        "type": "passive",
+        "trigger": {
+          "condition": "always_active",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_pull",
+            "target": "enemies_in_radius",
+            "radius": 3000,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": 3000,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "goblin-drill_evo",
+      "base_card_key": "goblin-drill",
+      "base_card_sc_key": "GoblinDrill",
+      "name": "Evolved Goblin Drill",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Resurface",
+        "description": "When hitpoints reach 66% and 33%, the Goblin Drill resurfaces nearby, leaving Goblins behind each time it's destroyed",
+        "type": "on_damage_taken",
+        "trigger": {
+          "condition": "when_below_half_hp",
+          "cooldown_ms": null,
+          "max_stacks": 2
+        },
+        "effects": [
+          {
+            "effect_type": "respawn",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          },
+          {
+            "effect_type": "spawn_unit",
+            "target": "ground_and_air",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Goblin",
+            "spawn_count": 2,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-11-03"
+    },
+    {
+      "id": "goblin_giant_evo",
+      "base_card_key": "goblin-giant",
+      "base_card_sc_key": "GoblinGiant",
+      "name": "Evolved Goblin Giant",
+      "cycle_cost": 1,
+      "elixir": 6,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Goblin Swarm",
+        "description": "When below 50% hitpoints, spawns a Goblin every 2.2 seconds",
+        "type": "conditional",
+        "trigger": {
+          "condition": "when_below_half_hp",
+          "cooldown_ms": 2200,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Goblin",
+            "spawn_count": 1,
+            "spawn_interval_ms": 2200,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "hunter_evo",
+      "base_card_key": "hunter",
+      "base_card_sc_key": "Hunter",
+      "name": "Evolved Hunter",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Net Trap",
+        "description": "Throws a net at the closest unit that freezes them in place, preventing movement and attacks, and allows ground units to hit them",
+        "type": "continuous",
+        "trigger": {
+          "condition": "always_active",
+          "cooldown_ms": 5000,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "freeze",
+            "target": "nearest_enemy",
+            "radius": null,
+            "value": null,
+            "duration_ms": 3000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-06-03"
+    },
+    {
+      "id": "ice_spirit_evo",
+      "base_card_key": "ice-spirit",
+      "base_card_sc_key": "IceSpirit",
+      "name": "Evolved Ice Spirit",
+      "cycle_cost": 2,
+      "elixir": 1,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Ice Blast",
+        "description": "3 seconds after hitting an enemy, deals the same stun and damage to the enemy for 1.1 seconds with 0.5 tiles larger splash radius",
+        "type": "on_hit",
+        "trigger": {
+          "condition": "after_first_hit",
+          "cooldown_ms": 3000,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": null,
+            "damage": 110,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "freeze",
+            "target": "enemies_in_radius",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": 1100,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-07-08"
+    },
+    {
+      "id": "inferno_dragon_evo",
+      "base_card_key": "inferno-dragon",
+      "base_card_sc_key": "InfernoDragon",
+      "name": "Evolved Inferno Dragon",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Legendary",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Persistent Charge",
+        "description": "After defeating a troop, maintains current damage stage for 9 seconds or until stunned. After 20 seconds of damage, reaches 4th stage dealing twice the damage of 3rd stage. Charge is not reset by knockback or pull effects.",
+        "type": "conditional",
+        "trigger": {
+          "condition": "on_kill",
+          "cooldown_ms": null,
+          "max_stacks": 4
+        },
+        "effects": [
+          {
+            "effect_type": "damage_buff",
+            "target": "self",
+            "radius": null,
+            "value": 100,
+            "duration_ms": 9000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-06-02"
+    },
+    {
+      "id": "knight_evo",
+      "base_card_key": "knight",
+      "base_card_sc_key": "Knight",
+      "name": "Evolved Knight",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Damage Reduction Shield",
+        "description": "Receives 60% less damage from all sources while not attacking",
+        "type": "conditional",
+        "trigger": {
+          "condition": "while_not_attacking",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "damage_reduction",
+            "target": "self",
+            "radius": null,
+            "value": 60,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "lumberjack_evo",
+      "base_card_key": "lumberjack",
+      "base_card_sc_key": "Lumberjack",
+      "name": "Evolved Lumberjack",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Legendary",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Ghost",
+        "description": "When the Lumberjack dies, his ghost spawns with unlimited health, cannot be targeted by troops/buildings/towers, lasts 5.5 seconds, and deals the same damage as the original Lumberjack",
+        "type": "on_death",
+        "trigger": {
+          "condition": "on_kill",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": 5500,
+            "damage": null,
+            "spawn_character": "LumberjackGhost",
+            "spawn_count": 1,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-10-06"
+    },
+    {
+      "id": "mega_knight_evo",
+      "base_card_key": "mega-knight",
+      "base_card_sc_key": "MegaKnight",
+      "name": "Evolved Mega Knight",
+      "cycle_cost": 1,
+      "elixir": 7,
+      "rarity": "Legendary",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Uppercut",
+        "description": "Every attack launches the targeted troop 4 tiles towards the nearest enemy Crown Tower",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "knockback",
+            "target": "attacking_unit",
+            "radius": null,
+            "value": 4000,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "mortar_evo",
+      "base_card_key": "mortar",
+      "base_card_sc_key": "Mortar",
+      "name": "Evolved Mortar",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Goblin Spawn",
+        "description": "Every attack spawns a Goblin and has 1 second faster hit speed",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Goblin",
+            "spawn_count": 1,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2024-12-16"
+    },
+    {
+      "id": "musketeer_evo",
+      "base_card_key": "musketeer",
+      "base_card_sc_key": "Musketeer",
+      "name": "Evolved Musketeer",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Sniper Shots",
+        "description": "After deployment, gains 3 infinite-range attacks targeting the closest troop or building in front of her, dealing 1.8x damage",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": 3
+        },
+        "effects": [
+          {
+            "effect_type": "custom",
+            "target": "nearest_enemy",
+            "radius": null,
+            "value": 80,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": {
+              "infinite_range": true,
+              "targets_closest": true,
+              "excludes_crown_towers": true,
+              "only_when_out_of_normal_range": true
+            },
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2024-11-04"
+    },
+    {
+      "id": "pekka_evo",
+      "base_card_key": "pekka",
+      "base_card_sc_key": "PEKKA",
+      "name": "Evolved P.E.K.K.A",
+      "cycle_cost": 1,
+      "elixir": 7,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Butterfly Heal",
+        "description": "When P.E.K.K.A defeats a unit, heals 3.5%-15% of original hitpoints based on defeated unit's HP. Can overheal up to 50% more than max hitpoints.",
+        "type": "on_kill",
+        "trigger": {
+          "condition": "on_kill",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "heal",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "royal_ghost_evo",
+      "base_card_key": "royal-ghost",
+      "base_card_sc_key": "RoyalGhost",
+      "name": "Evolved Royal Ghost",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Legendary",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Souldiers",
+        "description": "When attacking while invisible, spawns 2 Souldiers that deal spawn damage on deployment and do not despawn naturally",
+        "type": "conditional",
+        "trigger": {
+          "condition": "while_not_attacking",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Souldier",
+            "spawn_count": 2,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "royal_giant_evo",
+      "base_card_key": "royal-giant",
+      "base_card_sc_key": "RoyalGiant",
+      "name": "Evolved Royal Giant",
+      "cycle_cost": 1,
+      "elixir": 6,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Recoil Damage",
+        "description": "Every time he attacks, he deals damage in a 2.5 tile radius around him and knocks back enemy ground troops by 1 tile",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 2500,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "knockback",
+            "target": "enemies_in_radius",
+            "radius": 2500,
+            "value": 1000,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "royal_hogs_evo",
+      "base_card_key": "royal-hogs",
+      "base_card_sc_key": "RoyalHogs",
+      "name": "Evolved Royal Hogs",
+      "cycle_cost": 2,
+      "elixir": 5,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Flying Deploy",
+        "description": "Deploy as flying troops unable to be attacked by ground-targeting troops. Upon attacking or taking damage, fall to ground dealing area damage on impact.",
+        "type": "conditional",
+        "trigger": {
+          "condition": "on_attack_or_damage_taken",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": 115,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-11-03"
+    },
+    {
+      "id": "royal_recruits_evo",
+      "base_card_key": "royal-recruits",
+      "base_card_sc_key": "RoyalRecruits",
+      "name": "Evolved Royal Recruits",
+      "cycle_cost": 1,
+      "elixir": 7,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": 240
+      },
+      "ability": {
+        "name": "Charge",
+        "description": "After their shield is destroyed, they gain the ability to charge towards their target after traveling 2.5 tiles, dealing 2x damage if they hit the target whilst charging",
+        "type": "conditional",
+        "trigger": {
+          "condition": "when_shield_destroyed_and_traveled_distance",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "damage_buff",
+            "target": "self",
+            "radius": null,
+            "value": 100,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-01-08"
+    },
+    {
+      "id": "skeleton-army_evo",
+      "base_card_key": "skeleton-army",
+      "base_card_sc_key": "SkeletonArmy",
+      "name": "Evolved Skeleton Army",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": 15,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Shadow Resurrection",
+        "description": "When Skeletons are defeated, they spawn as untargetable shadows. All shadows are defeated when General Gerry dies.",
+        "type": "on_death",
+        "trigger": {
+          "condition": "on_kill",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "ShadowSkeleton",
+            "spawn_count": 1,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2026-01-12"
+    },
+    {
+      "id": "skeleton-barrel_evo",
+      "base_card_key": "skeleton-barrel",
+      "base_card_sc_key": "SkeletonBarrel",
+      "name": "Evolved Skeleton Barrel",
+      "cycle_cost": 2,
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": 1.25,
+        "damage_multiplier": 1.64,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": 2,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Double Barrel Drop",
+        "description": "Spawns with 2 barrels, each containing 7 Skeletons. First barrel drops when reaching 75% HP, second barrel drops on death.",
+        "type": "on_damage_taken",
+        "trigger": {
+          "condition": "when_below_75_percent_hp",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "ground_and_air",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Skeleton",
+            "spawn_count": 7,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": false,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-07-07"
+    },
+    {
+      "id": "skeletons_evo",
+      "base_card_key": "skeletons",
+      "base_card_sc_key": "Skeletons",
+      "name": "Evolved Skeletons",
+      "cycle_cost": 2,
+      "elixir": 1,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Skeleton Spawn",
+        "description": "Every time they attack, an additional Evolved Skeleton spawns, for a maximum total of 8 Skeletons",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": 8
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Skeletons",
+            "spawn_count": 1,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2023-10-03"
+    },
+    {
+      "id": "tesla_evo",
+      "base_card_key": "tesla",
+      "base_card_sc_key": "Tesla",
+      "name": "Evolved Tesla",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Electric Pulse",
+        "description": "After surfacing and deployment, spawns an expanding electric pulse that deals high damage and stuns all enemies in a 6-tile radius for 0.5 seconds",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 6000,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "stun",
+            "target": "enemies_in_radius",
+            "radius": 6000,
+            "value": null,
+            "duration_ms": 500,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "valkyrie_evo",
+      "base_card_key": "valkyrie",
+      "base_card_sc_key": "Valkyrie",
+      "name": "Evolved Valkyrie",
+      "cycle_cost": 2,
+      "elixir": 4,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Tornado",
+        "description": "Every time she attacks, a Tornado appears for 0.5 seconds, pulling all units towards her and dealing damage within a 5.5 tile radius",
+        "type": "on_attack",
+        "trigger": {
+          "condition": "on_each_attack",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_pull",
+            "target": "enemies_in_radius",
+            "radius": 5500,
+            "value": null,
+            "duration_ms": 500,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "area_damage",
+            "target": "ground_and_air",
+            "radius": 5500,
+            "value": null,
+            "duration_ms": 500,
+            "damage": 84,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "wall_breakers_evo",
+      "base_card_key": "wall-breakers",
+      "base_card_sc_key": "WallBreakers",
+      "name": "Evolved Wall Breakers",
+      "cycle_cost": 2,
+      "elixir": 2,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Runner Spawn",
+        "description": "When defeated, spawns a Runner that targets buildings and deals area damage",
+        "type": "on_death",
+        "trigger": {
+          "condition": "on_death",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "spawn_unit",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": "Runner",
+            "spawn_count": 1,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "witch_evo",
+      "base_card_key": "witch",
+      "base_card_sc_key": "Witch",
+      "name": "Evolved Witch",
+      "cycle_cost": 1,
+      "elixir": 5,
+      "rarity": "Epic",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Skeleton Death Heal",
+        "description": "Heals when spawned skeletons are defeated, can overheal up to 24% more hitpoints",
+        "type": "on_death",
+        "trigger": {
+          "condition": "on_skeleton_death",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "heal",
+            "target": "self",
+            "radius": null,
+            "value": 76,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": null,
+            "affects_ground": null
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-10-06"
+    },
+    {
+      "id": "wizard_evo",
+      "base_card_key": "wizard",
+      "base_card_sc_key": "Wizard",
+      "name": "Evolved Wizard",
+      "cycle_cost": 1,
+      "elixir": 5,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": 192
+      },
+      "ability": {
+        "name": "Fire Shield",
+        "description": "Deploys with a shield that prevents death in 1 attack. When shield is destroyed, pushes back all pushback-capable troops within 3 tiles by 3 tiles and deals high damage.",
+        "type": "on_death",
+        "trigger": {
+          "condition": "when_shield_destroyed",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "knockback",
+            "target": "enemies_in_radius",
+            "radius": 3000,
+            "value": 3000,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "area_damage",
+            "target": "enemies_in_radius",
+            "radius": 3000,
+            "value": null,
+            "duration_ms": null,
+            "damage": 281,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2025-06-03"
+    },
+    {
+      "id": "zap_evo",
+      "base_card_key": "zap",
+      "base_card_sc_key": "Zap",
+      "name": "Evolved Zap",
+      "cycle_cost": 2,
+      "elixir": 2,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "spawn_count_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Growing Zap Pulse",
+        "description": "After initial hit, creates a second zap pulse that grows radius by 0.5 tiles and deals same damage and stun",
+        "type": "on_deploy",
+        "trigger": {
+          "condition": "on_deploy",
+          "cooldown_ms": null,
+          "max_stacks": null
+        },
+        "effects": [
+          {
+            "effect_type": "area_damage",
+            "target": "ground_and_air",
+            "radius": 3000,
+            "value": null,
+            "duration_ms": null,
+            "damage": 192,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          },
+          {
+            "effect_type": "stun",
+            "target": "ground_and_air",
+            "radius": 3000,
+            "value": null,
+            "duration_ms": 500,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "spawn_interval_ms": null,
+            "buff_reference": null,
+            "projectile_behavior": null,
+            "pull_strength": null,
+            "affects_air": true,
+            "affects_ground": true
+          }
+        ]
+      },
+      "release_season": null,
+      "last_balance_date": "2024-10-08"
+    }
+  ],
+  "heroes": [
+    {
+      "id": "giant_hero",
+      "base_card_key": "giant",
+      "base_card_sc_key": "Giant",
+      "name": "Hero Giant",
+      "elixir": 5,
+      "rarity": "rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Heroic Hurl",
+        "description": "Grabs the highest HP enemy troop within 2 tiles and throws them horizontally, dealing impact damage when they land. Thrown troops become untargetable by ground units while airborne.",
+        "elixir_cost": 2,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "knockback",
+            "target": "enemy_troops",
+            "radius": 2000,
+            "value": 9000,
+            "duration_ms": null,
+            "damage": 135,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          },
+          {
+            "effect_type": "stun",
+            "target": "enemy_troops",
+            "radius": 2000,
+            "value": null,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": 0,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "ice_golem_hero",
+      "base_card_key": "ice-golem",
+      "base_card_sc_key": "IceGolem",
+      "name": "Hero Ice Golem",
+      "elixir": 2,
+      "rarity": "Rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Snowstorm",
+        "description": "Creates 3 pulses in 4-tile radius that slow enemies by 30% for 2 seconds each, deal damage, and freeze enemies for 2 seconds if they remain for all pulses",
+        "elixir_cost": 2,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "slow",
+            "target": "area",
+            "radius": 4000,
+            "value": 30,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": 3,
+            "shield_hitpoints": null
+          },
+          {
+            "effect_type": "area_damage",
+            "target": "area",
+            "radius": 4000,
+            "value": null,
+            "duration_ms": null,
+            "damage": 84,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": 3,
+            "shield_hitpoints": null
+          },
+          {
+            "effect_type": "freeze",
+            "target": "area",
+            "radius": 4000,
+            "value": null,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": 12,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "knight_hero",
+      "base_card_key": "knight",
+      "base_card_sc_key": "Knight",
+      "name": "Hero Knight",
+      "elixir": 3,
+      "rarity": "Common",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Triumphant Taunt",
+        "description": "Taunts all enemy troops and buildings in a 7.5-tile range for 5 seconds and gains a shield",
+        "elixir_cost": 2,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "taunt",
+            "target": "all_enemies",
+            "radius": 7500,
+            "value": null,
+            "duration_ms": 5000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": 7500,
+            "taunt_duration_ms": 5000,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": 819
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": 1,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "mini-pekka_hero",
+      "base_card_key": "mini-pekka",
+      "base_card_sc_key": "MiniPEKKA",
+      "name": "Hero Mini P.E.K.K.A.",
+      "elixir": 4,
+      "rarity": "rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Breakfast Boost",
+        "description": "Heals 30% and gains 1-5 levels based on pancake meters (filled by attacking or time)",
+        "elixir_cost": 1,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "heal",
+            "target": "self",
+            "radius": null,
+            "value": 30,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": null,
+            "affects_ground": null,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          },
+          {
+            "effect_type": "buff",
+            "target": "self",
+            "radius": null,
+            "value": null,
+            "duration_ms": null,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": "level_increase",
+            "affects_air": null,
+            "affects_ground": null,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": null,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": null
+    },
+    {
+      "id": "musketeer_hero",
+      "base_card_key": "musketeer",
+      "base_card_sc_key": "Musketeer",
+      "name": "Hero Musketeer",
+      "elixir": 4,
+      "rarity": "rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Trusty Turret",
+        "description": "Places a turret 3 tiles forward that lasts 10 seconds",
+        "elixir_cost": 3,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "building_spawn",
+            "target": "area",
+            "radius": null,
+            "value": 3000,
+            "duration_ms": 10000,
+            "damage": null,
+            "spawn_character": "TrustyTurret",
+            "spawn_count": 1,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": 1,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": "2025-12-01"
+    },
+    {
+      "id": "wizard_hero",
+      "base_card_key": "wizard",
+      "base_card_sc_key": "Wizard",
+      "name": "Hero Wizard",
+      "elixir": 5,
+      "rarity": "rare",
+      "stat_modifiers": {
+        "hitpoints_multiplier": null,
+        "damage_multiplier": null,
+        "hit_speed_multiplier": null,
+        "speed_override": null,
+        "range_override": null,
+        "shield_hitpoints": null
+      },
+      "ability": {
+        "name": "Fiery Flight",
+        "description": "Takes flight and fireballs gain 3 tile radius tornado effect that deals damage",
+        "elixir_cost": 1,
+        "activation": "manual",
+        "effects": [
+          {
+            "effect_type": "flight",
+            "target": "self",
+            "radius": null,
+            "value": 50,
+            "duration_ms": 2000,
+            "damage": null,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": null,
+            "affects_ground": null,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          },
+          {
+            "effect_type": "projectile_tornado",
+            "target": "projectiles",
+            "radius": 3000,
+            "value": null,
+            "duration_ms": 2000,
+            "damage": 43,
+            "spawn_character": null,
+            "spawn_count": null,
+            "buff_reference": null,
+            "affects_air": true,
+            "affects_ground": true,
+            "taunt_radius": null,
+            "taunt_duration_ms": null,
+            "dash_distance": null,
+            "heal_amount": null,
+            "decoy_hitpoints": null,
+            "decoy_duration_ms": null,
+            "projectile_count": null,
+            "shield_hitpoints": null
+          }
+        ]
+      },
+      "slot_type": "hero",
+      "unlock_arena": 1,
+      "fragments_to_unlock": 200,
+      "release_season": null,
+      "last_balance_date": null
+    }
+  ],
+  "_metadata": {
+    "schema_version": "2.0",
+    "generated_by": "cr_wiki_scraper.py",
+    "evolution_count": 39,
+    "hero_count": 6,
+    "source": "clashroyale.fandom.com"
+  }
+}

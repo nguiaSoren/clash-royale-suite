@@ -1,5 +1,5 @@
 # IGNORE THE DATA SYMLINK (309GB)
-data/
+/data/
 
 # Ignore local OS junk
 .DS_Store
@@ -15,3 +15,6 @@ __pycache__/
 !cr-data-engine/weights/RealESRGAN_x4.pth*.onnx
 *.pth
 target/
+target/
+__pycache__/
+*.pyc

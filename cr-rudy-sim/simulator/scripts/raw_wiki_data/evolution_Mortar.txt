@@ -1,0 +1,139 @@
+Evolved MortarElixir Cost4Cycle Cost2RarityCommonTypeBuildingArenaBuilder's WorkshopRelease Date3 July 2023
+
+## Evolved Mortar
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Mortar's Evolution is aCommoncardthat is unlocked with 6 Evolution Shards. It spawns a Mortar with a hit speed 1 second faster than the original. Every attack that it does will also spawn aGoblin. It is a metallic cylindrical tube with a golden base, a wooden gimbal on each side with three purple studs on them which are held by purple and black metal stakes, gold chains and aCard Evolutionsymbol on the side, and a large, double-layered team-colored band near the muzzle, which is surrounded by two gold rings, with a Goblin located near the top. The Mortar's Evolution costs 4Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - As it requires 2 cycles to evolve, It takes a long time to get this card into theArena. However, it makes up for the wait with incredible power. Due to its incredibly high damage, this card can take aCrown Towerdown on its own if ignored.
+  - The Evolved Mortar has great synergy with theFisherman. The Fisherman can distract and pull single-targeting units such as aMini P.E.K.K.A, Knight, Mighty Miner,Goblin Machine, Cannon Cart,P.E.K.K.A,Giant Skeleton,Golden Knight, Monk,Battle Healer,Lumberjack, Boss Bandit, Miner, or aPrinceinto the Mortar's blind spot, causing the Evolved Mortar to connect to the Crown Tower and get massive damage.
+  - In certain situations,Earthquakecan be a reliable and effective counter to the Evolved Mortar due to its high damage to buildings. This can be paired with a properly placedFire SpiritorIce Spiritto mostly counter it for an equal Elixir trade.
+  - Whenever the Evolved Mortar attacks theTower Princess, the Goblin it spawns will always get 2 hits, making even 1 connection deal hundreds of damage, factoring in both the Evolved Mortar's boulders and its spawned Goblins.If theCannoneerorDagger Duchessare in use, the Evolved Mortar’s Goblin will only get 1 hit, significantly reducing the damage dealt over time compared to the Tower Princess.
+  - Compared to the regular Mortar, the Evolved Mortar is slightly weaker to an activatedKing Tower, as the spawned Goblins will take damage from both the King Tower and the Crown Tower. Because of this, it’s highly recommended to get the Evolved Mortar or another unit to activate your King Tower as this will reduce future damage from 2 Goblin hits on the Tower Princess to 1. Interactions with the Cannoneer and Dagger Duchess don’t change as the Goblin will get 1 hit regardless.
+  - The Evolved Mortar has decent synergy with theGoblin Drillas the Evolved Mortar can assist with taking out swarms and high health units, such asGoblin Gang,Skeleton Army, Prince, Lumberjack,Skeleton King, Mini P.E.K.K.A, Golden Knight,Goblin Machine,Skeleton King, Cannon Cart,Mega Knight,Valkyrie,Elite Barbarians,Monk,Sparky,Mighty Miner, P.E.K.K.A,Boss Bandit, Battle Healer,Royal Ghost, Giant Skeleton, Miner, andKnight, meant to defend the Goblin Drill while the Goblin Drill does the majority of the damage. The additional Goblins spawned by the Evolved Mortar will further help in dealing damage to the Crown Tower, forcing the opponent to respond with a spell.Contrary, a Goblin Drill played on defense is a decent counter to the Evolved Mortar as the Goblins that come out from the Goblin Drill will attack the Evolved Mortar as it is attacking the drill itself. This is an equal Elixir trade while heavily reducing the damage done to your Crown Tower.
+  - Other building cards, such asTeslaandBomb Tower, are reliable counters to the Evolved Mortar as their somewhat high health and good damage allow them to fully stop the Evolved Mortar. These cards also are equal Elixir trades.
+  - Low health ranged cards, such asDart Goblin,Princess, andSpear Goblins, should not be used alone to counter the Evolved Mortar as its damage will OHKO them. Instead, it’s encouraged to use a mini tank, such as anIce Golem, Knight, Battle Healer,Elixir Golem, Valkyrie, Skeleton King,Hog Rider, orMiner, to tank the Evolved Mortar’s shots, giving the chance for these cards to take out the Evolved Mortar unharmed.Similarly they should not be placed next to the Evolved Mortar's target as the Evolved Mortar does splash damage, and will hit both. Even ranged troops that can survive its attack are unrecommended because the spawned Goblins may defeat them after getting weakened by the Evolved Mortar's boulders.
+  - On the other hand, bulky ranged cards, such asEvolved Royal Giant,Cannon Cart,Executioner, andBowler, are great counters to the Evolved Mortar as they’re capable of staying out of its blind radius, tank the Evolved Mortar’s shots, and deal high damage to take it out before it can lock onto the Crown Tower.
+  - If theCannoneerorDagger Duchessare in use, the Evolved Mortar’s Goblin will only get 1 hit, significantly reducing the damage dealt over time compared to the Tower Princess.
+  - Contrary, a Goblin Drill played on defense is a decent counter to the Evolved Mortar as the Goblins that come out from the Goblin Drill will attack the Evolved Mortar as it is attacking the drill itself. This is an equal Elixir trade while heavily reducing the damage done to your Crown Tower.
+  - Similarly they should not be placed next to the Evolved Mortar's target as the Evolved Mortar does splash damage, and will hit both. Even ranged troops that can survive its attack are unrecommended because the spawned Goblins may defeat them after getting weakened by the Evolved Mortar's boulders.
+
+## Statistics
+
+
+## Evolved Mortar Attributes
+
+Cost | Hit Speed | First Hit Speed | Deploy Time | Lifetime | Range | Splash Radius | Projectile Speed | Target | Type | Rarity
+4 | 4 sec | 1 sec | 3.5 sec | 30 sec | 3.5-11.5 | 2 | 300 | Ground | Building | Common
+
+## Evolution Attributes
+
+Cycles
+2
+
+## Goblin Attributes
+
+Hit Speed | Speed | Deploy Time | Range | Target | Count | Transport
+1.1 sec | Very Fast (120) | 0.2 sec | Melee: Short (0.5) | Ground | x1 | Ground
+
+## Card Statistics
+
+Level | Hitpoints | Area Damage | Damage per second | Hitpoints lost per second | Goblin Hitpoints | Goblin Damage | Goblin Damage per second
+1 | 535 | 104 | 26 | 17.8 | 79 | 47 | 42
+2 | 588 | 114 | 28 | 19.6 | 86 | 51 | 46
+3 | 647 | 125 | 31 | 21.5 | 95 | 56 | 50
+4 | 711 | 138 | 34 | 23.7 | 105 | 62 | 56
+5 | 781 | 151 | 37 | 26 | 115 | 68 | 61
+6 | 856 | 166 | 41 | 28.5 | 126 | 75 | 68
+7 | 941 | 183 | 45 | 31.3 | 139 | 82 | 74
+8 | 1,032 | 200 | 50 | 34.4 | 152 | 90 | 81
+9 | 1,134 | 220 | 55 | 37.8 | 167 | 99 | 90
+10 | 1,246 | 242 | 60 | 41.5 | 184 | 109 | 99
+11 | 1,369 | 266 | 66 | 45.6 | 202 | 120 | 109
+12 | 1,503 | 292 | 73 | 50.1 | 221 | 132 | 120
+13 | 1,653 | 321 | 80 | 55.1 | 244 | 145 | 131
+14 | 1,813 | 352 | 88 | 60.4 | 267 | 159 | 144
+15 | 1,990 | 386 | 96 | 66.3 | 293 | 174 | 159
+16 | 2,188 | 425 | 106 | 73 | 323 | 192 | 174
+
+## History[]
+
+2023
+  - The Mortar's Evolutioncardwas added to the game on 3/7/2023, in theJuly 2023 Update.
+2024
+  - On 5/2/2024, theFebruary 2024 Update, changed the Evolved Mortar's sound effects.
+  - On 14/5/2024, aBalance Update, removed the Evolved Mortar's hitpoints boost.
+  - On 8/10/2024, aBalance Update, added a 1 second delay in the Evolved Mortar's first attack.
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Mortar after death.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The first use ofmortars in warfarewas in 1413, where the Koreans used thewan'gu(gourd-shaped mortar) during a naval battle. Mortars are still used in modern warfare to this day as indirect fire weapons for close fire support.
+  - The Mortar's Evolution might be based off of an April Fools joke, where on 1/4/2016, certain Content Creators were given a different version of the game, with a Mortar that attacked by shootingGoblin Barrelsinstead of boulders.
+  - The Mortar is 1 of 6 evolvedcardsassociated withGoblins, with the others beingDart Goblin,Goblin Cage,Goblin Giant,Goblin Barrel, andGoblin Drill.
+  - The Mortar was the firstbuildingto receive aCard Evolution.
+  - In the Korean and German language settings of the game, the Mortar's name translates to "Mine Thrower".
+  - Due to a glitch, theEvolved Teslaplays the Evolved Mortar's deployment sound when played by the opponent.
+  - The Mortar is unavailable in multiplespecial game modes. More specifically:It is 1 of 20 cards that is unavailable inMirrormode, the others beingMinions,Royal Recruits,Cannon,Tesla,Goblin Hut,Tombstone,Bomb Tower,Inferno Tower,Barbarian Hut,Furnace,Elixir Collector,Freeze,Clone,X-Bow,Golden Knight,Skeleton King,Archer Queen,Mighty Miner, and theMonk.It is unavailable inThe Floor is Healingsub-modeof the Global Spell game mode, much like other building cards, as well as theCannon Cart.
+  - The Mortar's Evolution is the subject of anEmote.
+  - On 3/1/2024, the Evolved Mortar was supposed to receive a Goblin first attack time interval increase to 0.5 seconds (from 0.4 seconds), but this changewas pulled back last minute.
+  - It is 1 of 20 cards that is unavailable inMirrormode, the others beingMinions,Royal Recruits,Cannon,Tesla,Goblin Hut,Tombstone,Bomb Tower,Inferno Tower,Barbarian Hut,Furnace,Elixir Collector,Freeze,Clone,X-Bow,Golden Knight,Skeleton King,Archer Queen,Mighty Miner, and theMonk.
+  - It is unavailable inThe Floor is Healingsub-modeof the Global Spell game mode, much like other building cards, as well as theCannon Cart.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

@@ -1,0 +1,134 @@
+Evolved Skeleton BarrelElixir Cost3Cycle Cost2RarityCommonTypeTroopArenaJungle ArenaRelease Date7 July 2025
+
+## Evolved Skeleton Barrel
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Skeleton Barrel's Evolution is aCommoncardunlocked with 6 Evolution Shards. It spawns a Skeleton Barrel with hitpoints 25% higher and death damage 64% higher than the original. It spawns with 2 barrels, each with 7Skeletons: one dropped when it reaches 75% hitpoints, and another dropped when it is defeated. It is a golden-spiked, dark brown, double barrel with aCard Evolutionsymbol on both sides chained to a pair of team-colored balloons with a violet skull printed on them and a small spike on top of them. The Skeleton Barrel's Evolution costs 3Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - Due to the addition of a second barrel, as well as the first one dropping early, the Evolved Skeleton Barrel becomes far more dangerous. If the opponent carries only a smallspellto take the card down, the opponent must either use it on the first barrel'sSkeletonsand the remaining barrel, which risks chip damage from the second barrel's skeletons, or wait for the surviving barrel to drop the Skeletons and defeat them all with the spell, risking chip damage from both the remaining barrel and the Skeletons from the first barrel. From this interaction, some things can be noted.This is valid forTower Princess,Cannoneer, andRoyal Chef, who will quickly trigger the Evolved Skeleton Barrel's first barrel drop, but let the second one connect. ForDagger Duchess, she will defeat the Barrel quickly enough so that all of the Skeletons clump up and the small spell will make quick work of them.A well timedGiant Snowballwill avoid a lot of said damage, and anEvolved Giant Snowballprevents almost all damage, all for a +1Elixirtrade. The same can be applied to theTornadofor a neutral Elixir trade.A 2-Elixir spell + a Spirit card can prevent all damage when properly timed. AnElectro Spiritcan defeat the Skeletons from the first barrel and stun and damage the remaining barrel, leaving the spell for the second barrel, while, for the other Spirits, it's best to let the spell damage the remaining barrel + the first barrel's Skeletons, while the Spirit card defeats the remaining Skeletons.A well timedEarthquakewill prevent all damage done by Skeletons, only allowing the second barrel's death damage. For Dagger Duchess, it completely prevents damage for a neutral Elixir trade.
+  - Since a singular Evolved Skeleton Barrel's death damage is slightly more than a normal Skeleton Barrel, their combined death damage deals more damage than aRocket. As such, it can be good to prepare a big push or a counterpush with it, so that the Evolved Skeleton Barrel can connect both of its barrels on theCrown Towerwhile the other cards take hits againstbuildingsand anti-air units. If the Skeletons are not dealt with, then a Crown Tower is lost, and even if the death Skeletons do not connect, the Crown Tower will have suffered a lot of damage.
+  - The Evolved Skeleton Barrel is also a great defensive card. Against clumped up units with some anti-air cards, one can deploy the Evolved Skeleton Barrel on top of them to let itself drop one or both barrels on the units. A single barrel's death damage can defeat up toMinions, and the combined death damage can defeatElixir Blobs. The death Skeletons may also be useful for extra damage, finishing off certain units that survive with a silver of health, or extra distraction.
+  - To combat the Evolved Skeleton Barrel, anti-air units with a high hit speed or an AoE attack should help. When put at a distance so that the death damage doesn't take them out, troops who attack quickly, likeArchers,Musketeer,Phoenix,Little Prince, orDart Goblinwill quickly deplete the barrels' HP and assist in defeating the Skeletons one by one, while AoE troops, likeFirecracker,Wizard,Princess, andExecutioner, will clear the death Skeletons all at once while dealing with the barrel.
+  - Splash troops who do not target air, likeValkyrie,Skeleton King,Bomber,Dark Prince,Goblin Demolisher, andBowler, can still work to take the Skeletons down, but it leaves the Crown Tower vulnerable to one barrel's death damage (or both of them).
+  - A well-timedEvolved Furnacecan be sufficient to counter all but the second barrel's death damage (or even counter all damage) when the Evolved Skeleton Barrel takes the Crown Tower damage. One must place it so that the firstFire Spiritspawned clears the first barrel's Skeletons. Then, once it attacks, the second Fire Spirit might spawn just as the second barrel deploys more Skeletons.
+  - TheBomb Toweris the most reliable counter to an Evolved Skeleton Barrel for -1 Elixir. It's tanky enough to handle the barrel's death damage and the Skeletons' own damage, while having an AoE attack that quickly dispatches the card's death spawns. It can also survive an Earthquake with high enough health to still counter the Evolved Skeleton Barrel.
+  - When timed correctly, theEvolved Cannonand theEvolved Teslacan clear out the first barrel's Skeletons with their abilities, cripple the second barrel, and deal with said barrel's Skeletons. The former is a neutral elixir trade, while the latter can counter the Evolved Skeleton Barrel well even with just a normal center placement.
+  - This is valid forTower Princess,Cannoneer, andRoyal Chef, who will quickly trigger the Evolved Skeleton Barrel's first barrel drop, but let the second one connect. ForDagger Duchess, she will defeat the Barrel quickly enough so that all of the Skeletons clump up and the small spell will make quick work of them.
+  - A well timedGiant Snowballwill avoid a lot of said damage, and anEvolved Giant Snowballprevents almost all damage, all for a +1Elixirtrade. The same can be applied to theTornadofor a neutral Elixir trade.
+  - A 2-Elixir spell + a Spirit card can prevent all damage when properly timed. AnElectro Spiritcan defeat the Skeletons from the first barrel and stun and damage the remaining barrel, leaving the spell for the second barrel, while, for the other Spirits, it's best to let the spell damage the remaining barrel + the first barrel's Skeletons, while the Spirit card defeats the remaining Skeletons.
+  - A well timedEarthquakewill prevent all damage done by Skeletons, only allowing the second barrel's death damage. For Dagger Duchess, it completely prevents damage for a neutral Elixir trade.
+
+## Statistics
+
+
+## Evolved Skeleton Barrel Attributes
+
+Cost | Speed | Range | Deploy Time | Target | Count | Transport | Type | Rarity
+3 | Fast (90) | Melee: Short (0.35) | 1 sec | Buildings | 2 | Air | Troop | Common
+
+## Evolution Attributes
+
+Cycles | Barrel Count | 1st Barrel Activation
+2 | 2 | 75%
+
+## Skeleton Container Attributes
+
+Death Damage Splash Radius | Deploy Time | Target
+2 | 0.6 sec | Air & Ground
+
+## Skeleton Attributes
+
+Hit Speed | Speed | Range | Deploy Time | Target | Count | Transport
+1.1 sec | Fast (90) | Melee: Short (0.5) | 0.5 sec | Ground | x7 | Ground
+
+## Card Statistics
+
+Level | Skeleton Barrel Hitpoints | Skeleton Barrel Death Damage | Skeleton Hitpoints | Skeleton Damage | Skeleton Damage per second
+1 | 260 | 83 x2 (166) | 32 | 32 | 29
+2 | 286 | 92 x2 (184) | 35 | 35 | 31
+3 | 314 | 102 x2 (205) | 38 | 38 | 34
+4 | 345 | 114 x2 (228) | 42 | 42 | 38
+5 | 379 | 126 x2 (253) | 46 | 46 | 41
+6 | 416 | 141 x2 (281) | 51 | 51 | 46
+7 | 457 | 156 x2 (312) | 56 | 56 | 50
+8 | 501 | 174 x2 (347) | 61 | 61 | 55
+9 | 551 | 193 x2 (386) | 67 | 67 | 60
+10 | 605 | 214 x2 (428) | 74 | 74 | 67
+11 | 665 | 238 x2 (476) | 81 | 81 | 73
+12 | 730 | 262 x2 (524) | 89 | 89 | 80
+13 | 803 | 288 x2 (576) | 98 | 98 | 89
+14 | 881 | 317 x2 (634) | 108 | 108 | 98
+15 | 967 | 348 x2 (697) | 119 | 119 | 108
+16 | 1063 | 380 x2 (760) | 130 | 130 | 118
+
+## History[]
+
+2025
+  - The Skeleton Barrel's Evolutioncardwas added to the game on 7/7/2025, in theJuly 2025 Update.
+  - On 4/8/2025, theAugust 2025 Updatedecreased the death damage to 164% of the original's (from 176%). It also made it so thatEvolved Witchwould no longer would be healed by defeatedSkeletons.
+  - On 6/10/2025, aBalance Updateincreased the Skeleton's attack time interval to 1.1 seconds (from 1.0 seconds).
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The word "Skeleton" comes from the Greek "σκελετός" (skeletós), meaning dried up or withered.
+  - The Skeleton Barrel is 1 of 6 evolvedcardsassociated withSkeletons, with the others beingBomber,Witch,Wall Breakers,Skeleton Army, and of course,Skeletons.
+  - The Skeleton Barrel is 1 of 4 evolvedtroopsto die as a part of their attack, the others being theIce Spirit, Wall Breakers, and Runners.
+  - The barrel of the Evolved Skeleton Barrel looks similar to the hull of theRocket.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

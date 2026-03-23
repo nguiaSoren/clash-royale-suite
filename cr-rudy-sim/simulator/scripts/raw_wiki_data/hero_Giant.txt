@@ -1,0 +1,131 @@
+Hero GiantElixir Cost5Ability Cost2RarityRareTypeTroopArenaTraining CampRelease DateDecember 1 2025
+
+## Hero Giant
+
+
+## Elixir Cost
+
+
+## Ability Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Hero Giant is aRarecardthat is unlocked with 200 hero fragments. It spawns one single-target, ground-targeting, melee, and groundtroopwith high hitpoints and moderate damage. The Heroic Giant takes the appearance of a colossal humanoid creature with glowing yellow eyes, blonde mutton chops, hair and eyebrows, wearing darker brown pants, a golden headband, and a team-colored belt with a golden base and details along with theHeroShard in the center, while being bare-chested and wielding a pair of brass knuckles as his weapon with pearl and gold armbands. A Heroic Giant card costs 5to deploy, and his ability costs an additional 2to activate.
+
+## Ability: Heroic Hurl[]
+
+The Hero Giant has a special ability accessible from whatever side of the screen was put in, just above the player'scardslots inbattle. After a 1-second delay and when a unit gets in range, the Hero Giant activates his “Heroic Hurl”, grabbing the highest HP enemytroopwithin 2 tiles around him and throws them horizontally, also dealing damage to them when they land. While on the air, these troops are untargetable by ground-targeting troops and theEarthquake, but can still take damage from other spells. Air troops can be affected by the ability, but will take no damage when they land. The ability goes on a 14 second cooldown after the duration ends. The Heroic Hurl ability costs 2Elixirto activate.
+
+## Strategy[]
+
+  - For the purposes of determiningElixirtrades, the Heroic Giant and his activated Ability count as 7 Elixir, as the player must play the 5 Elixir Heroic Giant and then spend a further 2 on his Ability.
+  - This card would be good in Giant Graveyard decks as with its ability, it could prevent a knockback unit like theEvolved Mega Knightand theMonkfrom knocking it out of range of the Princess tower, so then the skeletons from theGraveyardcan take the tower.
+  - It would also be good on Giant Double Prince decks as the Giant can stil act as a tank, but now, it is able to add DPS to a troop with extra from the two brothers, so that if the unit is strong and a major threat, like theEvolved Mega KnightorMonk, you can use the Ability to knock it onto the other lane, which makes sure it can't hinder your troops' progress towards a 3 crown.
+  - The Heroic Giant is completely ineffective against swarms, as he has no way to attack them directly, besides using his ability, which will only launch one unit.
+  - He is also easily countered by any building, as the ability will do nothing against them. Even against theBarbarian Hut, it will, at worst, send oneBarbarianaway, while the remaining ones take him down.
+  - When using theFishermanagainst the Heroic Giant, he should be placed closer to the edge of the Arena instead of the center, This will cause the Heroic Giant to throw him to the other lane, but still be in range to pull the Heroic Giant to the other lane.
+  - When using the Heroic Giant, it is always important to attack the same lane as the opponent. This allows the Heroic Giant to send their offensive card into the other lane, leaving it unsupported and easy to defeat , while their support troops are defeated by the Heroic Giant's support troops.
+
+## Statistics
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Target | Count | Transport | Type | Rarity
+5 | 1.5 sec | 0.5 sec | Slow (45) | 1 sec | Melee: Medium (1.2) | Buildings | x1 | Ground | Troop | Rare
+
+## Heroic Hurl Attributes
+
+Cost | Throwback Range | Cast Time | Units Affected | Ability Target | Unit Stun Duration | Ability Cooldown
+2 | 9 | 0.933 sec | 1 | Air & Ground | 2 secs | 14 sec
+Level | Hitpoints | Damage | Damage Per Second | Impact Damage
+3 | 1,933 | 119 | 79 | 64
+4 | 2,125 | 131 | 87 | 70
+5 | 2,333 | 144 | 96 | 77
+6 | 2,556 | 158 | 105 | 84
+7 | 2,812 | 174 | 116 | 93
+8 | 3,084 | 191 | 127 | 102
+9 | 3,387 | 209 | 139 | 112
+10 | 3,723 | 230 | 153 | 123
+11 | 4,090 | 253 | 168 | 135
+12 | 4,490 | 278 | 185 | 149
+13 | 4,937 | 305 | 203 | 163
+14 | 5,417 | 335 | 223 | 179
+15 | 5,944 | 368 | 245 | 197
+16 | 6,535 | 404 | 269 | 216
+
+## History[]
+
+2025
+  - The Giant/Herocardwill be available inNovember 24 2025 09:00:00 +0000.The Giant/Hero card was added to the game on 24/11/2025.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The Giant is 1 of 19troopswhich first existed in Clash of Clans, the others beingMinions,Archers,Goblins,Skeletons,Barbarians,Valkyrie,Wizard,Hog Rider,Witch,P.E.K.K.A.,Balloon,Golem,Wall Breakers,Bowler,Cannon Cart,Phoenix,Lava Hound, and theArcher Queen.The Heroic Giant mostly resembles the Level 13 Giant from Clash of Clans. HisStar Level 2 skinresembles the Level 5 Giant from Clash of Clans.
+  - The Giant is 1 of 7cardsthat are already unlocked for the player when they start playing the game, the others being the Minions, Archers,Knight,Arrows,Tower Princess, andFireball. Despite this, the game recognizes that those cards are unlocked in theTraining Camp.
+  - The Giant is one of the first troops to be featured in Clash-A-Rama, alongside the Minions, Goblins, and Barbarians.
+  - The Giant is one of the first troop cards to be featured in aTrainer'sdeck, alongside the Minions, Archers, Knight,Spear Goblins, Goblins,Bomber, Skeletons, Barbarians,Minion Horde,Mini P.E.K.K.A.,Musketeer, Valkyrie, Wizard, Hog Rider,Baby Dragon,Skeleton Army, Witch, P.E.K.K.A.,Prince, and Balloon.
+  - The Giant is one of the first troop cards to receive a card render, alongside the Archers, Knight, Goblins, Bomber, Skeletons, Barbarians,Bats,Royal Recruits,Skeleton Barrel,Rascals, Musketeer, Valkyrie, Wizard,Flying Machine, Hog Rider,Royal Hogs,Dart Goblin,Zappies,Elixir Golem, Baby Dragon, Skeleton Army, Witch, P.E.K.K.A., Prince, Balloon,Giant Skeleton,Goblin Giant,Hunter,Electro Dragon, Wall Breakers, Bowler, Cannon Cart,Mega Knight,Ram Rider,Miner,Royal Ghost,Ice Wizard,Magic Archer,Bandit, Lava Hound,Night Witch, andFisherman.
+  - The Giant is 1 of 14 troops that has been featured with aRagebuff, the others beingElectro Spirit, Zappies,Guards, Giant Skeleton, Goblin Giant, Electro Dragon, Wall Breakers,Electro Giant, Mega Knight, Ram Rider,Electro Wizard,Sparky, and Royal Ghost.He is the first troop to be featured with a buff.
+  - The Giant is 1 of 3 troops that has had its Melee range classification changed, the others being Mini P.E.K.K.A. and P.E.K.K.A..
+  - According to The Art of Supercell, the Giant was originally supposed to be blue.
+  - The Giant shares the first part of his description with the Golem.
+  - The Giant is 1 of 15troopswhich bring an excited reaction from the audience upon spawning and brings a collective groan from the audience when defeated, as well as a concerning gasp when the opponent plays him and applause when he's destroyed, the others includeRoyal Giant, P.E.K.K.A., Giant Skeleton,Rune Giant, Goblin Giant, Golem, Bowler, Electro Wizard,Inferno Dragon, Sparky, Lava Hound, Night Witch,Super Lava Hound, and theMonk.
+  - The Giant, along with the Goblins, Barbarians, Valkyrie, Wizard, Hog Rider, Witch, P.E.K.K.A., and the Archer Queen, was featured as a non-playable opponent inChess.
+  - The Giant, along with the Archers, Goblins, Barbarians,Ice Spirit, Mini P.E.K.K.A., Musketeer, Wizard, Hog Rider, Witch, Prince, and Night Witch, is featured as a sticker iniMessage, in a sticker pack calledClash Theater.
+  - InFisherman's Float, Giants can be seen sitting in the audience.
+  - The Giant is the subject of a fewEmotes.
+  - The Giant was featured in the winning decks of multiple Clash Royale Tournaments. More specifically:The Giant was featured in the winning deck of theClash Royale Helsinki Tournament, by a player called Jason.The Giant was featured in the winning deck of theThe Crown Duel Tournament, by a player called Backstabx.
+  - The Heroic Giant mostly resembles the Level 13 Giant from Clash of Clans. HisStar Level 2 skinresembles the Level 5 Giant from Clash of Clans.
+  - He is the first troop to be featured with a buff.
+  - The Giant was featured in the winning deck of theClash Royale Helsinki Tournament, by a player called Jason.
+  - The Giant was featured in the winning deck of theThe Crown Duel Tournament, by a player called Backstabx.
+  - The Heroic Giant is no longer 1 of 6 troops that cannot deal damage to other troops whatsoever, the others being the Royal Giant, Hog Rider, Royal Hogs, Elixir Golem, and Rune Giant.
+  - Before the Giant's card release, the Giant's Hitpoints were increased by 11%, and his Damage was increased by 4%.
+  - The Heroic Knight was one of the firstHeroesto be added in the game, alongside theKnight,Mini P.E.K.K.A., andMusketeer.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

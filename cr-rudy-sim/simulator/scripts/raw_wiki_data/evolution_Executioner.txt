@@ -1,0 +1,123 @@
+Evolved ExecutionerElixir Cost5Cycle Cost1RarityEpicTypeTroopArenaSerenity PeakRelease Date7 April 2025
+
+## Evolved Executioner
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Executioner's Evolution is anEpiccardthat is unlocked with 6 Evolution Shards. It spawns an Executioner with identical stats to the original. The Executioner launches an axe that travels up to its maximum range, and returns back to him after some time, while piercing through enemies in both ways. If an enemy troop is within 3.5 tiles from the start of the attack, it will be knocked back, while also receiving extra damage. They will also receive the extra damage on the returning phase on the attack. He resembles a shirtless man with glowing pink eyes, wears a purple mask with gold stitches, glove with a golden stripe and boots, a team-colored kilt and pants, a belt, and a pair of straps, carries a double-sided axe with aCard Evolutionsymbol and a large golden knob on the bottom, and has an axe-shaped tattoo on his arm, which glows alongside his axe whenever the axe is within 3.5 tiles of range. The Executioner's Evolution costs 5Elixirand requires 1 cycle to deploy.
+
+## Strategy[]
+
+  - The Executioner only requires 1 cycle to evolve, and costs only 5Elixir, which means that the player can easily use his evolution multiple times in a single match.
+  - The Evolved Executioner can fulfill the role of theBowler, as he'll push back all troops affected by knockback, with the added bonus of hitting aerial troops as well. This allows him to counter many things that he previously couldn't take on defense, namely theElite Barbarians, which will be countered for a +1 Elixir trade in exchange for minimal damage dealt to the Executioner. Other troops that can be stalled more efficiently with the push back are theKnight,Mini P.E.K.K.A.,Valkyrie,Hog Rider,Mega Minion,Skeleton Dragons,Baby Dragon,Royal Hogs,Battle Healer,Ram Rider,Phoenix,Electro Dragon,Rascals,Golden Knight,Monk,Balloon, and theLumberjack.
+  - Along with the pushback effect, he also deals extra damage if troops get close to him, allowing the Evolved Executioner to defeat those troops faster. As such, he'll be able to defeat win-conditions like the Hog Rider, Royal Hogs, Ram Rider, and the Balloon, who will be stalled with the pushback effect and rapidly defeated by the extra damage before they deal too much damage to theCrown Tower. The extra damage trait will also allow him to defeat tanky troops, such as theGiant,Royal Giant,Elixir Golem, or theGoblin Giant, though additional support is needed for theGolemor theLava Hound, troops that he cannot handle alone, or theP.E.K.K.A.,Giant Skeleton,Sparky,Mega Knight,Goblin Machine,Mighty Miner, or theBoss Bandit, which will take him down quickly.
+  - The Evolved Executioner can be used the same manner as a normal Executioner can, being able to easily nullify theBarbarians,Royal Recruits,Goblin Gang,Minion Horde,Wall Breakers, Lava Pups, andElixir Golemitesand Blobs. On top of that, he will take both forms of theEvolved Wall Breakerswithout additional support and destroy them quickly, or letting them connect to the Crown Tower if misplaced.
+  - His pushback ability will allow him to move the Balloon and theGoblin Demolisheraway from a Crown Tower, stopping their death damage from hitting them. This doesn't work against the Giant Skeleton, as he isn't able to be pushed back by the axe.
+  - TheTornadosynergizes even more with the Evolved Executioner, as it will pull all troops in the Axe Smash range, letting them be taken down more quickly when otherwise they would be scattered, possibly also knocking them back if they're able to be. On the contrary, the Tornado is also a decent counter to the Evolved Executioner, bringing him away from the push back and extra damage range.
+  - His push back will also constantly reset theBattle Ram,Evolved Battle Ram,Evolved Royal Recruits, and the Ram Rider's charge, mostly stopping each of them to gain value (as well as the Barbarians/Evolved Barbariansspawned from the former ones).
+  - He will also reset theInferno Dragon's ramp up damage if the Evolved Executioner is directly targeting him, since he is vulnerable to knockback and gets just in range of the push back effect. As such, theInferno Towerand the Mighty Miner have to be used against him, as the former is a building while the latter is a heavy unit and thus cannot be pushed back by him, but one must be cautious about other ramp up damage resetters.
+  - The Evolved Executioner's axe has a longer range than his own range, which allows him to hit support troops behind tanky units with ease, regardless of the push back and extra damage traits, or hit Crown Towers on offense. However, this can turn against him, as aFishermancan pull him so that his axe can activate theKing's Tower, or anIce Spiritfreezing him enough for a Tornado to pull him into the range of the King's Tower.
+  - Ragewill not work with the Evolved Executioner, as he will throw his axe slower to compensate for a reduction of the time his axe stays in air. Therefore, this is a waste of 2 Elixir that could be used to better support him.
+  - The Monk can use his Pensive Protection to stall an Evolved Executioner, as a deflected axe will deal extra damage and push back the Executioner. However, that is a negative Elixir trade, and his slow movement speed will allow the Executioner to defeat him anyways.
+  - Since he only deals extra damage and push backs close units, ranged troops with moderate hitpoints such as theMusketeer,Wizard,Electro Wizard,Cannon Cart, and theArcher Queenwill easily defeat him. TheWitchis also useful because the Evolved Executioner will be distracted by her spawnedSkeletonsover time, though this doesn't happen with theNight Witch, as she is a melee troop.
+  - Another way of taking him down is usingFireball,Rocket,Lightning, orPoison, which are spells that can bring him to very low health (or outright defeat him), nullifying his value, and even hitting other units or an enemy Crown Tower in the mean time, though he can be used to bait those spells for other units weak to them.
+  - Tanky melee units such as the P.E.K.K.A., Giant Skeleton, and the Mega Knight can also withstand a decent number of his extra damage hits, though they shouldn't be supported with fragile units unless placed away from them, as the Executioner will easily take those down. Also, the Boss Bandit can be affected by his push back.
+  - If needed, anIce Golemcan be used to tank for another unit (specially melee or frail air units), distracting the Executioner for long enough so that the other unit will take him down without worrying about his push back and extra damage for a while.
+  - When positioned properly,Batswill stall and damage him enough so that the Evolved Executioner is defeated by them and an allied Crown Tower for a +3 Elixir trade.
+
+## Statistics
+
+
+## Evolved Executioner Attributes
+
+Cost | Hit Speed | First Hit Speed | Axe Time | Speed | Deploy Time | Range | Projectile Range | Projectile Width | Projectile Speed | Target | Count | Transport | Type | Rarity
+5 | 0.9 sec | 0.5 sec | 1.5 sec | Medium (60) | 1 sec | 4.5 | 7.5 | 2 | 550 | Air & Ground | x1 | Ground | Troop | Epic
+
+## Evolution Attributes
+
+Cycles | Axe Smash Range
+1 | 3.5
+
+## Card Statistics
+
+Level | Hitpoints | Area Damage | Axe Smash Damage | Damage per second
+6 | 800 | 105 x2 (210) | 184 x2 (368) | 87
+7 | 880 | 116 x2 (232) | 202 x2 (404) | 96
+8 | 965 | 127 x2 (254) | 221 x2 (442) | 105
+9 | 1,060 | 139 x2 (278) | 243 x2 (486) | 115
+10 | 1,165 | 153 x2 (306) | 267 x2 (534) | 127
+11 | 1,280 | 168 x2 (336) | 294 x2 (588) | 140
+12 | 1,405 | 185 x2 (370) | 323 x2 (646) | 154
+13 | 1,545 | 203 x2 (406) | 355 x2 (710) | 169
+14 | 1,695 | 223 x2 (446) | 389 x2 (778) | 185
+15 | 1,860 | 245 x2 (490) | 427 x2 (854) | 204
+
+## History[]
+
+2025
+  - The Executioner's Evolutioncardwas added to the game on 7/4/2025, in theApril 2025 Update.
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - In the Korean and Arabic language settings of the game, the Executioner's name translates to "Axeman". In the Chinese and Thai language settings of the game, the Executioner's name translates to "Throwing Axe Butcher" and "Hangman" respectively.
+  - When the Evolved Executioner's axe is within Axe Smash range, the axe tattoo on his arm will light up.
+  - Upon deployment, the Evolved Executioner exclaims "Time to slice and dice!”, “New axe!”, or “I love when they scream!”. When attacking, he may say, "Spinning!", "My axe is laughing", or "Spin into your doom!".The Executioner is 1 of 9 evolvedtroopsthat speak distinct words when on the field, the others beingBomber,Wizard,Goblin Brawler,Witch,P.E.K.K.A.,Hunter,Mega Knight, andLumberjack.Also, the Executioner is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Goblin Brawler, Witch, Hunter, and Mega Knight.
+  - The Executioner's Evolution is the subject of 2Emotes.
+  - Before the Executioner's Evolution's release, the Evolved Executioner's Axe push back distance was decreased to 1.5 tiles (from 2 tiles) and the Axe Smash damage was decreased by 13%.
+  - The Executioner is 1 of 9 evolvedtroopsthat speak distinct words when on the field, the others beingBomber,Wizard,Goblin Brawler,Witch,P.E.K.K.A.,Hunter,Mega Knight, andLumberjack.Also, the Executioner is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Goblin Brawler, Witch, Hunter, and Mega Knight.
+  - Also, the Executioner is 1 of 6 evolved troops whose regular troop do not speak distinct words when on the field, the others being Bomber, Goblin Brawler, Witch, Hunter, and Mega Knight.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

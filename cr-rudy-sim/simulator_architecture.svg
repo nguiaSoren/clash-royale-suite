@@ -1,0 +1,151 @@
+<svg viewBox="0 0 840 620" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="620" fill="#ffffff"/>
+
+  <!-- ══ DATA LAYER ══ -->
+  <rect x="20" y="15" width="800" height="85" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="40" y="36" font-size="10" font-weight="700" fill="#92400e" letter-spacing="0.06em">DATA LAYER</text>
+  <text x="160" y="36" font-size="10" fill="#92400e">8 JSON definitions — zero hardcoded heuristics</text>
+
+  <rect x="35" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="79" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">characters</text>
+  <rect x="130" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="174" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">buildings</text>
+  <rect x="225" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="269" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">spells</text>
+  <rect x="320" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="364" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">projectiles</text>
+  <rect x="415" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="459" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">buffs</text>
+  <rect x="510" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="554" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">evolutions</text>
+  <rect x="605" y="48" width="88" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="649" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">heroes</text>
+  <rect x="700" y="48" width="105" height="22" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="752" y="63" text-anchor="middle" font-size="7.5" fill="#92400e">cards registry</text>
+
+  <text x="40" y="88" font-size="8" fill="#92400e">178 characters · 89 buildings · 81 spells · 92 projectiles · 62 buffs · 39 evolutions · 6 heroes</text>
+
+  <line x1="420" y1="100" x2="420" y2="125" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ RUST ENGINE CORE ══ -->
+  <rect x="20" y="130" width="800" height="210" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="40" y="152" font-size="11" font-weight="700" fill="#1e40af">RUST ENGINE CORE</text>
+  <text x="200" y="152" font-size="9.5" fill="#1e40af">deterministic tick loop · 20 tps · integer-only arithmetic · bit-reproducible</text>
+
+  <rect x="40" y="165" width="115" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="97" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Phase/Resource</text>
+  <text x="97" y="194" text-anchor="middle" font-size="7.5" fill="#888">elixir · phases</text>
+
+  <text x="162" y="187" font-size="10" fill="#3b82f6">→</text>
+
+  <rect x="172" y="165" width="115" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="229" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Deploy/Spawn</text>
+  <text x="229" y="194" text-anchor="middle" font-size="7.5" fill="#888">timers · spawners</text>
+
+  <text x="294" y="187" font-size="10" fill="#3b82f6">→</text>
+
+  <rect x="304" y="165" width="115" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="361" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Targeting</text>
+  <text x="361" y="194" text-anchor="middle" font-size="7.5" fill="#888">O(N²) scan · sticky</text>
+
+  <text x="426" y="187" font-size="10" fill="#3b82f6">→</text>
+
+  <rect x="436" y="165" width="115" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="493" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Movement</text>
+  <text x="493" y="194" text-anchor="middle" font-size="7.5" fill="#888">pathing · bridge · river</text>
+
+  <text x="558" y="187" font-size="10" fill="#3b82f6">→</text>
+
+  <rect x="568" y="165" width="115" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="625" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Combat</text>
+  <text x="625" y="194" text-anchor="middle" font-size="7.5" fill="#888">windup · hit · splash</text>
+
+  <text x="690" y="187" font-size="10" fill="#3b82f6">→</text>
+
+  <rect x="700" y="165" width="110" height="38" rx="5" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="755" y="181" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1e40af">Death/Cleanup</text>
+  <text x="755" y="194" text-anchor="middle" font-size="7.5" fill="#888">spawns · damage</text>
+
+  <!-- Engine modules -->
+  <rect x="40" y="215" width="760" height="55" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="55" y="232" font-size="9" font-weight="600" fill="#1e40af">Engine Modules</text>
+
+  <rect x="55" y="240" width="80" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="95" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">engine.rs</text>
+  <rect x="142" y="240" width="80" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="182" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">combat.rs</text>
+  <rect x="229" y="240" width="80" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="269" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">entities.rs</text>
+  <rect x="316" y="240" width="90" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="361" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">game_state.rs</text>
+  <rect x="413" y="240" width="90" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="458" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">data_types.rs</text>
+  <rect x="510" y="240" width="100" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="560" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">champion_system.rs</text>
+  <rect x="617" y="240" width="85" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="659" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">evo_system.rs</text>
+  <rect x="709" y="240" width="85" height="22" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="0.8"/>
+  <text x="751" y="255" text-anchor="middle" font-size="7.5" fill="#1e40af">hero_system.rs</text>
+
+  <!-- Performance + Determinism -->
+  <rect x="40" y="280" width="350" height="50" rx="6" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="55" y="298" font-size="9" font-weight="600" fill="#1e40af">Performance (single M1 Pro core)</text>
+  <text x="55" y="314" font-size="8.5" fill="#888">3,000 agents at 29ms/tick · 10K parallel sims at 1.5μs/instance</text>
+  <text x="55" y="326" font-size="8.5" fill="#888">p99 within 50ms real-time budget at all tested levels</text>
+
+  <rect x="410" y="280" width="400" height="50" rx="6" fill="#fff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="425" y="298" font-size="9" font-weight="600" fill="#1e40af">Determinism (verified)</text>
+  <text x="425" y="314" font-size="8.5" fill="#888">100× identical runs across all scenarios · no floating point</text>
+  <text x="425" y="326" font-size="8.5" fill="#888">bit-identical state after 9,600 ticks (full 8-min match)</text>
+
+  <!-- Arrows down -->
+  <line x1="250" y1="340" x2="250" y2="370" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="258" y="360" font-size="8" fill="#888">PyO3 FFI</text>
+  <line x1="600" y1="340" x2="600" y2="370" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ PYTHON + TESTS ══ -->
+  <rect x="20" y="375" width="420" height="65" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="40" y="397" font-size="10" font-weight="700" fill="#5b21b6">PYTHON API + AI AGENT LAYER</text>
+  <text x="40" y="415" font-size="9" fill="#888">match_runner · ai_agent · replay_recorder · analytics</text>
+  <text x="40" y="430" font-size="9" fill="#888">observation API · JSON snapshots · diff-based event replay</text>
+
+  <rect x="460" y="375" width="360" height="65" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="480" y="397" font-size="10" font-weight="700" fill="#166534">TEST HARNESS</text>
+  <text x="620" y="397" font-size="9" fill="#166534">28 batches · 1,900+ assertions</text>
+  <text x="480" y="415" font-size="9" fill="#888">125+ card types · spells · buildings · heroes · evolutions</text>
+  <text x="480" y="430" font-size="9" fill="#888">determinism ×100 · stress 3K agents · full match lifecycle</text>
+
+  <!-- ══ WRITEUPS ══ -->
+  <rect x="20" y="460" width="800" height="145" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="40" y="482" font-size="10" font-weight="700" fill="#374151">DEEP-DIVE WRITEUPS</text>
+  <text x="210" y="482" font-size="9" fill="#888">data-driven fidelity verification with measured results</text>
+
+  <rect x="35" y="495" width="180" height="50" rx="6" fill="#fff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="125" y="513" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5b21b6">Charge &amp; Poison</text>
+  <text x="125" y="527" text-anchor="middle" font-size="7.5" fill="#888">distance-triggered charge</text>
+  <text x="125" y="538" text-anchor="middle" font-size="7.5" fill="#888">pulsed DOT + speed debuff</text>
+
+  <rect x="225" y="495" width="185" height="50" rx="6" fill="#fff" stroke="#14b8a6" stroke-width="1"/>
+  <text x="317" y="513" text-anchor="middle" font-size="8.5" font-weight="600" fill="#0f766e">Collision &amp; Bridge</text>
+  <text x="317" y="527" text-anchor="middle" font-size="7.5" fill="#888">mass-based N-body separation</text>
+  <text x="317" y="538" text-anchor="middle" font-size="7.5" fill="#888">cost-based bridge selection</text>
+
+  <rect x="420" y="495" width="195" height="50" rx="6" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="517" y="513" text-anchor="middle" font-size="8.5" font-weight="600" fill="#9f1239">Simultaneous Hits</text>
+  <text x="517" y="527" text-anchor="middle" font-size="7.5" fill="#888">tick-deterministic trades</text>
+  <text x="517" y="538" text-anchor="middle" font-size="7.5" fill="#888">N-body convergence proof</text>
+
+  <rect x="625" y="495" width="185" height="50" rx="6" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="717" y="513" text-anchor="middle" font-size="8.5" font-weight="600" fill="#92400e">Performance &amp; Observability</text>
+  <text x="717" y="527" text-anchor="middle" font-size="7.5" fill="#888">3,000 agents · 10K parallel sims</text>
+  <text x="717" y="538" text-anchor="middle" font-size="7.5" fill="#888">12μs state capture overhead</text>
+
+  <text x="420" y="582" text-anchor="middle" font-size="9" fill="#374151" font-weight="600">125+ heterogeneous agent types · full game lifecycle · RL-ready observation API</text>
+  <text x="420" y="598" text-anchor="middle" font-size="8.5" fill="#888">Game domain: Clash Royale — targeting Digital Twin, V2X, and autonomous systems research</text>
+</svg>

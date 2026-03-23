@@ -1,0 +1,138 @@
+Evolved Ice SpiritElixir Cost1Cycle Cost2RarityCommonTypeTroopArenaFrozen PeakRelease Date4 December 2023
+
+## Evolved Ice Spirit
+
+
+## Elixir Cost
+
+
+## Cycle Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Ice Spirit's Evolution is aCommoncardthat is unlocked with 6 Evolution Shards. It spawns an Ice Spirit with a splash radius 0.5 tiles larger than the original. When 3 seconds have passed after it hits an enemy, it will deal the same stun and damage to the enemy for 1.1 seconds. It resembles a small snowball with indigo eyes and a mouth, along with its hands, legs, teeth and crystals on its head being in the form of ice. The Ice Spirit's Evolution costs 1Elixirand requires 2 cycles to deploy.
+
+## Strategy[]
+
+  - The Evolved Ice Spirit is very effective againstInferno Dragon,Mighty Miner,Prince,Dark Prince,Ram Rider,Battle Ram,Mega Knight, andSparky, due to the Ice Blast constantly interrupting their attacks and preventing them from charging.
+  - The Evolved Ice Spirit has great synergy with theHog Riderand theRam Rideras he can cripple and consistently stun defensivebuildingssuch as theInferno Tower, and support units to allow the Hog Rider to get extra hits.
+  - The Evolved Ice Spirit can be ignored under certain situations with theTower Princess, dealing slight chip damage. However, it is notably higher than other1-Elixircards, so it should not be ignored if the Tower Princess is at low hitpoints. If theCannoneerorDagger Duchessare in use, the Evolved Ice Spirit will not connect, allowing the user to always ignore it.Since the Evolved Ice Spirit has sufficient hitpoints to reach an opposing Tower Princess,Goblins, Spear Goblins, Archers,Goblin Gang,Minions,Minion Horde, Skeleton Army,Evolved Bats, andEvolved Skeletonscan reach theCrown Towerunscathed while the Evolved Ice Spirit tanks and continuously freezes the Tower Princess.
+  - Since the Evolved Ice Spirit has identical hitpoints to the regularIce Spirit, it can still be fully countered byThe LogandBarbarian Barreldespite the slight negativeElixirtrade.
+  - The best way to fully counter the Evolved Ice Spirit is to deploy another 1-Elixirtroop, such asFire Spirit, directly on top of him to soak his damage. This causes the opponent to prevent the user from getting any value out of its Ice Blast ability. TheSkeletonsare especially effective as they'll be destroyed immediately by the initial jump, preventing the Ice Blast from moving towards other supporting troops.Batsand Goblins can work in a similar way, albeit for a slight negative Elixir trade.
+  - While a large negative Elixir trade, the stun effect from the Ice Blast has no effect on theGoblin Cage, making it a good response for it when used in larger pushes.
+  - Do not place troops next to ones that have been already hit by the Evolved Ice Spirit, to avoid them taking unnecessary damage from the Ice Blast.
+  - The Evolved Ice Spirit has enough hitpoints to take a shot from most medium-sized units. TheMusketeer,Executioner,Baby Dragon,Witch,Archer Queen, Firecracker, Bomber, Dart Goblin, Minions,Goblin Demolisher,Electro Wizard,Princess,Ice Wizard,Miner,Electro Dragon,Magic Archer,Zappies,Phoenix,Bandit, andFisherman, all take more than 1 hit to eliminate the Evolved Ice Spirit, giving it ample time to freeze them. Unlike the regular Ice Spirit, some of these may even be fully countered with the help of the Crown Tower due to the Ice Blast.
+  - A full Ice Blast eliminates aPrincess,Dart Goblin,Rascal Girls, Minions, and all the Spirit cards up to 1 Level higher and aFirecracker,Bomber, andArchersof the same Level. It also eliminateSpear Goblinsand Goblins, while the initial hit from the Evolved Ice Spirit is enough to take out Skeletons and Bats.
+  - The Evolved Ice Spirit has decent synergy withGoblin Drillas he can tank a couple shots from the Tower Princess while stalling any unit meant to defend the Goblin Drill.
+  - If placed properly, the Evolved Ice Spirit can fully counter lone swarms, such as the Minion Horde,Skeleton Army,Goblin Gang, Guards, and Minions, for a large positive Elixir trade.
+  - The Evolved Ice Spirit has great synergy with theInferno Tower, as he can constantly stun the Inferno Tower's target until it is defeated while preventing support troops behind the target from reaching the Inferno Tower.On the contrary, the Evolved Ice Spirit is especially dangerous to your Inferno Tower as he can prevent the ramp-up damage from reaching the max damage stage for a long period of time. Consider using a cheap unit, such asSkeletons, Goblins, Bats, orFire Spirit, to distract the Evolved Ice Spirit.
+  - The Evolved Ice Spirit does not deal enough damage to take out theGuards' shields but it does deal enough damage to finish off the Guards' shields after all two Ice Blasts. Knowing this, you can combine the Evolved Ice Spirit with any other Spirit card to counter the Guards for a slight positive Elixir trade, however this can require precise timing.
+  - Since the Evolved Ice Spirit has sufficient hitpoints to reach an opposing Tower Princess,Goblins, Spear Goblins, Archers,Goblin Gang,Minions,Minion Horde, Skeleton Army,Evolved Bats, andEvolved Skeletonscan reach theCrown Towerunscathed while the Evolved Ice Spirit tanks and continuously freezes the Tower Princess.
+  - On the contrary, the Evolved Ice Spirit is especially dangerous to your Inferno Tower as he can prevent the ramp-up damage from reaching the max damage stage for a long period of time. Consider using a cheap unit, such asSkeletons, Goblins, Bats, orFire Spirit, to distract the Evolved Ice Spirit.
+
+## Statistics
+
+
+## Evolved Ice Spirit Attributes
+
+Cost | Speed | Deploy Time | Range | Splash Radius | Target | Freeze Duration | Transport | Type | Rarity
+1 | Very Fast (120) | 1 sec | 2.5 | 2 | Air & Ground | 1.1 sec | Ground | Troop | Common
+
+## Evolution Attributes
+
+Cycles
+2
+
+## Card Statistics
+
+Level | Hitpoints | Area Damage | Ice Blast Damage
+1 | 90 | 43 | 43
+2 | 99 | 47 | 47
+3 | 108 | 52 | 52
+4 | 119 | 57 | 57
+5 | 131 | 62 | 62
+6 | 144 | 68 | 68
+7 | 158 | 75 | 75
+8 | 173 | 82 | 82
+9 | 190 | 91 | 91
+10 | 209 | 100 | 100
+11 | 230 | 110 | 110
+12 | 252 | 120 | 120
+13 | 278 | 132 | 132
+14 | 305 | 145 | 145
+15 | 334 | 159 | 159
+16 | 368 | 175 | 175
+
+## History[]
+
+2023
+  - The Ice Spirit's Evolutioncardwas added to the game on 4/12/2023, in theDecember 2023 Update.
+  - On 13/12/2023, theTower Troop Update, decreased the cycles required to 2 (from 3).
+2024
+  - On 5/3/2024, aBalance Update, increased the Evolved Ice Spirit's area radius to 2 tiles (from 1.5 tiles).
+  - On 16/12/2024, the2024 Quarter 4 Update, added a sound effect to the Evolved Ice Spirit after death.
+2025
+  - On 8/1/2025, aBalance Update, added a 48% damage boost to the Evolved Ice Spirit, but removed the third Ice Blast.
+  - On 3/6/2025, aBalance Update, removed the Evolved Ice Spirit's damage boost.
+  - On 8/7/2025, aBalance Update, decreased the Evolved Ice Spirit's freeze duration to 1.1 seconds (from 1.2 seconds).
+
+## Gallery[]
+
+
+## Trivia[]
+
+  - The Ice Spirit's Evolution is tied with theSkeletonsfor the cheapestEvolutionto be placed, costing 3Elixir(excluding Elixir from using othercards).
+  - The Ice Spirit's Evolution is 1 of 3 evolvedtroopsto die as part of its attack, the other being theWall Breakers, and Runners.
+  - In the French, Italian, Portuguese, Malaysian, and Finnish language settings of the game, the Ice Spirit's name translates to "Spirit of Ice". In the Persian language settings of the game, the Ice Spirit's name translates to "Ice Soul".
+  - The Ice Spirit's Evolution is 1 of 5 cards that has had its Cycles required changed, the others beingBomber, Skeletons,Lumberjack, andBaby Dragon.
+  - The Ice Spirit’s gender is confirmed to be male, as in the balance changes in theApril 2022 Updateit states, "We want to provide more distinct use for the Ice Spirit compared to his counterparts the Electro Spirit."
+  - The Ice Spirit's Evolution is 1 of 3 evolved cards without the diamond evolution symbol anywhere on their card render, the others beingBatsand Giant Snowball.
+  - InTouchdown, if an Ice Spirit jumps into the enemy end zone as it attacks, it does not count as a point. This is because a jumping spirit no longer counts as a troop; it becomes similar to a projectile.
+  - The Ice Spirit's Evolution is the subject of 2Emotes.
+  - The Ice Spirit is the only spirit - amongFire Spirit,Electro SpiritandHeal Spirit- to have an evolution.
+Wiki Navigation
+CommunityCommunityHome•Game Version History•Esports•Supercell ID•Supercell Make•GlossaryAssetsLoading Screens•Loading Screen Hints•Notifications•SoundtracksCardsGeneralAbout Cards•Card Overviews(Merge Tactics)•Battle DecksTroop CardsCommonMinions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•RascalsRareMini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir GolemEpicGuards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+LegendaryMega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ChampionGolden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+Spell CardsCommonArrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+RareFireball•Rocket•Earthquake•HealEpicGoblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•MirrorLegendaryThe Log•Graveyard•Party Rocket+Building CardsCommonCannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+RareGoblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)EpicX-Bow(Merge Tactics)•Goblin Drill(Evolution)LegendaryParty Hut+ •Rocket Silo+Tower Troop CardsCommonTower Princess•Baby Goblins+EpicCannoneerLegendaryDagger Duchess•Royal ChefMerge TacticsTraitsAce•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•ThrowerRulersRoyale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger DuchessBattleBasicsBasics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •ModifiersModes2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+FormatsTraining Camp•Tournament(Special Event Challenges)•Card DeliveryTrophy RoadsArenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+Crown Towers/RulersKing's Tower•Goblin Queen Tower•Princess TowerGameplaySocialClans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars ICurrenciesGold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky ChestsFeaturesShop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily TasksCurrent cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange. | Community | Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary | Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks | Cards | General | About Cards•Card Overviews(Merge Tactics)•Battle Decks | Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals | Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem | Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+ | Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+ | Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+ | Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+ | Rare | Fireball•Rocket•Earthquake•Heal | Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror | Legendary | The Log•Graveyard•Party Rocket+ | Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+ | Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics) | Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution) | Legendary | Party Hut+ •Rocket Silo+ | Tower Troop Cards | Common | Tower Princess•Baby Goblins+ | Epic | Cannoneer | Legendary | Dagger Duchess•Royal Chef | Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower | Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess | Battle | Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers | Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+ | Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery | Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+ | Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower | Gameplay | Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I | Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests | Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks | Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.
+Community
+Community | Home•Game Version History•Esports•Supercell ID•Supercell Make•Glossary
+Assets | Loading Screens•Loading Screen Hints•Notifications•Soundtracks
+Cards
+General | About Cards•Card Overviews(Merge Tactics)•Battle Decks
+Troop Cards | Common | Minions•Archers(Evolution) (Merge Tactics)•Knight(Evolution) (Hero) (Merge Tactics)•Spear Goblins(Merge Tactics)•Goblins(Hero) (Merge Tactics)•Bomber(Evolution) (Merge Tactics)•Skeletons(Evolution) (Merge Tactics)•Barbarians(Evolution) (Merge Tactics)•Electro Spirit•Skeleton Dragons(Merge Tactics)•Fire Spirit•Bats(Evolution)•Royal Recruits(Evolution)•Royal Giant(Evolution) (Merge Tactics)•Ice Spirit(Evolution)•Berserker•Skeleton Barrel(Evolution)•Goblin Gang•Elite Barbarians•Minion Horde•Firecracker(Evolution)•Rascals
+Rare | Mini P.E.K.K.A.(Hero) (Merge Tactics)•Musketeer(Evolution) (Hero) (Merge Tactics)•Giant(Hero• (Merge Tactics)•Valkyrie(Evolution) (Merge Tactics)•Mega Minion•Battle Ram(Evolution)•Wizard(Evolution) (Merge Tactics) (Hero)•Flying Machine•Hog Rider•Royal Hogs(Evolution)•Three Musketeers•Battle Healer•Ice Golem(Hero)•Dart Goblin(Evolution) (Merge Tactics)•Furnace(Evolution)•Zappies•Goblin Demolisher(Merge Tactics•Heal Spirit•Suspicious Bush•Elixir Golem
+Epic | Guards•Baby Dragon(Evolution) (Merge Tactics)•Skeleton Army(Evolution)•Witch(Evolution) (Merge Tactics)•P.E.K.K.A.(Evolution) (Merge Tactics)•Dark Prince•Prince(Merge Tactics)•Balloon•Giant Skeleton(Merge Tactics)•Rune Giant•Goblin Giant(Evolution)•Hunter(Evolution)•Golem•Electro Dragon(Evolution)•Wall Breakers(Evolution)•Electro Giant(Merge Tactics)•Bowler•Executioner(Evolution) (Merge Tactics)•Cannon Cart•Raging Prince+
+Legendary | Mega Knight(Evolution) (Merge Tactics)•Ram Rider•Electro Wizard(Merge Tactics)•Inferno Dragon(Evolution)•Sparky•Miner•Princess(Merge Tactics)•Phoenix•Royal Ghost(Evolution)(Merge Tactics)•Ice Wizard•Magic Archer•Bandit(Merge Tactics)•Lava Hound•Night Witch•Lumberjack(Evolution)•Spirit Empress•Goblin Machine(Merge Tactics)•Mother Witch•Fisherman•Super Lava Hound+ •Super Witch+ •Super Mini P.E.K.K.A.+ •Santa Hog Rider+ •Super Ice Golem+ •Super Magic Archer+ •Super Archers+ •Wizard Trio+ •Super Knight+
+Champion | Golden Knight(Merge Tactics)•Skeleton King(Merge Tactics)•Boss Bandit•Archer Queen(Merge Tactics)•Mighty Miner•Monk(Merge Tactics)•Little Prince•Goblinstein•Terry+
+Spell Cards | Common | Arrows•Zap(Evolution)•Giant Snowball(Evolution)•Royal Delivery•Warmth+
+Rare | Fireball•Rocket•Earthquake•Heal
+Epic | Goblin Barrel(Evolution)•Vines•Lightning•Freeze•Barbarian Barrel•Poison•Goblin Curse•Rage•Void•Clone•Tornado•Mirror
+Legendary | The Log•Graveyard•Party Rocket+
+Building Cards | Common | Cannon(Evolution)•Mortar(Evolution) (Merge Tactics)•Tesla(Evolution) (Merge Tactics)•Barbarian Launcher+
+Rare | Goblin Cage(Evolution)•Goblin Hut•Tombstone•Bomb Tower•Inferno Tower(Merge Tactics)•Barbarian Hut•Elixir Collector(Merge Tactics)
+Epic | X-Bow(Merge Tactics)•Goblin Drill(Evolution)
+Legendary | Party Hut+ •Rocket Silo+
+Tower Troop Cards | Common | Tower Princess•Baby Goblins+
+Epic | Cannoneer
+Legendary | Dagger Duchess•Royal Chef
+Merge Tactics | Traits | Ace•Assassin•Clan•Dragon•Fire•Goblin•Hinder•Marksman•Noble•Superstar•Tank•Titan•Undead•Warrior•Avenger•Blaster•Brawler•Brutalist•[[File:Electric (Trait).png20px|]]Electric•Giant•Juggernaut•Mage•P.E.K.K.A•Ranger•Thrower
+Rulers | Royale King•Spirit Empress•Goblin Queen•Elixir Loong•Battle Machine•Echo Sage•Dagger Duchess
+Battle
+Basics | Basics of Battle•Cards•Elixir•Card Evolution•Heroes•Buff+ •Ruler Ability+ •Modifiers
+Modes | 2v2•Touchdown•Global Spell•Heist•Troop Rush+ •Treasure Hunt+ •Obstacle Course+ •Battleground•Chess Royale+ •Trick or Treat+ •C.H.A.O.S+
+Formats | Training Camp•Tournament(Special Event Challenges)•Card Delivery
+Trophy Roads | Arenas•Ranked•Merge Tactics•Goblin Queen's Journey+ •2v2 League+ •Retro Royale+ •Undead March+
+Crown Towers/Rulers | King's Tower•Goblin Queen Tower•Princess Tower
+Gameplay
+Social | Clans•Clan Wars•Clan Voyage•Friendly Battle•Trade Tokens•Emotes•Clan Chest•Clan Wars I
+Currencies | Gold•Gems•Chests•Trophies•Experience•Star Points•Magic Items•Lucky Chests
+Features | Shop•Pass Royale•Player Profile•Events+ •Card Mastery•Battle Banners•TV Royale•Achievements•Quests•Season Shop•Daily Tasks
+Current cards and features appear inblue. Cards/Features that have since been removed from the game, or were only available in a since-discontinued Event, appear ingray. Upcoming cards and features that are not yet in the game appear inyellow. A card or a feature with a + next to it denotes something that is only available in temporary challenges (has a timer on it, and the event may still come back every once in a while). Merge Tactics cards arepurple, while Evolutions arepink, and Heroes areorange.

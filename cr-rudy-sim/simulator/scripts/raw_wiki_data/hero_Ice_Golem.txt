@@ -1,0 +1,61 @@
+Hero Ice GolemElixir Cost2Ability Cost2RarityRareTypeTroopArenaFrozen PeakRelease Date5 January 2026
+
+## Hero Ice Golem
+
+
+## Elixir Cost
+
+
+## Ability Cost
+
+
+## Rarity
+
+
+## Type
+
+
+## Arena
+
+
+## Release Date
+
+The Hero Ice Golem is aRarecard that is unlocked by unlocking 200and rolling the Hero Ice Golem. The Heroic Ice Golem takes the appearance of a large creature made out of snow with glowing yellow eyes and golden ice shards on his head, with his hands being also colored golden and his nose and rocks on his spine being in the form of coal. He also dons a team-colored cape, two heavy golden armpads and gauntlets, and a gold headpiece with theHero Shardin the center. This card costs 2to put on the arena and an additional 2to activate his ability.
+
+## Ability: Snowstorm[]
+
+The Hero Ice Golem has a special ability accessible from whatever side of the screen was put in, just above the player'scardslots inbattle. After a 1-second delay, the Hero Ice Golem activates his "Blizzard" ability, which generates a 4-tile aura radius that slows all enemy troops in it while the second one does 1 tile knockback, and the third one freezes the enemy troops in it for 2-3 seconds. It has 3 pulses, each one slows down enemy troops and does damage, and if one stays there for all three of them, they get frozen for around 2 seconds. The ability goes on a 14 second cooldown after the duration ends. The Snowstorm ability costs 2to activate.
+
+## Strategy[]
+
+  - Use your Ice Golem to distract enemy troops then pop the ability to freeze any defensive cards once it's at the tower.
+
+## Statistics
+
+
+## Hero Ice Golem Attributes
+
+Cost | Hit Speed | First Hit Speed | Speed | Deploy Time | Range | Target | Count | Transport | Type | Rarity
+2 | 2.5 sec | 1.5 sec | Slow (45) | 1 sec | Melee: Medium (1.2) | Buildings | x1 | Ground | Troop | Rare
+
+## Snowstorm Ability Attributes
+
+Cost | Radius | Slowdown | Slowdown Duration | Pulses | Freeze Duration | Target | Cooldown
+2 | 4 | 30% | 2 seconds | 3 | 2 seconds | Air & Ground | 17 seconds
+
+## Card Statistics
+
+Level | Hitpoints | Damage | Damage per second | Death Damage | Every Blizzard Pulse Damage
+3 | 566 | 39 | 15 | 39 | 39
+4 | 622 | 43 | 17 | 43 | 43
+5 | 683 | 48 | 19 | 48 | 48
+6 | 748 | 52 | 20 | 52 | 52
+7 | 823 | 58 | 23 | 58 | 58
+8 | 903 | 63 | 25 | 63 | 63
+9 | 992 | 69 | 27 | 69 | 69
+10 | 1,090 | 76 | 30 | 76 | 76
+11 | 1,198 | 84 | 33 | 84 | 84
+12 | 1,315 | 92 | 36 | 92 | 92
+13 | 1,446 | 101 | 40 | 101 | 101
+14 | 1,586 | 111 | 44 | 111 | 111
+15 | 1,740 | 122 | 48 | 122 | 122

@@ -1,0 +1,530 @@
+{
+  "_schema_version": "2.0",
+  "_description": "Clash Royale Simulator - Data Architecture & Schema",
+  "_architecture": {
+    "source_1_royaleapi": {
+      "description": "RoyaleAPI cr-api-data — base combat, physics, projectiles, buffs, buildings",
+      "files": {
+        "cards_stats_characters.json": "125 troops/champions, 297 fields — HP, damage, speed, collision, dash, spawn, death, per-level arrays",
+        "cards_stats_building.json": "89 buildings, 285 fields — same depth as characters + lifetime, hide mechanics",
+        "cards_stats_projectile.json": "92 projectiles — speed, homing, splash radius, gravity, damage",
+        "cards_stats_spell.json": "71 spells — radius, duration, pushback, damage, area effects",
+        "cards_stats_character_buff.json": "62 buffs — rage multiplier, freeze, poison tick, heal, slow"
+      },
+      "total_entities": 439
+    },
+    "source_2_wiki_scrape": {
+      "description": "Fandom Wiki scrape — evolution abilities + hero abilities (this file)",
+      "url_base": "https://clashroyale.fandom.com/wiki/",
+      "scraped_by": "Python scraper targeting individual card wiki pages",
+      "files": {
+        "evo_hero_abilities.json": "~39 evolution abilities + ~10 hero abilities"
+      }
+    }
+  },
+
+  "_cross_references": {
+    "character_to_projectile": "characters[].projectile → projectiles[].name (e.g. 'ArcherArrow')",
+    "character_to_buff": "characters[].buff_on_damage → buffs[].name (e.g. 'Rage')",
+    "character_to_building": "separate entity pools, no cross-ref needed",
+    "evo_to_character": "evolutions[].base_card_key → characters[].key",
+    "hero_to_character": "heroes[].base_card_key → characters[].key",
+    "evo_buff_to_buff_file": "evolutions[].ability.effects[].buff_reference → buffs[].name"
+  },
+
+  "_card_lookup_flow": [
+    "1. Player plays 'Knight' → find characters[] where key='knight'",
+    "2. Get all 297 combat/physics fields from that entry",
+    "3. If card has projectile field → look up projectiles[] by name",
+    "4. If evo is active → find evolutions[] where base_card_key='knight'",
+    "5.   Apply stat_modifiers on top of base stats",
+    "6.   Register ability trigger in combat engine",
+    "7. If hero variant → find heroes[] where base_card_key='knight'",
+    "8.   Apply stat_modifiers, register ability button with elixir_cost",
+    "9. For spells → look up spells[] by name instead of characters[]",
+    "10. For buildings → look up buildings[] by name instead of characters[]"
+  ],
+
+  "evolutions": {
+    "_count": "~39 total",
+    "_scrape_url_pattern": "https://clashroyale.fandom.com/wiki/{CardName}/Evolution",
+
+    "schema": {
+      "id": "string — unique ID, e.g. 'knight_evo'",
+      "base_card_key": "string — links to characters[].key, e.g. 'knight'",
+      "base_card_sc_key": "string — links to characters[].sc_key, e.g. 'Knight'",
+      "name": "string — display name, e.g. 'Evolved Knight'",
+      "cycle_cost": "integer — times base card must be played before evo activates (1 or 2)",
+      "elixir": "integer — same as base card",
+      "rarity": "string — base card rarity",
+
+      "stat_modifiers": {
+        "_description": "Changes relative to base card. null = unchanged.",
+        "hitpoints_multiplier": "number|null — e.g. 1.10 = +10% HP",
+        "damage_multiplier": "number|null",
+        "hit_speed_multiplier": "number|null",
+        "speed_override": "integer|null",
+        "spawn_count_override": "integer|null",
+        "range_override": "integer|null",
+        "shield_hitpoints": "integer|null — at tournament level 11"
+      },
+
+      "ability": {
+        "name": "string — e.g. 'Elbow Reflection'",
+        "description": "string — human-readable full description",
+        "type": "string — 'passive'|'on_attack'|'on_hit'|'on_kill'|'on_death'|'on_deploy'|'on_damage_taken'|'continuous'|'conditional'",
+
+        "trigger": {
+          "condition": "string — 'while_not_attacking'|'on_each_attack'|'on_kill'|'on_deploy'|'when_below_half_hp'|'always_active'",
+          "cooldown_ms": "integer|null",
+          "max_stacks": "integer|null"
+        },
+
+        "effects": [
+          {
+            "effect_type": "string — 'damage_reduction'|'damage_buff'|'speed_buff'|'hitspeed_buff'|'heal'|'spawn_unit'|'area_pull'|'area_damage'|'projectile_chain'|'projectile_bounce'|'shield_grant'|'freeze'|'stun'|'slow'|'rage'|'clone_on_death'|'respawn'|'custom'",
+            "target": "string — 'self'|'enemies_in_radius'|'all_enemies'|'allies_in_radius'|'nearest_enemy'|'attacking_unit'|'ground'|'air'|'ground_and_air'",
+            "radius": "integer|null — game units (same scale as RoyaleAPI)",
+            "value": "number|null — primary value: reduction %, buff %, heal amount",
+            "value_per_level": "array|null",
+            "duration_ms": "integer|null — null = permanent/until condition ends",
+            "damage": "integer|null — at tournament level 11",
+            "damage_per_level": "array|null",
+            "spawn_character": "string|null — sc_key of spawned unit",
+            "spawn_count": "integer|null",
+            "spawn_interval_ms": "integer|null",
+            "buff_reference": "string|null — links to character_buff[].name",
+            "projectile_behavior": {
+              "chain_count": "integer|null",
+              "bounce_count": "integer|null",
+              "chain_damage_multiplier": "number|null",
+              "can_hit_same_target": "boolean|null",
+              "hits_crown_towers": "boolean|null"
+            },
+            "pull_strength": "integer|null",
+            "affects_air": "boolean|null",
+            "affects_ground": "boolean|null"
+          }
+        ]
+      },
+
+      "release_season": "integer|null",
+      "last_balance_date": "string|null"
+    },
+
+    "examples": [
+      {
+        "id": "knight_evo",
+        "base_card_key": "knight",
+        "base_card_sc_key": "Knight",
+        "name": "Evolved Knight",
+        "cycle_cost": 2,
+        "elixir": 3,
+        "rarity": "Common",
+        "stat_modifiers": {
+          "hitpoints_multiplier": null,
+          "damage_multiplier": null,
+          "hit_speed_multiplier": null,
+          "speed_override": null,
+          "spawn_count_override": null,
+          "range_override": null,
+          "shield_hitpoints": null
+        },
+        "ability": {
+          "name": "Elbow Reflection",
+          "description": "While not attacking, takes 60% less damage from all sources. Deactivates during attack animation.",
+          "type": "conditional",
+          "trigger": {
+            "condition": "while_not_attacking",
+            "cooldown_ms": null,
+            "max_stacks": null
+          },
+          "effects": [
+            {
+              "effect_type": "damage_reduction",
+              "target": "self",
+              "radius": null,
+              "value": 60,
+              "value_per_level": null,
+              "duration_ms": null,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": null,
+              "affects_ground": null
+            }
+          ]
+        },
+        "release_season": 50,
+        "last_balance_date": null
+      },
+      {
+        "id": "barbarians_evo",
+        "base_card_key": "barbarians",
+        "base_card_sc_key": "Barbarians",
+        "name": "Evolved Barbarians",
+        "cycle_cost": 1,
+        "elixir": 5,
+        "rarity": "Common",
+        "stat_modifiers": {
+          "hitpoints_multiplier": 1.10,
+          "damage_multiplier": null,
+          "hit_speed_multiplier": null,
+          "speed_override": null,
+          "spawn_count_override": 5,
+          "range_override": null,
+          "shield_hitpoints": null
+        },
+        "ability": {
+          "name": "Rage Buildup",
+          "description": "Every attack increases hit speed and movement speed by 30% for 3 seconds. Stacks with each successive hit.",
+          "type": "on_attack",
+          "trigger": {
+            "condition": "on_each_attack",
+            "cooldown_ms": null,
+            "max_stacks": null
+          },
+          "effects": [
+            {
+              "effect_type": "hitspeed_buff",
+              "target": "self",
+              "radius": null,
+              "value": 30,
+              "value_per_level": null,
+              "duration_ms": 3000,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": null,
+              "affects_ground": null
+            },
+            {
+              "effect_type": "speed_buff",
+              "target": "self",
+              "radius": null,
+              "value": 30,
+              "value_per_level": null,
+              "duration_ms": 3000,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": null,
+              "affects_ground": null
+            }
+          ]
+        },
+        "release_season": 48,
+        "last_balance_date": "2024-05-14"
+      },
+      {
+        "id": "valkyrie_evo",
+        "base_card_key": "valkyrie",
+        "base_card_sc_key": "Valkyrie",
+        "name": "Evolved Valkyrie",
+        "cycle_cost": 2,
+        "elixir": 4,
+        "rarity": "Rare",
+        "stat_modifiers": {
+          "hitpoints_multiplier": null,
+          "damage_multiplier": null,
+          "hit_speed_multiplier": null,
+          "speed_override": null,
+          "spawn_count_override": null,
+          "range_override": null,
+          "shield_hitpoints": null
+        },
+        "ability": {
+          "name": "Spin Wind",
+          "description": "When attacking a ground target, creates a small tornado that pulls enemies toward her. Affects both ground and air.",
+          "type": "on_attack",
+          "trigger": {
+            "condition": "on_each_attack",
+            "cooldown_ms": null,
+            "max_stacks": null
+          },
+          "effects": [
+            {
+              "effect_type": "area_pull",
+              "target": "enemies_in_radius",
+              "radius": 2000,
+              "value": null,
+              "value_per_level": null,
+              "duration_ms": null,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": "SuperArcherTornado",
+              "projectile_behavior": null,
+              "pull_strength": 1000,
+              "affects_air": true,
+              "affects_ground": true
+            }
+          ]
+        },
+        "release_season": 55,
+        "last_balance_date": "2025-12-01"
+      }
+    ],
+
+    "all_cards_to_scrape": [
+      "Barbarians", "Royal_Giant", "Firecracker", "Skeletons",
+      "Mortar", "Knight", "Royal_Recruits", "Bats",
+      "Archers", "Ice_Spirit", "Valkyrie", "Wall_Breakers",
+      "Bomber", "Musketeer", "Skeleton_Barrel", "Witch",
+      "Wizard", "Tesla", "Zap", "Battle_Ram",
+      "Goblin_Barrel", "Goblin_Giant", "Goblin_Drill", "Goblin_Cage",
+      "P.E.K.K.A.", "Mega_Knight", "Electro_Dragon", "Royal_Ghost",
+      "Furnace", "Cannon", "Executioner", "Skeleton_Army",
+      "Lumberjack", "Baby_Dragon", "Elite_Barbarians", "Dart_Goblin",
+      "Giant_Snowball", "Hog_Rider", "Royal_Hogs"
+    ]
+  },
+
+  "heroes": {
+    "_count": "~10 total",
+    "_scrape_url_pattern": "https://clashroyale.fandom.com/wiki/{CardName}/Hero",
+
+    "schema": {
+      "id": "string — e.g. 'knight_hero'",
+      "base_card_key": "string — links to characters[].key",
+      "base_card_sc_key": "string — links to characters[].sc_key",
+      "name": "string — e.g. 'Hero Knight'",
+      "elixir": "integer — deploy cost (same as base card)",
+      "rarity": "string",
+
+      "stat_modifiers": {
+        "hitpoints_multiplier": "number|null",
+        "damage_multiplier": "number|null",
+        "hit_speed_multiplier": "number|null",
+        "speed_override": "integer|null",
+        "range_override": "integer|null",
+        "shield_hitpoints": "integer|null"
+      },
+
+      "ability": {
+        "name": "string",
+        "description": "string",
+        "elixir_cost": "integer — elixir to activate the ability",
+        "activation": "string — always 'manual' for heroes",
+
+        "effects": [
+          {
+            "effect_type": "string — same enum as evolutions + hero-specific types",
+            "target": "string — same enum as evolutions",
+            "radius": "integer|null",
+            "value": "number|null",
+            "value_per_level": "array|null",
+            "duration_ms": "integer|null",
+            "damage": "integer|null",
+            "damage_per_level": "array|null",
+            "spawn_character": "string|null",
+            "spawn_count": "integer|null",
+            "spawn_interval_ms": "integer|null",
+            "buff_reference": "string|null",
+            "projectile_behavior": "object|null",
+            "pull_strength": "integer|null",
+            "affects_air": "boolean|null",
+            "affects_ground": "boolean|null",
+            "taunt_radius": "integer|null",
+            "taunt_duration_ms": "integer|null",
+            "dash_distance": "integer|null",
+            "heal_amount": "integer|null",
+            "heal_per_level": "array|null",
+            "decoy_hitpoints": "integer|null",
+            "decoy_duration_ms": "integer|null",
+            "projectile_count": "integer|null",
+            "shield_hitpoints": "integer|null"
+          }
+        ]
+      },
+
+      "slot_type": "string — 'hero' (shares slot with champions)",
+      "unlock_arena": "integer",
+      "fragments_to_unlock": "integer — 200",
+      "release_season": "integer|null",
+      "last_balance_date": "string|null"
+    },
+
+    "examples": [
+      {
+        "id": "knight_hero",
+        "base_card_key": "knight",
+        "base_card_sc_key": "Knight",
+        "name": "Hero Knight",
+        "elixir": 3,
+        "rarity": "Common",
+        "stat_modifiers": {
+          "hitpoints_multiplier": null,
+          "damage_multiplier": null,
+          "hit_speed_multiplier": null,
+          "speed_override": null,
+          "range_override": null,
+          "shield_hitpoints": null
+        },
+        "ability": {
+          "name": "Triumphant Taunt",
+          "description": "Forces all enemies within 6.5 tile radius to target the Hero Knight for 4 seconds. Gains a shield for extra protection. Troops close enough won't stop targeting him even after taunt expires.",
+          "elixir_cost": 2,
+          "activation": "manual",
+          "effects": [
+            {
+              "effect_type": "custom",
+              "target": "enemies_in_radius",
+              "radius": 6500,
+              "value": null,
+              "value_per_level": null,
+              "duration_ms": 4000,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": true,
+              "affects_ground": true,
+              "taunt_radius": 6500,
+              "taunt_duration_ms": 4000,
+              "dash_distance": null,
+              "heal_amount": null,
+              "heal_per_level": null,
+              "decoy_hitpoints": null,
+              "decoy_duration_ms": null,
+              "projectile_count": null,
+              "shield_hitpoints": null
+            },
+            {
+              "effect_type": "shield_grant",
+              "target": "self",
+              "radius": null,
+              "value": null,
+              "value_per_level": null,
+              "duration_ms": 4000,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": null,
+              "affects_ground": null,
+              "taunt_radius": null,
+              "taunt_duration_ms": null,
+              "dash_distance": null,
+              "heal_amount": null,
+              "heal_per_level": null,
+              "decoy_hitpoints": null,
+              "decoy_duration_ms": null,
+              "projectile_count": null,
+              "shield_hitpoints": null
+            }
+          ]
+        },
+        "slot_type": "hero",
+        "unlock_arena": 15,
+        "fragments_to_unlock": 200,
+        "release_season": 78,
+        "last_balance_date": null
+      },
+      {
+        "id": "magic_archer_hero",
+        "base_card_key": "magic-archer",
+        "base_card_sc_key": "MagicArcher",
+        "name": "Hero Magic Archer",
+        "elixir": 4,
+        "rarity": "Legendary",
+        "stat_modifiers": {
+          "hitpoints_multiplier": null,
+          "damage_multiplier": null,
+          "hit_speed_multiplier": null,
+          "speed_override": null,
+          "range_override": null,
+          "shield_hitpoints": null
+        },
+        "ability": {
+          "name": "Triple Threat",
+          "description": "Dashes backward, leaves a decoy in his place, and fires a triple-arrow shot on his next attack.",
+          "elixir_cost": 2,
+          "activation": "manual",
+          "effects": [
+            {
+              "effect_type": "custom",
+              "target": "self",
+              "radius": null,
+              "value": null,
+              "value_per_level": null,
+              "duration_ms": null,
+              "damage": null,
+              "damage_per_level": null,
+              "spawn_character": null,
+              "spawn_count": null,
+              "spawn_interval_ms": null,
+              "buff_reference": null,
+              "projectile_behavior": null,
+              "pull_strength": null,
+              "affects_air": null,
+              "affects_ground": null,
+              "taunt_radius": null,
+              "taunt_duration_ms": null,
+              "dash_distance": 3000,
+              "heal_amount": null,
+              "heal_per_level": null,
+              "decoy_hitpoints": 500,
+              "decoy_duration_ms": 5000,
+              "projectile_count": 3,
+              "shield_hitpoints": null
+            }
+          ]
+        },
+        "slot_type": "hero",
+        "unlock_arena": 15,
+        "fragments_to_unlock": 200,
+        "release_season": 81,
+        "last_balance_date": null
+      }
+    ],
+
+    "all_cards_to_scrape": [
+      "Knight", "Giant", "Mini_P.E.K.K.A.", "Musketeer",
+      "Ice_Golem", "Wizard", "Goblins", "Mega_Minion",
+      "Barbarian_Barrel", "Magic_Archer"
+    ]
+  },
+
+  "scraping_guide": {
+    "what_to_extract_per_evo_page": [
+      "Ability name (usually bold in first paragraph)",
+      "Cycle cost (1 or 2, mentioned in description or infobox)",
+      "Stat changes vs base (HP multiplier, damage changes — in stat table or description)",
+      "Effect type and values (%, durations in ms, radii)",
+      "Balance change history (bottom of page — dates and what changed)"
+    ],
+    "what_to_extract_per_hero_page": [
+      "Ability name and elixir cost",
+      "Ability description and all mechanic details",
+      "Stat differences from base card",
+      "Effect values (radius, duration, damage)",
+      "Balance changes"
+    ]
+  }
+}
