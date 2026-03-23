@@ -1,4 +1,5 @@
 use anyhow::{Context, Result};
+use clap::Parser;
 use image::{imageops::FilterType, RgbImage};
 use indicatif::{ProgressBar, ProgressStyle};
 use ndarray::Array4;
@@ -11,14 +12,54 @@ use opencv::{
 use ort::session::Session;
 use ort::value::Tensor;
 use rayon::prelude::*;
+use std::cell::RefCell;
 use std::fs;
 
-// ─── CONFIG ────────────────────────────────────────────────────────────────────
+// ─── THREAD-LOCAL PREPROCESS BUFFER ────────────────────────────────────────────
+//
+// Each rayon worker thread gets its own 588 KB buffer (3×224×224 floats) via
+// thread-local storage (TLS). The buffer is allocated once on first use and
+// reused for every subsequent crop on that thread.
+//
+// Without this, `preprocess_single_crop` would heap-allocate a fresh Vec on
+// every call — that's 5 cards × N frames = tens of thousands of alloc/free
+// round-trips. With TLS, we reduce that to one allocation per rayon thread
+// (typically 4–8 total), and each call just overwrites the existing buffer.
+//
+// `RefCell` is needed because `thread_local!` only gives us a shared `&`
+// reference, but we need `&mut` to write pixel data into the buffer.
+// Since each thread has its own independent copy, there's no contention —
+// the runtime borrow check inside RefCell will never fail here.
+thread_local! {
+    static CROP_BUF: RefCell<Vec<f32>> = RefCell::new(vec![0.0f32; 3 * 224 * 224]);
+}
 
-const VIDEO_PATH: &str = "/Users/soren/Desktop/Clash Royale/Hand Card/Clash royale game.MOV";
-const OUTPUT_PATH: &str = "tracked_clash_gameplay.mp4";
-const MODEL_PATH: &str = "checkpoints/best_model.onnx"; // Must export from PyTorch first
-const CLASS_PATH: &str = "checkpoints/classes.json";
+// ─── CLI ───────────────────────────────────────────────────────────────────────
+
+/// Clash Royale card classifier — batched ONNX inference over video frames.
+///
+/// Usage:
+///   cargo run --release -- --video input.mov
+///   cargo run --release -- --video input.mov --output out.mp4 --model my.onnx
+#[derive(Parser, Debug)]
+#[command(name = "cr-card-classifier")]
+struct Args {
+    /// Path to the input video file
+    #[arg(short, long)]
+    video: String,
+
+    /// Path to the output annotated video [default: tracked_clash_gameplay.mp4]
+    #[arg(short, long, default_value = "tracked_clash_gameplay.mp4")]
+    output: String,
+
+    /// Path to the ONNX model checkpoint [default: checkpoints/best_model.onnx]
+    #[arg(short, long, default_value = "checkpoints/best_model.onnx")]
+    model: String,
+
+    /// Path to the class names JSON file [default: checkpoints/classes.json]
+    #[arg(short, long, default_value = "checkpoints/classes.json")]
+    classes: String,
+}
 
 const NUM_CARDS: usize = 5;
 
@@ -67,22 +108,29 @@ fn mat_to_rgb_image(mat: &Mat) -> Result<RgbImage> {
 
 /// Crop, resize to 224×224, normalize → flat Vec<f32> in CHW order (length 3×224×224).
 /// This is the per-crop unit of work that runs in parallel via rayon.
+///
+/// Uses a thread-local buffer to avoid allocating a new Vec on every call.
+/// The buffer lives in each rayon thread's TLS and is reused across frames.
+/// We `.clone()` the filled buffer to return owned data to the caller —
+/// this is a single memcpy of known size, cheaper than a heap alloc round-trip.
 fn preprocess_single_crop(img: &RgbImage, rect: &CardRect) -> Vec<f32> {
     let crop = image::imageops::crop_imm(img, rect.left, rect.top, rect.w, rect.h).to_image();
     let resized = image::imageops::resize(&crop, 224, 224, FilterType::Triangle);
 
-    let mut buf = vec![0.0f32; 3 * 224 * 224];
-    for y in 0..224usize {
-        for x in 0..224usize {
-            let pixel = resized.get_pixel(x as u32, y as u32);
-            for c in 0..3usize {
-                let val = pixel[c] as f32 / 255.0;
-                // CHW layout: channel * (224*224) + y * 224 + x
-                buf[c * (224 * 224) + y * 224 + x] = (val - MEAN[c]) / STD[c];
+    CROP_BUF.with(|cell| {
+        let mut buf = cell.borrow_mut();
+        for y in 0..224usize {
+            for x in 0..224usize {
+                let pixel = resized.get_pixel(x as u32, y as u32);
+                for c in 0..3usize {
+                    let val = pixel[c] as f32 / 255.0;
+                    // CHW layout: channel * (224*224) + y * 224 + x
+                    buf[c * (224 * 224) + y * 224 + x] = (val - MEAN[c]) / STD[c];
+                }
             }
         }
-    }
-    buf
+        buf.clone() // copy data out; the buffer stays in TLS for the next crop
+    })
 }
 
 /// Preprocess all 5 card crops **in parallel** using rayon, then stack them into
@@ -233,8 +281,11 @@ fn draw_card_overlay(
 // ─── MAIN ──────────────────────────────────────────────────────────────────────
 
 fn main() -> Result<()> {
+    let args = Args::parse();
+
     // --- Load class names ---
-    let raw = fs::read_to_string(CLASS_PATH).context("Failed to read classes.json")?;
+    let raw = fs::read_to_string(&args.classes)
+        .with_context(|| format!("Failed to read class names from: {}", args.classes))?;
     let class_names_raw: Vec<String> = serde_json::from_str(&raw)?;
     let class_names: Vec<String> = class_names_raw
         .iter()
@@ -244,10 +295,12 @@ fn main() -> Result<()> {
 
     // --- Load ONNX model with CoreML (Apple Neural Engine) ---
     // Read model bytes into memory to avoid path issues with CoreML + external data files
-    let model_bytes = std::fs::read(MODEL_PATH)
-        .context("Cannot read model file — make sure checkpoints/best_model.onnx exists")?;
+    let model_bytes = std::fs::read(&args.model)
+        .with_context(|| format!("Cannot read model file: {}", args.model))?;
 
-    let mut session = Session::builder()
+    // `session` is immutable: Session::run() takes &self, not &mut self.
+    // The model weights and execution graph don't change between inference calls.
+    let session = Session::builder()
         .map_err(|e| anyhow::anyhow!("{e}"))?
         .with_intra_threads(4)
         .map_err(|e| anyhow::anyhow!("{e}"))?
@@ -264,9 +317,9 @@ fn main() -> Result<()> {
     println!("🧠 Model loaded (CoreML/ANE will be used if available, CPU fallback otherwise)");
 
     // --- Open video ---
-    let mut cap = VideoCapture::from_file(VIDEO_PATH, videoio::CAP_ANY)?;
+    let mut cap = VideoCapture::from_file(&args.video, videoio::CAP_ANY)?;
     if !cap.is_opened()? {
-        anyhow::bail!("Cannot open video: {}", VIDEO_PATH);
+        anyhow::bail!("Cannot open video: {}", args.video);
     }
 
     let fps = cap.get(videoio::CAP_PROP_FPS)?;
@@ -287,7 +340,7 @@ fn main() -> Result<()> {
 
     // --- Open writer ---
     let fourcc = VideoWriter::fourcc('m', 'p', '4', 'v')?;
-    let mut out = VideoWriter::new(OUTPUT_PATH, fourcc, fps, Size::new(width, height), true)?;
+    let mut out = VideoWriter::new(&args.output, fourcc, fps, Size::new(width, height), true)?;
     if !out.is_opened()? {
         anyhow::bail!("Cannot open output video writer");
     }
@@ -357,6 +410,6 @@ fn main() -> Result<()> {
     }
 
     pb.finish_with_message("Done!");
-    println!("\n✅ Export Complete: {}", OUTPUT_PATH);
+    println!("\n✅ Export Complete: {}", args.output);
     Ok(())
 }

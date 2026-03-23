@@ -83,6 +83,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <h1>Real-time card classification pipeline</h1>
 <p class="subtitle">Rust + ONNX Runtime + CoreML/ANE — batched inference and stateful gatekeeper for Clash Royale hand tracking</p>
+<p style="font-size: 0.85rem; color: var(--fg3); margin-bottom: 1.5rem;">Source: <a href="https://github.com/nguiaSoren/clash-royale-suite/tree/main/cr-perception/card-classifier/rust-inference-pipeline/src" style="color: var(--accent);"><code>cr-perception/card-classifier/rust-inference-pipeline/src</code></a></p>
 
 <p>A high-performance video inference pipeline that classifies the 5 cards in a Clash Royale player's hand in real-time. Originally prototyped in Python (PyTorch + OpenCV), then <b>rewritten from scratch in Rust</b> to maximize throughput through systems-level optimizations: batched ONNX inference, parallel preprocessing via Rayon, and hardware-accelerated execution on Apple's Neural Engine via CoreML.</p>
 

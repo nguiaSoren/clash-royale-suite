@@ -21,3 +21,4 @@ image = "0.25"
 indicatif = "0.17"
 rayon = "1.10"
 anyhow = "1"
+clap = { version = "4", features = ["derive"] }

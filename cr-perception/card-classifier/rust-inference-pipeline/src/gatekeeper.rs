@@ -1,4 +1,5 @@
 use anyhow::{Context, Result};
+use clap::Parser;
 use image::{imageops::FilterType, RgbImage};
 use indicatif::{ProgressBar, ProgressStyle};
 use ndarray::Array4;
@@ -11,14 +12,45 @@ use opencv::{
 use ort::session::Session;
 use ort::value::Tensor;
 use rayon::prelude::*;
+use std::cell::RefCell;
 use std::fs;
 
-// ─── CONFIG ────────────────────────────────────────────────────────────────────
+// ─── THREAD-LOCAL PREPROCESS BUFFER ────────────────────────────────────────────
+//
+// Each rayon worker thread gets its own 588 KB buffer (3×224×224 floats) via
+// thread-local storage (TLS). Allocated once on first use, reused every frame.
+// See batch.rs for a detailed explanation of why this matters.
+thread_local! {
+    static CROP_BUF: RefCell<Vec<f32>> = RefCell::new(vec![0.0f32; 3 * 224 * 224]);
+}
 
-const VIDEO_PATH: &str = "/Users/soren/Desktop/Clash Royale/Hand Card/Clash royale game.MOV";
-const OUTPUT_PATH: &str = "tracked_clash_gameplay.mp4";
-const MODEL_PATH: &str = "checkpoints/best_model.onnx";
-const CLASS_PATH: &str = "checkpoints/classes.json";
+// ─── CLI ───────────────────────────────────────────────────────────────────────
+
+/// Clash Royale card classifier with Gatekeeper optimization.
+/// Locks high-confidence slots and skips inference until pixels change.
+///
+/// Usage:
+///   cargo run --release --bin gatekeeper -- --video input.mov
+///   cargo run --release --bin gatekeeper -- --video input.mov --output out.mp4
+#[derive(Parser, Debug)]
+#[command(name = "cr-gatekeeper")]
+struct Args {
+    /// Path to the input video file
+    #[arg(short, long)]
+    video: String,
+
+    /// Path to the output annotated video [default: tracked_clash_gameplay.mp4]
+    #[arg(short, long, default_value = "tracked_clash_gameplay.mp4")]
+    output: String,
+
+    /// Path to the ONNX model checkpoint [default: checkpoints/best_model.onnx]
+    #[arg(short, long, default_value = "checkpoints/best_model.onnx")]
+    model: String,
+
+    /// Path to the class names JSON file [default: checkpoints/classes.json]
+    #[arg(short, long, default_value = "checkpoints/classes.json")]
+    classes: String,
+}
 
 const NUM_CARDS: usize = 5;
 
@@ -148,17 +180,19 @@ fn preprocess_single_crop(img: &RgbImage, rect: &CardRect) -> Vec<f32> {
     let crop = image::imageops::crop_imm(img, rect.left, rect.top, rect.w, rect.h).to_image();
     let resized = image::imageops::resize(&crop, 224, 224, FilterType::Triangle);
 
-    let mut buf = vec![0.0f32; 3 * 224 * 224];
-    for y in 0..224usize {
-        for x in 0..224usize {
-            let pixel = resized.get_pixel(x as u32, y as u32);
-            for c in 0..3usize {
-                let val = pixel[c] as f32 / 255.0;
-                buf[c * (224 * 224) + y * 224 + x] = (val - MEAN[c]) / STD[c];
+    CROP_BUF.with(|cell| {
+        let mut buf = cell.borrow_mut();
+        for y in 0..224usize {
+            for x in 0..224usize {
+                let pixel = resized.get_pixel(x as u32, y as u32);
+                for c in 0..3usize {
+                    let val = pixel[c] as f32 / 255.0;
+                    buf[c * (224 * 224) + y * 224 + x] = (val - MEAN[c]) / STD[c];
+                }
             }
         }
-    }
-    buf
+        buf.clone() // copy data out; the buffer stays in TLS for the next crop
+    })
 }
 
 /// Preprocess only the *unlocked* slots in parallel, returning a batch tensor
@@ -325,8 +359,11 @@ fn draw_card_overlay(
 // ─── MAIN ──────────────────────────────────────────────────────────────────────
 
 fn main() -> Result<()> {
+    let args = Args::parse();
+
     // --- Load class names ---
-    let raw = fs::read_to_string(CLASS_PATH).context("Failed to read classes.json")?;
+    let raw = fs::read_to_string(&args.classes)
+        .with_context(|| format!("Failed to read class names from: {}", args.classes))?;
     let class_names_raw: Vec<String> = serde_json::from_str(&raw)?;
     let class_names: Vec<String> = class_names_raw
         .iter()
@@ -335,10 +372,11 @@ fn main() -> Result<()> {
     let num_classes = class_names.len();
 
     // --- Load ONNX model with CoreML (Apple Neural Engine) ---
-    let model_bytes = std::fs::read(MODEL_PATH)
-        .context("Cannot read model file — make sure checkpoints/best_model.onnx exists")?;
+    let model_bytes = std::fs::read(&args.model)
+        .with_context(|| format!("Cannot read model file: {}", args.model))?;
 
-    let mut session = Session::builder()
+    // `session` is immutable: Session::run() takes &self, not &mut self.
+    let session = Session::builder()
         .map_err(|e| anyhow::anyhow!("{e}"))?
         .with_intra_threads(4)
         .map_err(|e| anyhow::anyhow!("{e}"))?
@@ -355,9 +393,9 @@ fn main() -> Result<()> {
     println!("🧠 Model loaded (CoreML/ANE will be used if available, CPU fallback otherwise)");
 
     // --- Open video ---
-    let mut cap = VideoCapture::from_file(VIDEO_PATH, videoio::CAP_ANY)?;
+    let mut cap = VideoCapture::from_file(&args.video, videoio::CAP_ANY)?;
     if !cap.is_opened()? {
-        anyhow::bail!("Cannot open video: {}", VIDEO_PATH);
+        anyhow::bail!("Cannot open video: {}", args.video);
     }
 
     let fps = cap.get(videoio::CAP_PROP_FPS)?;
@@ -376,7 +414,7 @@ fn main() -> Result<()> {
     });
 
     let fourcc = VideoWriter::fourcc('m', 'p', '4', 'v')?;
-    let mut out = VideoWriter::new(OUTPUT_PATH, fourcc, fps, Size::new(width, height), true)?;
+    let mut out = VideoWriter::new(&args.output, fourcc, fps, Size::new(width, height), true)?;
     if !out.is_opened()? {
         anyhow::bail!("Cannot open output video writer");
     }
@@ -506,6 +544,6 @@ fn main() -> Result<()> {
     println!("│  Inferences skipped:    {:>14}  │", inferences_skipped);
     println!("│  Skip rate:             {:>13.1}%  │", skip_rate);
     println!("└─────────────────────────────────────────┘");
-    println!("\n✅ Export Complete: {}", OUTPUT_PATH);
+    println!("\n✅ Export Complete: {}", args.output);
     Ok(())
 }

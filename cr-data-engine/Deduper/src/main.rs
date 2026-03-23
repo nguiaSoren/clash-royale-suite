@@ -32,7 +32,6 @@ struct DeviceLayout {
 // 2. CROPPING & LAYOUT LOGIC
 // ==========================================
 
-// --- RESUME TIE-IN: "Engineered a high-speed data processing engine..." ---
 // Part of building a robust engine is making it dynamic. Instead of hardcoding 
 // pixel values that break on different devices, this calculates the aspect ratio 
 // and maps precise percentages. It makes the engine scalable across mixed datasets.
@@ -84,10 +83,9 @@ fn process_frame(frame: &DynamicImage) -> [[u8; 3]; 5] {
         let abs_w = (card_box.w_pct * width as f32) as u32;
         let abs_h = (card_box.h_pct * height as f32) as u32;
 
-        // --- RESUME TIE-IN: "...through optimized I/O..." (RAM Optimization) ---
         // 'crop_imm' creates a zero-copy immutable view into the original image memory.
-        // Standard Python libraries allocate brand new memory for every single crop. 
-        // This zero-copy approach prevents massive RAM thrashing across 430k frames.
+        // We then call `.to_rgb8()` to convert it into a typed, contiguous buffer for
+        // fast iteration — this is cheaper than per-pixel dynamic dispatch on DynamicImage.
         let cropped_view = frame.crop_imm(abs_x, abs_y, abs_w, abs_h);
         colors[index] = get_average_color(&cropped_view.to_rgb8());
     }
@@ -98,7 +96,6 @@ fn process_frame(frame: &DynamicImage) -> [[u8; 3]; 5] {
 // ==========================================
 // 3. COLOR MATH (THE "FAST PATH")
 // ==========================================
-// --- RESUME TIE-IN: "...perform bit-level deduplication..." ---
 // Instead of relying on metadata or heavy computer vision models, we iterate 
 // directly over the raw binary byte array of the RGB channels.
 
@@ -130,7 +127,6 @@ fn are_colors_similar(color_a: [u8; 3], color_b: [u8; 3], threshold: u8) -> bool
 // 4. THE PARALLEL PIPELINE
 // ==========================================
 
-// --- RESUME TIE-IN: "...achieving a 10x performance increase... and multi-threading." ---
 // Python is bottlenecked by the GIL (Global Interpreter Lock). Rust's Rayon crate 
 // (.par_iter) unleashes a "work-stealing" algorithm across every physical and logical core. 
 // While one thread waits for the SSD, another is doing pixel math, keeping CPU usage at 100%.
@@ -158,7 +154,6 @@ fn extract_features_parallel(file_paths: &[PathBuf]) -> Vec<FrameData> {
     processed_frames
 }
 
-// --- RESUME TIE-IN: "...and temporal redundancy filtering..." ---
 // The engine explicitly looks for frames that are redundant in the timeline. 
 // By comparing N to N-1, we filter out localized duplicates (like waiting for elixir) 
 // without destroying distinct identical frames that might occur minutes apart.
@@ -171,6 +166,10 @@ fn filter_temporal_redundancy(frames: Vec<FrameData>, threshold: u8) -> Vec<usiz
         let curr_frame = &frames[i];
         let mut is_duplicate = true;
 
+        // Early-exit short-circuit: if card slot 1 already differs beyond threshold,
+        // we skip slots 2–5 entirely. This is faster than accumulating a total distance
+        // across all slots, because most consecutive frame pairs in gameplay footage
+        // differ on at least one card and bail out immediately.
         for card_idx in 0..5 {
             if !are_colors_similar(prev_frame.card_colors[card_idx], curr_frame.card_colors[card_idx], threshold) {
                 is_duplicate = false;
@@ -191,8 +190,10 @@ fn main() {
     let start_time = Instant::now();
 
     // 1. Define input and output base directories
-    let input_dir_str = "/Volumes/Extreme SSD/Clash royale";
-    let input_dir = Path::new(input_dir_str);
+    let input_dir_str = std::env::args()
+        .nth(1)
+        .expect("Usage: clash_deduper <input_directory>");
+    let input_dir = Path::new(&input_dir_str);
     
     // Automatically creates "path_cleaned"
     let output_dir_str = format!("{}_cleaned", input_dir_str);
@@ -200,7 +201,7 @@ fn main() {
 
     println!("Scanning directory tree at: {:?}", input_dir);
 
-    // --- RESUME TIE-IN: "...on a 430,000-frame dataset..." ---
+
     // A dataset this large spans dozens of folders. WalkDir recursively crawls 
     // the directory tree. We map the frames to their specific parent folders so 
     // the temporal filter only compares frames within the same specific video file.
@@ -258,7 +259,6 @@ fn main() {
                     let _ = fs::create_dir_all(parent);
                 }
 
-                // --- RESUME TIE-IN: "...through optimized I/O..." (Disk Optimization) ---
                 // We bypass the CPU re-encoding the JPEG. We issue a direct OS-level call
                 // to duplicate the raw binary blob on the disk, operating at maximum SSD speed.
                 if let Err(e) = fs::copy(original_path, &new_path) {

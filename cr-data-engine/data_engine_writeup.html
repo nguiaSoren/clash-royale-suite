@@ -73,6 +73,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <h1>High-throughput temporal deduplication engine</h1>
 <p class="subtitle">Rust — multi-threaded batch processing for large-scale CV dataset sanitization</p>
+<p style="font-size: 0.85rem; color: var(--fg3); margin-bottom: 1.5rem;">Source: <a href="https://github.com/nguiaSoren/clash-royale-suite/blob/main/cr-data-engine/Deduper/src/main.rs" style="color: var(--accent);"><code>cr-data-engine/Deduper/src/main.rs</code></a></p>
 
 <p>A data processing engine written in Rust that eliminates temporal redundancy from massive video-frame datasets. Raw gameplay footage produces hundreds of thousands of frames, but consecutive frames where the card hand hasn't changed are identical from a training perspective — they add storage cost and training noise without adding information. This engine identifies and removes those duplicates at <b>221 FPS</b> across 440,000 frames.</p>
 
@@ -245,7 +246,7 @@ cargo build --release
 # Run the deduplication engine
 cargo run --release</code></pre>
 
-<p>Configure input/output paths at the top of <code>src/main.rs</code>. The engine creates a <code>{input_dir}_cleaned/</code> output directory automatically, preserving the full subfolder structure.</p>
+<p>Configure input/output paths at the top of <a href="https://github.com/nguiaSoren/clash-royale-suite/blob/main/cr-data-engine/Deduper/src/main.rs" style="color: var(--accent);"><code>src/main.rs</code></a>. The engine creates a <code>{input_dir}_cleaned/</code> output directory automatically, preserving the full subfolder structure.</p>
 
 <hr>
 <p style="font-size: 0.82rem; color: var(--fg3);">Part of <a href="https://github.com/nguiaSoren/clash-royale-suite" style="color: var(--accent);">clash-royale-suite</a> — the data-centric AI core responsible for dataset sanitization, super-resolution upscaling (Real-ESRGAN), and multi-stage augmentation.</p>
