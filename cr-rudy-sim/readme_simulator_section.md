@@ -2,7 +2,7 @@
 
 ### Deterministic Multi-Agent Simulator
 
-![Simulator Architecture](cr-rudy-sim/simulator/simulator_architecture.svg)
+![Simulator Architecture](cr-rudy-sim/simulator_architecture.svg)
 
 A tick-deterministic, integer-only combat simulation engine in Rust, modeling 125+ heterogeneous agent types from 8 data-driven JSON definitions. Exposes a Python API via PyO3 for AI agent integration, replay recording, and RL training pipelines.
 
