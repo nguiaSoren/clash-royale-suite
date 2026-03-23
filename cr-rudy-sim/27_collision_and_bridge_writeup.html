@@ -68,7 +68,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 <h1>Troop collision separation &amp; bridge pathfinding</h1>
 <p class="subtitle">Clash Royale Simulator — technical writeup for engine fixes in <code>combat.rs</code></p>
 
-<p>This is a deterministic multi-agent combat simulator written in Rust — tick-level precision, integer arithmetic, fully reproducible. Built as practice for Digital Twin and autonomous systems work: the collision steering and graph-based pathfinding directly mirror challenges in V2X coordination and swarm navigation. The following documents two engine-level bugs I diagnosed and fixed in the collision and pathfinding systems.</p>
+<p>This is a deterministic multi-agent combat simulator written in Rust — tick-level precision, integer arithmetic, fully reproducible. Built as practice for autonomous systems work: the collision steering and graph-based pathfinding directly mirror challenges in multi-agent coordination and swarm navigation. The following documents two engine-level bugs I diagnosed and fixed in the collision and pathfinding systems.</p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <h2>1. The collision stacking problem <span class="tag tag-bug">bug</span></h2>
@@ -418,19 +418,19 @@ tick &nbsp; A_x &nbsp;&nbsp;&nbsp; A_y &nbsp;&nbsp;&nbsp; B_x &nbsp;&nbsp;&nbsp;
   <!-- Left path totals -->
   <rect x="40" y="370" width="340" height="90" rx="8" fill="var(--green-fill)" stroke="var(--green-stroke)" stroke-width="0.5"/>
   <text x="210" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="var(--green-text)">Left route (via graph nodes)</text>
-  <text x="56" y="412" font-size="10" fill="var(--green-text)">Leg 1: Knight → BRIDGE_L_P1 &nbsp; ‖(100,−5000)→(−5100,−1200)‖ = 6,360</text>
+  <text x="56" y="412" font-size="10" fill="var(--green-text)">Leg 1: Knight → BRIDGE_L_P1 &nbsp; ‖(100,−5000)→(−5100,−1200)‖ = 6,440</text>
   <text x="56" y="428" font-size="10" fill="var(--green-text)">Leg 2: BRIDGE_L_P1 → BRIDGE_L_P2 &nbsp; ‖(−5100,−1200)→(−5100,1200)‖ = 2,400</text>
   <text x="56" y="444" font-size="10" fill="var(--green-text)">Leg 3: BRIDGE_L_P2 → TARGET &nbsp; ‖(−5100,1200)→(−5100,10200)‖ = 9,000</text>
 
   <rect x="400" y="370" width="320" height="90" rx="8" fill="var(--coral-fill)" stroke="var(--coral-stroke)" stroke-width="0.5"/>
   <text x="560" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="var(--coral-text)">Right route (via graph nodes)</text>
-  <text x="416" y="412" font-size="10" fill="var(--coral-text)">Leg 1: Knight → BRIDGE_R_P1 &nbsp;= 5,950</text>
+  <text x="416" y="412" font-size="10" fill="var(--coral-text)">Leg 1: Knight → BRIDGE_R_P1 &nbsp;= 6,280</text>
   <text x="416" y="428" font-size="10" fill="var(--coral-text)">Leg 2: BRIDGE_R_P1 → BRIDGE_R_P2 &nbsp;= 2,400</text>
-  <text x="416" y="444" font-size="10" fill="var(--coral-text)">Leg 3: BRIDGE_R_P2 → TARGET &nbsp;= 13,600</text>
+  <text x="416" y="444" font-size="10" fill="var(--coral-text)">Leg 3: BRIDGE_R_P2 → TARGET &nbsp;= 13,603</text>
 
   <!-- Totals -->
-  <text x="210" y="466" text-anchor="middle" font-size="11" font-weight="600" fill="var(--success)">Total: 17,760 ✓ shorter</text>
-  <text x="560" y="466" text-anchor="middle" font-size="11" font-weight="600" fill="var(--danger)">Total: 21,950 ✗</text>
+  <text x="210" y="466" text-anchor="middle" font-size="11" font-weight="600" fill="var(--success)">Total: 17,840 ✓ shorter</text>
+  <text x="560" y="466" text-anchor="middle" font-size="11" font-weight="600" fill="var(--danger)">Total: 22,283 ✗</text>
 </svg>
 <div class="diagram-caption">Figure 6 — Graph traversal trace: each route sums 3 legs through explicit graph nodes. The left route wins; the knight walks toward BRIDGE_L_P1 this tick.</div>
 </div>

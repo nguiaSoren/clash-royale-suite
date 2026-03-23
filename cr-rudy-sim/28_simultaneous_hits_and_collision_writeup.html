@@ -68,12 +68,12 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 <h1>Simultaneous hit resolution &amp; N-body collision convergence</h1>
 <p class="subtitle">Clash Royale Simulator — system-level invariant verification for two engine subsystems</p>
 
-<p><strong>This is a deterministic multi-agent combat simulator written in Rust</strong> — 20 ticks per second, integer-only arithmetic, fully reproducible bit-for-bit. Built as practice for distributed systems, multi-agent simulation, and Digital Twin research, this document focuses on two system-level invariants I stress-tested with 100× reproducibility: <b>simultaneous hit resolution</b> (proving that symmetric agents trade damage on the exact same tick — the distributed consensus problem of "who goes first") and <b>N-body collision convergence to stable separation</b> (proving that N overlapping agents reach equilibrium spacing — the swarm formation problem). These mirror exactly the challenges of concurrent event ordering in distributed V2X systems and multi-robot formation control in cloud-native edge deployments.</p>
+<p><strong>This is a deterministic multi-agent combat simulator written in Rust</strong> — 20 ticks per second, integer-only arithmetic, fully reproducible bit-for-bit. Built as practice for distributed systems and multi-agent simulation research, this document focuses on two system-level invariants I stress-tested with 100× reproducibility: <b>simultaneous hit resolution</b> (proving that symmetric agents trade damage on the exact same tick — the distributed consensus problem of "who goes first") and <b>N-body collision convergence to stable separation</b> (proving that N overlapping agents reach equilibrium spacing — the swarm formation problem). These mirror exactly the challenges of concurrent event ordering in distributed systems and multi-robot formation control in cloud-native edge deployments.</p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <h2>1. The simultaneous hit problem <span class="tag tag-data">data-driven</span></h2>
 
-<p>When two identical agents face each other at equal distance, both enter attack windup on the same tick. The question: does the engine resolve both hits on the same tick (mutual trade), or does iteration order cause one to die before dealing its hit? This is the <b>distributed conflict resolution</b> problem — identical to two V2X nodes transmitting simultaneously.</p>
+<p>When two identical agents face each other at equal distance, both enter attack windup on the same tick. The question: does the engine resolve both hits on the same tick (mutual trade), or does iteration order cause one to die before dealing its hit? This is the <b>distributed conflict resolution</b> problem — identical to two nodes transmitting simultaneously.</p>
 
 <h3>Data model (Knight, tournament standard level 11)</h3>
 
@@ -229,7 +229,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 <div class="eq">tick_combat: ∀ entity → advance_phase(entity) → collect_hits()</div>
 <div class="eq">then: ∀ hit ∈ collected → apply_damage(hit.target, hit.amount)</div>
 
-<p>This is the <b>synchronous update</b> pattern — identical to how distributed Digital Twin simulations handle concurrent state mutations. All agents observe the <i>previous tick's state</i>, compute their actions, and commit simultaneously.</p>
+<p>This is the <b>synchronous update</b> pattern — identical to how distributed simulations handle concurrent state mutations. All agents observe the <i>previous tick's state</i>, compute their actions, and commit simultaneously.</p>
 
 <h3>Determinism proof: 100× identical outcomes</h3>
 

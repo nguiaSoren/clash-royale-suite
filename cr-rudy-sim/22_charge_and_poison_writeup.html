@@ -67,7 +67,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <h1>Distance-triggered charge &amp; pulsed poison modeling</h1>
 <p class="subtitle">Clash Royale Simulator — data-driven fidelity verification for two combat subsystems</p>
-<p><strong>This is a deterministic multi-agent combat simulator written in Rust</strong> — 20 ticks per second, integer-only arithmetic, fully reproducible bit-for-bit. Built to sharpen skills directly applicable to Digital Twin, autonomous systems, and multi-agent simulation research, this document focuses on two subtle real-world mechanics I reverse-engineered with tick-level precision: <b>distance-triggered charge attacks</b> (step-function acceleration after walking a threshold) and <b>pulsed damage-over-time with simultaneous movement debuff</b> (like environmental hazards in V2X scenarios). These mirror exactly the challenges of modeling dynamic vehicle acceleration, road-condition speed penalties, and periodic sensor-triggered effects in swarm coordination and smart-city Digital Twins.</p>
+<p><strong>This is a deterministic multi-agent combat simulator written in Rust</strong> — 20 ticks per second, integer-only arithmetic, fully reproducible bit-for-bit. Built to sharpen skills directly applicable to autonomous systems and multi-agent simulation research, this document focuses on two subtle real-world mechanics I reverse-engineered with tick-level precision: <b>distance-triggered charge attacks</b> (step-function acceleration after walking a threshold) and <b>pulsed damage-over-time with simultaneous movement debuff</b> (like environmental hazards in multi-agent scenarios). These mirror exactly the challenges of modeling dynamic vehicle acceleration, road-condition speed penalties, and periodic sensor-triggered effects in swarm coordination.</p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <h2>1. Distance-triggered charge model <span class="tag tag-data">data-driven</span></h2>
@@ -349,7 +349,7 @@ First hit at tick 97: −1254 HP (exact 2× of 627). Subsequent hits: 627 (norma
 
 <h3>Pulsed DOT mechanism</h3>
 
-<p>The damage does <b>not</b> fire every tick. A <code>damage_hit_timer</code> counts down from the pulse interval (5 ticks / 250 ms). When it reaches 0, one pulse of damage fires and the timer resets. The spell zone reapplies the buff every pulse, and because <code>enable_stacking=True</code>, multiple buff instances stack — compounding the speed debuff over time.</p>
+<p>The damage does <b>not</b> fire every tick. A <code>damage_hit_timer</code> counts down from the pulse interval (5 ticks / 250 ms). When it reaches 0, one pulse of damage fires and the timer resets. The spell zone reapplies the buff every pulse, and because <code>enable_stacking=True</code>, multiple buff instances stack — accumulating the speed debuff over time.</p>
 
 <div class="eq">damage_per_pulse = 57 HP (from buff <code>damage_per_second</code>)</div>
 <div class="eq">pulse_interval = 5 ticks (250 ms, from spell <code>hit_speed</code>)</div>
@@ -412,31 +412,65 @@ First hit at tick 97: −1254 HP (exact 2× of 627). Subsequent hits: 627 (norma
   <line x1="592" y1="20" x2="592" y2="196" stroke="var(--fg3)" stroke-width="1" stroke-dasharray="4 3"/>
   <text x="600" y="16" font-size="9" fill="var(--fg3)">t=160</text>
 
-  <!-- ═══ BOTTOM CHART: Speed ═══ -->
+  <!-- ═══ BOTTOM CHART: Speed staircase (additive stacking) ═══ -->
   <line x1="80" y1="440" x2="720" y2="440" stroke="var(--fg3)" stroke-width="1"/>
   <line x1="80" y1="440" x2="80" y2="260" stroke="var(--fg3)" stroke-width="1"/>
   <text x="400" y="472" text-anchor="middle" font-size="12" fill="var(--fg2)">Tick (1 tick = 50 ms, 20 ticks = 1 second)</text>
   <text x="30" y="350" text-anchor="middle" font-size="11" fill="var(--fg2)" transform="rotate(-90 30 350)">Speed (u/tick)</text>
 
-  <!-- Y labels -->
-  <text x="72" y="290" text-anchor="end" font-size="10" fill="var(--fg3)">12.0</text>
-  <text x="72" y="364" text-anchor="end" font-size="10" fill="var(--fg3)">10.2</text>
-  <text x="72" y="440" text-anchor="end" font-size="10" fill="var(--fg3)">0</text>
+  <!-- Y labels (0 to 19 u/tick, 1 u/tick = 9px, base y=440) -->
+  <text x="72" y="273" text-anchor="end" font-size="10" fill="var(--fg3)">19</text>
+  <text x="72" y="300" text-anchor="end" font-size="10" fill="var(--fg3)">16</text>
+  <text x="72" y="327" text-anchor="end" font-size="10" fill="var(--fg3)">13</text>
+  <text x="72" y="354" text-anchor="end" font-size="10" fill="var(--fg3)">10</text>
+  <text x="72" y="381" text-anchor="end" font-size="10" fill="var(--fg3)">7</text>
+  <text x="72" y="444" text-anchor="end" font-size="10" fill="var(--fg3)">0</text>
 
   <!-- Normal baseline -->
-  <line x1="80" y1="290" x2="720" y2="290" stroke="var(--fg3)" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="700" y="284" text-anchor="end" font-size="9" fill="var(--fg3)">normal: 12.0</text>
+  <line x1="80" y1="269" x2="720" y2="269" stroke="var(--fg3)" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="700" y="264" text-anchor="end" font-size="9" fill="var(--fg3)">normal: 19</text>
+
+  <!-- Y gridlines for stack levels -->
+  <line x1="80" y1="296" x2="720" y2="296" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2 3"/>
+  <line x1="80" y1="323" x2="720" y2="323" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2 3"/>
+  <line x1="80" y1="350" x2="720" y2="350" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2 3"/>
+  <line x1="80" y1="377" x2="720" y2="377" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <!-- Speed zone active region -->
   <rect x="80" y="260" width="512" height="180" fill="var(--blue-fill)" opacity="0.25"/>
 
-  <!-- Speed line -->
-  <polyline points="80,290 83,364 592,364 595,290 720,290" fill="none" stroke="var(--blue-stroke)" stroke-width="2.5"/>
+  <!-- Speed staircase: ramp down as stacks accumulate, ramp up as they expire -->
+  <!-- Additive: speed = base × (100 − 15×stacks) / 100 -->
+  <!-- Stacks arrive every 5 ticks starting at tick ~20, each lasts 20 ticks -->
+  <!-- Ramp down: t20→16, t25→13, t30→10, t35→7 -->
+  <!-- Steady: 7 u/tick from t35 to ~t135 -->
+  <!-- Ramp up: t135→10, t140→13, t145→16, t150→19 -->
+  <polyline points="
+    80,269
+    144,269 144,296
+    160,296 160,323
+    176,323 176,350
+    192,350 192,377
+    512,377 512,350
+    528,350 528,323
+    544,323 544,296
+    560,296 560,269
+    720,269
+  " fill="none" stroke="var(--blue-stroke)" stroke-width="2.5"/>
 
-  <!-- Slow label -->
-  <rect x="260" y="375" width="200" height="42" rx="6" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
-  <text x="360" y="393" text-anchor="middle" font-size="11" font-weight="600" fill="var(--blue-text)">−15% speed debuff</text>
-  <text x="360" y="409" text-anchor="middle" font-size="10" fill="var(--blue-text)">12.0 → 10.2 u/tick (measured)</text>
+  <!-- Stack count labels on the steps -->
+  <text x="152" y="290" text-anchor="middle" font-size="8" fill="var(--blue-text)">1×</text>
+  <text x="168" y="317" text-anchor="middle" font-size="8" fill="var(--blue-text)">2×</text>
+  <text x="184" y="344" text-anchor="middle" font-size="8" fill="var(--blue-text)">3×</text>
+
+  <!-- Steady-state annotation -->
+  <rect x="280" y="387" width="180" height="42" rx="6" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+  <text x="370" y="403" text-anchor="middle" font-size="10" font-weight="600" fill="var(--blue-text)">4× stacks (steady state)</text>
+  <text x="370" y="419" text-anchor="middle" font-size="10" fill="var(--blue-text)">19 × 40% = 7 u/tick</text>
+
+  <!-- Ramp labels -->
+  <text x="168" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="var(--amber-text)">ramp ↓</text>
+  <text x="536" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="var(--amber-text)">ramp ↑</text>
 
   <!-- X ticks shared -->
   <text x="80" y="456" text-anchor="middle" font-size="10" fill="var(--fg3)">0</text>
@@ -448,7 +482,7 @@ First hit at tick 97: −1254 HP (exact 2× of 627). Subsequent hits: 627 (norma
   <!-- Expiry line -->
   <line x1="592" y1="260" x2="592" y2="445" stroke="var(--fg3)" stroke-width="1" stroke-dasharray="4 3"/>
 </svg>
-<div class="diagram-caption">Figure 4 — Dual-effect timeline over 200 ticks. Top: HP staircase with 8 DOT pulses (57 HP each). Bottom: speed drops to 85% of normal for the zone's duration (160 ticks). Both effects expire simultaneously.</div>
+<div class="diagram-caption">Figure 4 — Dual-effect timeline over 200 ticks. Top: HP staircase with 8 DOT pulses (57 HP each). Bottom: speed staircase as buff stacks accumulate additively (19 → 16 → 13 → 10 → 7 u/tick), hold at steady state, then ramp back up symmetrically as stacks expire.</div>
 </div>
 
 <h3>Buff-based architecture</h3>
@@ -533,13 +567,13 @@ if buff.damage_hit_interval > 0 {
 <b>DOT:</b> 26 pulses × 57 HP = 1,482 total. Interval: 5 ticks (250 ms). First pulse at relative tick ~20.<br>
 <b>Speed debuff (stacking):</b><br>
 &nbsp; Baseline: 19 u/tick → tick 30: 20 → tick 35: 16 → tick 40: 13 → tick 45: 10 → tick 50: 7 (fully stacked)<br>
-&nbsp; During poison: 7 u/tick (stable) — 4 concurrent −15% stacks = 0.85⁴ ≈ 63% reduction<br>
+&nbsp; During poison: 7 u/tick (stable) — 4 concurrent −15% stacks = (100 − 4×15) = 40% of base → 60% reduction<br>
 &nbsp; Recovery: tick 160: 7 → 165: 10 → 170: 13 → 175: 16 → 180: 19 (full recovery ✓)<br>
 &nbsp; The ramp-down mirrors the ramp-up exactly — each step is one buff stack applying or expiring.
 </div>
 <div class="result-block result-pass">PASS — Pulsed DOT (not per-tick) ✓ &nbsp; All pulses = 57 HP ✓ &nbsp; Speed debuff active ✓ &nbsp; Speed recovers after expiry ✓</div>
 
-<div class="note"><b>Stacking mechanic:</b> The poison buff has <code>enable_stacking=True</code> with <code>buff_time=1000ms</code> (20 ticks per stack). New stacks are applied every 5 ticks (the pulse interval). Since each stack lasts 20 ticks and a new one arrives every 5, up to 4 stacks overlap at steady state. Each stack applies −15% speed independently: effective speed = base × 0.85⁴ ≈ 0.52 × base. This explains the measured 63% slow (7 u/tick vs 19 baseline) — it's not a single −15% but four stacked −15% debuffs compounding multiplicatively.</div>
+<div class="note"><b>Stacking mechanic:</b> The poison buff has <code>enable_stacking=True</code> with <code>buff_time=1000ms</code> (20 ticks per stack). New stacks are applied every 5 ticks (the pulse interval). Since each stack lasts 20 ticks and a new one arrives every 5, up to 4 stacks overlap at steady state. The engine sums <code>speed_percent</code> from all active buffs additively: effective speed = base × (100 + Σ speed_percent) / 100. With 4 stacks of −15%: speed = base × (100 − 60) / 100 = 40% of base. Measured: 19 × 0.40 = 7.6 → 7 u/tick (integer truncation), matching the observed 60% slow exactly. The measured ramp (19 → 16 → 13 → 10 → 7) decreases by ~3 u/tick per stack — the linear step pattern confirms additive stacking.</div>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <h2>3. Validation results</h2>
@@ -557,7 +591,7 @@ Charge mechanics:
 
 Poison:
   ✓ Pulsed DOT: 26 × 57 HP at 5-tick (250 ms) intervals
-  ✓ Speed debuff: stacking −15% per buff (4 stacks = ~63% total slow)
+  ✓ Speed debuff: stacking −15% per buff (4 stacks = 60% total slow)
   ✓ Speed ramp: 19 → 16 → 13 → 10 → 7 u/tick (one stack per 5-tick pulse)
   ✓ Both slow + DOT active simultaneously during zone lifetime
   ✓ Speed fully recovers after poison expires (7 → 10 → 13 → 16 → 19)
