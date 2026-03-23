@@ -107,9 +107,11 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 - [x] Rust inference pipeline with stateful gatekeeper (22 FPS, 49% inference reduction)
 - [x] Temporal deduplication engine (440K frames, 61% reduction, 221 FPS)
 - [x] Deterministic simulation engine (3K agents, 10K parallel sims, 1,900+ test assertions)
+- [ ] Deck composition model combining card-attribute synergy with top-ladder win-rate data (hierarchical policy prior for self-play)
 - [ ] Self-play RL training at scale (millions of simulated matches via Rayon parallelism)
 - [ ] Imitation learning from top-ladder player replays
 - [ ] Real-time troop/spell localization (YOLOv11)
 - [ ] Strategy evaluation against top-player meta
+- [ ] ECS refactor (hecs/bevy_ecs) — formalize data-driven component architecture for zero-retrain card composition
 
 
