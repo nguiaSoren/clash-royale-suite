@@ -5,12 +5,12 @@ A research-oriented framework combining high-performance systems programming and
 ## 🚀 Key Technical Pillars
 
 * **[High-Performance System Programming (Rust)](https://nguiasoren.github.io/clash-royale-suite/cr-data-engine/data_engine_writeup.html):** Engineered a high-speed data processing engine in **Rust** to perform bit-level deduplication and temporal redundancy filtering on a **440,000-frame dataset**, achieving a 10x performance increase over Python-based alternatives and a 61% dataset reduction through zero-copy memory management and multi-threaded I/O.
-* **Real-Time Neural Perception Pipeline:** Trained **MobileNetV3-Small (97.89% Val Acc, 175 classes)** for card classification in Clash Royale gameplay; rewrote the full video inference pipeline from Python/PyTorch to Rust — replacing per-card sequential inference with batched ONNX Runtime forward passes, parallelizing ROI preprocessing via rayon work-stealing threads, and targeting platform-native acceleration (CoreML/ANE) — achieving ~9ms per-card inference and 22 FPS throughput over 8,702 frames (43K+ classifications).
+* **[Real-Time Neural Perception Pipeline:](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)** For card classification in Clash Royale gameplay; rewrote the full video inference pipeline from Python/PyTorch to Rust — replacing per-card sequential inference with batched ONNX Runtime forward passes, parallelizing ROI preprocessing via rayon work-stealing threads, and targeting platform-native acceleration (CoreML/ANE) — achieving ~9ms per-card inference and 22 FPS throughput over 8,702 frames (43K+ classifications).
 * **[Stateful Inference Gatekeeper:](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)** Architected a per-slot state machine in Rust that pre-filters card slots before downstream inference. Uses sub-microsecond pixel fingerprinting (8×8 sampled grid) to detect visual changes, locking slots at ≥90% classification confidence and skipping inference until pixel divergence is detected — eliminating 49% of inference calls (21K of 43K) across a live match, targeting real-time and cost-constrained deployment scenarios.
-* **Deterministic Simulation Framework:** Engineered a high-throughput real-time simulation engine in Rust deterministic tick loop (20 tps, integer-only arithmetic) modeling 125+ heterogeneous agent types from data-driven JSON definitions. Stress-tested to **3,000 concurrent agents** at 29 ms/tick (within 50 ms real-time budget) on a single M1 Pro core. Measured **10,000 parallel simulation** instances at 23.7 ms batch latency (1.5 μs/instance), demonstrating linear scaling with no cache degradation. Built a full observability pipeline: per-tick state capture at 12 μs overhead, diff-based event reconstruction, and JSON-serializable snapshots for downstream data pipelines. Game domain: Clash Royale combat mechanics.
+* **[Deterministic Simulation Framework:](cr-rudy-sim/simulator/README.md)** Engineered a high-throughput real-time simulation engine in Rust deterministic tick loop (20 tps, integer-only arithmetic) modeling 125+ heterogeneous agent types from data-driven JSON definitions. Stress-tested to **3,000 concurrent agents** at 29 ms/tick (within 50 ms real-time budget) on a single M1 Pro core. Measured **10,000 parallel simulation** instances at 23.7 ms batch latency (1.5 μs/instance), demonstrating linear scaling with no cache degradation. Built a full observability pipeline: per-tick state capture at 12 μs overhead, diff-based event reconstruction, and JSON-serializable snapshots for downstream data pipelines. Game domain: Clash Royale combat mechanics.
 * **Generative Data Engineering:** Utilized **Super-Resolution (Real-ESRGAN)** to enhance low-fidelity API assets to $1200\text{px}$, followed by a 4-stage augmentation pipeline (radial loading, 8-directional occlusion, domain-invariant compositing) to synthesize a **295k+ image training set**.
 
-<!-- ═══ INFERENCE PIPELINE SECTION (paste into your top-level README.md) ═══ -->
+<!-- ═══ INFERENCE PIPELINE SECTION ═══ -->
 
 ### [Real-Time Inference Pipeline →](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)
 
@@ -93,25 +93,20 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 
 ## 📂 Repository Structure
 
-* `cr-perception/`: Hand-card classification and arena unit detection (YOLOv11 integration pending).
-* `cr-data-engine/`: The "Data-Centric AI" core, containing the super-resolution scripts and the 4-stage augmentation suite.
-* `cr-rudy-sim/`: The Rust-based deterministic simulator and logic core.
+* `cr-perception/`: Hand-card classification — MobileNetV3 training, Rust inference pipeline (batch + gatekeeper), ONNX/CoreML deployment.
+* `cr-data-engine/`: Dataset sanitization (Rust temporal deduplication engine), super-resolution upscaling (Real-ESRGAN), 4-stage augmentation suite.
+* `cr-rudy-sim/`: Deterministic Rust simulator — tick engine, PyO3 Python API, 28 test batches, champion/evolution systems.
 * `data/`: (Symlinked/Local) 309GB dataset storage (excluded from VCS via `.gitignore`).
 
-## 📊 Performance Benchmarks
+## 🛠 Roadmap
 
-| Metric | Achievement |
-| :--- | :--- |
-| **Inference Latency** | <10ms (Optimized for Linux/Edge) |
-| **Model Footprint** | ~2.1MB (MobileNetV3-Small) |
-| **Classification Acc** | 97.4% (175 Classes) |
-| **Data Processing** | 10x Speedup via Rust Multi-threading |
+- [x] High-accuracy hand-card state extraction (97.89%, 175 classes)
+- [x] Rust inference pipeline with stateful gatekeeper (22 FPS, 49% inference reduction)
+- [x] Temporal deduplication engine (440K frames, 61% reduction, 221 FPS)
+- [x] Deterministic simulation engine (3K agents, 10K parallel sims, 1,900+ test assertions)
+- [ ] Self-play RL training at scale (millions of simulated matches via Rayon parallelism)
+- [ ] Imitation learning from top-ladder player replays
+- [ ] Real-time troop/spell localization (YOLOv11)
+- [ ] Strategy evaluation against top-player meta
 
-## 🛠 Project Roadmap
-- [x] High-accuracy hand-card state extraction.
-- [ ] Real-time troop/spell localization using YOLOv11.
-- [ ] Integration of Monte Carlo Tree Search (MCTS) with the Rust logic core.
-- [ ] Inverse Reinforcement Learning for opponent modeling and strategy optimization.
 
----
-*Developed with a focus on real-time systems, Linux optimization, and fundamental computer system principles.*
