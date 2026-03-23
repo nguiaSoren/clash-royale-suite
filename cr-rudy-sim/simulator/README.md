@@ -198,10 +198,10 @@ The engine is built and verified. The next phase is training autonomous agents o
 
 | Writeup | Focus |
 |---------|-------|
-| [Charge & Poison Modeling](../22_charge_and_poison_writeup.html) | Distance-triggered charge activation, pulsed DOT with movement debuff |
-| [Collision & Bridge Pathfinding](../27_collision_and_bridge_writeup.html) | Mass-based N-body collision separation, cost-based bridge selection |
-| [Simultaneous Hits & Convergence](../28_simultaneous_hits_and_collision_writeup.html) | Tick-deterministic trade resolution, collision convergence proof |
-| [Performance & Observability](../29_performance_observability_writeup.html) | Scaling to 3,000 agents, 10K parallel sims, 12μs state capture |
+| [Charge & Poison Modeling](https://nguiasoren.github.io/clash-royale-suite/cr-rudy-sim/22_charge_and_poison_writeup.html) | Distance-triggered charge activation, pulsed DOT with movement debuff |
+| [Collision & Bridge Pathfinding](https://nguiasoren.github.io/clash-royale-suite/cr-rudy-sim/27_collision_and_bridge_writeup.html) | Mass-based N-body collision separation, cost-based bridge selection |
+| [Simultaneous Hits & Convergence](https://nguiasoren.github.io/clash-royale-suite/cr-rudy-sim/28_simultaneous_hits_and_collision_writeup.html) | Tick-deterministic trade resolution, collision convergence proof |
+| [Performance & Observability](https://nguiasoren.github.io/clash-royale-suite/cr-rudy-sim/29_performance_observability_writeup.html) | Scaling to 3,000 agents, 10K parallel sims, 12μs state capture |
 
 ## Project Structure
 
