@@ -99,6 +99,7 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 * `cr-perception/`: Hand-card classification — MobileNetV3 training, Rust inference pipeline (batch + gatekeeper), ONNX/CoreML deployment.
 * `cr-data-engine/`: Dataset sanitization (Rust temporal deduplication engine), super-resolution upscaling (Real-ESRGAN), 4-stage augmentation suite.
 * `cr-rudy-sim/`: Deterministic Rust simulator — tick engine, PyO3 Python API, 28 test batches, champion/evolution systems.
+* `cr-deck-synergy/`: Attribute-based deck composition — pairwise/triple synergy measurement, cluster discovery, hierarchical deck assembly.
 * `data/`: (Symlinked/Local) 309GB dataset storage (excluded from VCS via `.gitignore`).
 
 ## 🛠 Roadmap
@@ -107,7 +108,7 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 - [x] Rust inference pipeline with stateful gatekeeper (22 FPS, 49% inference reduction)
 - [x] Temporal deduplication engine (440K frames, 61% reduction, 221 FPS)
 - [x] Deterministic simulation engine (3K agents, 10K parallel sims, 1,900+ test assertions)
-- [ ] Deck composition model combining card-attribute synergy with top-ladder win-rate data (hierarchical policy prior for self-play)
+- [ ] Attribute-based deck composition model — learn card synergy from simulated interactions + top-ladder win-rate validation (hierarchical policy prior for self-play)
 - [ ] Self-play RL training at scale (millions of simulated matches via Rayon parallelism)
 - [ ] Imitation learning from top-ladder player replays
 - [ ] Real-time troop/spell localization (YOLOv11)
