@@ -433,7 +433,7 @@ This approach is **generative and causal**: it learns *why* cards synergize from
 
 This is the difference between "these decks have won" and "these cards should work together because their mechanics complement each other."
 
-📄 **[Novelty Analysis →](https://nguiasoren.github.io/clash-royale-suite/deck_synergy_comparative_study.html)** — detailed positioning against existing deck tools, game AI research, and related work in combinatorial optimization.
+📄 **[Novelty Analysis →](https://nguiasoren.github.io/clash-royale-suite/cr-deck-synergy/deck_synergy_comparative_study.html)** — detailed positioning against existing deck tools, game AI research, and related work in combinatorial optimization.
 
 ## File Structure
 
