@@ -1,4 +1,4 @@
-# Deck Composition & Card Synergy Model (deck_synergy_readme.md)
+# Deck Composition & Card Synergy Model
 
 Attribute-based deck composition using simulated pairwise interactions — learning card synergy from mechanics, not just historical win rates.
 
@@ -432,6 +432,8 @@ Existing deck recommendation systems (RoyaleAPI, DeckShop, StatsRoyale) are **st
 This approach is **generative and causal**: it learns *why* cards synergize from attribute-level mechanical interactions verified in simulation, then composes novel decks that may never have appeared on ladder. It can evaluate new cards the moment they're added to the JSON — before any player has tried them.
 
 This is the difference between "these decks have won" and "these cards should work together because their mechanics complement each other."
+
+📄 **[Novelty Analysis →](deck_synergy_comparative_study.html)** — detailed positioning against existing deck tools, game AI research, and related work in combinatorial optimization.
 
 ## File Structure
 

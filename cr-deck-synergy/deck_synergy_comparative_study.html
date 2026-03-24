@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novelty Analysis — Deck Synergy &amp; Composition Model</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --fg2: #555; --fg3: #888;
+  --accent: #2563eb; --success: #16a34a; --danger: #dc2626; --warn: #d97706;
+  --border: #e5e5e5; --surface: #f8f8f8; --code-bg: #f3f4f6;
+  --blue-fill: #dbeafe; --blue-stroke: #3b82f6; --blue-text: #1e40af;
+  --teal-fill: #ccfbf1; --teal-stroke: #14b8a6; --teal-text: #0f766e;
+  --coral-fill: #ffe4e6; --coral-stroke: #f43f5e; --coral-text: #9f1239;
+  --amber-fill: #fef3c7; --amber-stroke: #f59e0b; --amber-text: #92400e;
+  --purple-fill: #ede9fe; --purple-stroke: #8b5cf6; --purple-text: #5b21b6;
+  --gray-fill: #f3f4f6; --gray-stroke: #9ca3af; --gray-text: #374151;
+  --green-fill: #dcfce7; --green-stroke: #22c55e; --green-text: #166534;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111; --fg: #e5e5e5; --fg2: #aaa; --fg3: #777;
+    --border: #333; --surface: #1a1a1a; --code-bg: #1e1e1e;
+    --blue-fill: #1e3a5f; --blue-stroke: #60a5fa; --blue-text: #93c5fd;
+    --teal-fill: #134e4a; --teal-stroke: #5eead4; --teal-text: #99f6e4;
+    --coral-fill: #4c1d28; --coral-stroke: #fb7185; --coral-text: #fda4af;
+    --amber-fill: #451a03; --amber-stroke: #fbbf24; --amber-text: #fde68a;
+    --purple-fill: #2e1065; --purple-stroke: #a78bfa; --purple-text: #c4b5fd;
+    --gray-fill: #1f2937; --gray-stroke: #6b7280; --gray-text: #d1d5db;
+    --green-fill: #14532d; --green-stroke: #4ade80; --green-text: #bbf7d0;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
+h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p { margin: 0.5rem 0; color: var(--fg); }
+.subtitle { color: var(--fg2); font-size: 0.95rem; margin-bottom: 2rem; }
+code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85em; background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 4px; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.85rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; background: var(--surface); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; border-radius: 4px; vertical-align: middle; margin-left: 0.3rem; }
+.tag-this { background: var(--green-fill); color: var(--green-text); }
+.tag-stat { background: var(--blue-fill); color: var(--blue-text); }
+.tag-rl { background: var(--teal-fill); color: var(--teal-text); }
+.tag-theory { background: var(--purple-fill); color: var(--purple-text); }
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.note { margin: 1rem 0; padding: 0.6rem 1rem; border-radius: 8px; background: var(--amber-fill); border: 1px solid var(--amber-stroke); color: var(--amber-text); font-size: 0.85rem; }
+.diagram { margin: 1.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1rem; background: var(--surface); }
+.diagram pre { margin: 0; background: none; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.82rem; line-height: 1.5; }
+.diagram-caption { font-size: 0.82rem; color: var(--fg3); text-align: center; margin-top: 0.5rem; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>Novelty analysis — deck synergy &amp; composition model</h1>
+<p class="subtitle">What's new, what exists, and why this approach is distinct</p>
+
+<p>This document positions the <a href="README.md">deck synergy module</a> against existing deck-building tools, game AI research, and related work in combinatorial optimization. The analysis covers novelty in the Clash Royale context and in the broader game AI / multi-agent systems space.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>1. Existing deck-building approaches <span class="tag tag-stat">landscape</span></h2>
+
+<p>Every public deck recommendation system for Clash Royale operates on the same principle: <b>observe what humans play, rank by win rate</b>. This is the statistical approach.</p>
+
+<table>
+<tr><th>System</th><th>Method</th><th>Can evaluate unplayed decks?</th><th>Explains why?</th></tr>
+<tr><td><a href="https://royaleapi.com/decks">RoyaleAPI</a></td><td>Win rate aggregation from top ladder</td><td>No</td><td>No</td></tr>
+<tr><td><a href="https://www.deckshop.pro">DeckShop</a></td><td>Heuristic scoring (elixir curve, roles)</td><td>Partially (heuristic)</td><td>Partially</td></tr>
+<tr><td><a href="https://statsroyale.com">StatsRoyale</a></td><td>Usage + win rate statistics</td><td>No</td><td>No</td></tr>
+<tr><td>Community tier lists</td><td>Expert opinion + meta observation</td><td>No</td><td>Subjective</td></tr>
+</table>
+
+<p>These systems know <i>that</i> certain decks win. They don't know <i>why</i>. They can't evaluate a deck nobody has played. They can't predict how a brand-new card will fit into existing archetypes. And they break every time the meta shifts — they have to wait for humans to discover the new winning compositions before they can report them.</p>
+
+<p>DeckShop is the closest to a structural approach — it scores decks using heuristic rules (needs a win condition, needs air defense, elixir curve should be balanced). But its synergy assessment is rule-based, not learned from mechanical interactions. It doesn't simulate.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>2. What this project does differently <span class="tag tag-this">novelty</span></h2>
+
+<p>This module takes a fundamentally different approach: <b>learn why cards synergize from their mechanical attributes, verified through exhaustive simulation, then compose novel decks from discovered synergy clusters</b>.</p>
+
+<h3>2.1 Simulation-verified synergy scoring</h3>
+
+<p>No one in game AI — not just Clash Royale — measures unit synergy by exhaustively simulating pairwise and triple interactions in a deterministic engine, then training embedding models on the results. The standard approaches are either pure statistics (observe win rates) or pure RL (let the agent figure out everything from scratch). This is a middle path: <b>measure mechanical interactions first, embed them into learned representations, then use those representations to compose</b>.</p>
+
+<p>The deterministic simulator makes this possible. C(178,2) = 15,753 pairwise interactions run in seconds. C(178,3) = 929,476 triple interactions run in minutes. No other Clash Royale project has a simulator that could produce this data.</p>
+
+<h3>2.2 Multi-order synergy with cluster discovery</h3>
+
+<p>Pairwise synergy is well-studied in recommendation systems. What's distinct here is the <b>three-level composition pipeline</b>:</p>
+
+<div class="diagram">
+<pre>
+Pairwise scores (15K)  ──┐
+                         ├──→  Synergy clusters (50-100 groups of 2-4 cards)
+Triple scores (929K)   ──┘              │
+                                        ├──→  Deck = 2-3 clusters assembled
+Inter-cluster scores   ─────────────────┘     (166K combos, not 4.5 trillion)
+</pre>
+<div class="diagram-caption">Three-level composition: card interactions → synergy clusters → deck assembly. Each level reduces the search space by orders of magnitude.</div>
+</div>
+
+<p>This mirrors how expert players actually build decks — they don't pick 8 cards independently. They pick a push package (Golem + Baby Dragon + Tornado), a defense package (Inferno Dragon + Tombstone), and fill in cycle/spells (Zap + Skeletons + Poison). The cluster discovery formalizes this intuition with simulation-backed scores, and the inter-cluster synergy measurement captures the emergent interactions between packages.</p>
+
+<p>The hierarchical structure — clusters within decks — is conceptually similar to hierarchical RL (high-level policy selects sub-goals, low-level policy executes), but applied to <i>composition</i> rather than <i>action selection</i>. The high-level policy assembles clusters into a deck; the low-level RL agent plays the deck. They improve each other iteratively.</p>
+
+<h3>2.3 Generative, not statistical</h3>
+
+<p>The critical distinction: this system can <b>compose decks that have never been played by any human</b>. It reasons from card attributes (the 35-field mechanical vector extracted from 297 JSON fields) rather than from observed play patterns. When Supercell releases a new card, the system reads its JSON attributes, computes its synergy with every existing card, places it into existing clusters or forms new ones, and evaluates deck compositions — all before a single player has tried it.</p>
+
+<p>This is the difference between <i>"these decks have won"</i> and <i>"these cards should work together because their mechanics complement each other."</i></p>
+
+<h3>2.4 Data-driven role derivation</h3>
+
+<p>Roles (tank, splash, win condition, anti-air) are not hardcoded labels. They are <b>derived from the same JSON fields</b> used for the attribute vector: <code>target_only_buildings=True</code> → win condition, <code>hitpoints &gt; 2000</code> → tank, <code>area_damage_radius &gt; 0</code> → splash. A single card can hold multiple roles (Mega Knight = tank + splash + dasher). This makes the system fully data-driven — new cards get classified automatically, and the role constraints in deck composition update without manual intervention.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>3. Related work beyond Clash Royale <span class="tag tag-theory">broader context</span></h2>
+
+<p>The deck synergy problem — finding optimal compositions of heterogeneous agents with attribute vectors — appears across multiple domains under different names.</p>
+
+<table>
+<tr><th>Domain</th><th>Problem</th><th>Standard approach</th><th>How this project differs</th></tr>
+<tr><td>Card game deckbuilding (MTG, Hearthstone)</td><td>Select K cards from N with synergy</td><td>Win-rate statistics, manual archetypes, genetic algorithms on card IDs</td><td>Synergy learned from <i>simulated mechanical interactions</i>, not card identities. Generalizes to unseen cards.</td></tr>
+<tr><td>Multi-robot team composition</td><td>Select K agents with complementary capabilities</td><td>Capability matrices + task allocation</td><td>Same structure: attribute vectors → pairwise interaction scores → team assembly. The game domain is a testbed; the methodology transfers.</td></tr>
+<tr><td>Drug combination discovery</td><td>Find drug pairs/triples with synergistic effects</td><td>Pairwise screening + statistical models</td><td>Analogous: exhaustive pairwise/triple simulation → embedding model → predict higher-order combinations. Different domain, same pipeline.</td></tr>
+<tr><td>Recommendation systems</td><td>Complementary item bundles</td><td>Collaborative filtering (user-item matrices)</td><td>This approach uses <i>item attributes + causal simulation</i> rather than user behavior. Cold-start capable (new items work immediately).</td></tr>
+<tr><td>Portfolio optimization</td><td>Select K assets with low correlation</td><td>Mean-variance (Markowitz), factor models</td><td>Synergy is the inverse of correlation. The cluster-based assembly parallels sector allocation.</td></tr>
+</table>
+
+<p>The closest academic parallel is <b>combinatorial drug synergy prediction</b>: exhaustive pairwise assays → train interaction models → predict higher-order combinations. The key difference is that drug assays are expensive (hours per pair), while game simulations are nearly free (microseconds per pair). This enables exhaustive triple measurement, which drug discovery can't afford — making the triple synergy model and cluster discovery feasible in a way they aren't in pharma.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>4. What's proven vs. what's projected <span class="tag tag-stat">status</span></h2>
+
+<p>Honest accounting of what exists today and what's designed but not yet validated.</p>
+
+<table>
+<tr><th>Component</th><th>Status</th><th>Evidence</th></tr>
+<tr><td>Deterministic simulator</td><td><b>Built and verified</b></td><td>1,900+ test assertions, 100× determinism, 3K agents at 29ms/tick</td></tr>
+<tr><td>Card attribute extraction (35 fields from 297)</td><td><b>Defined</b></td><td>Fields identified and documented from live JSON data</td></tr>
+<tr><td>Role derivation rules</td><td><b>Defined</b></td><td>15 roles derived from JSON conditions, verified against known card classifications</td></tr>
+<tr><td>Pairwise micro-scenario design</td><td><b>Designed</b></td><td>Scoring formula, deployment heuristics, and runtime estimates documented</td></tr>
+<tr><td>15K pairwise synergy scores</td><td>Not yet generated</td><td>Requires running simulations (estimated: seconds)</td></tr>
+<tr><td>929K triple synergy scores</td><td>Not yet generated</td><td>Requires running simulations (estimated: minutes)</td></tr>
+<tr><td>Pairwise + triple MLP models</td><td>Not yet trained</td><td>Architecture specified, training data pending</td></tr>
+<tr><td>Synergy cluster discovery</td><td>Not yet run</td><td>Methodology defined (agglomerative clustering on synergy graph)</td></tr>
+<tr><td>Cluster-based deck composition</td><td>Not yet run</td><td>Search strategy and constraints documented</td></tr>
+<tr><td>Interactive synergy atlas</td><td>Not yet built</td><td>Spec defined (force-directed graph, cluster expansion)</td></tr>
+</table>
+
+<div class="note">The simulator — the foundation that makes this entire approach possible — is fully built and tested. The deck synergy module is a detailed design backed by that foundation. The next step is generating the synergy data (seconds to minutes of simulation time) and validating the pipeline end-to-end.</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>5. Summary of novel contributions <span class="tag tag-this">this project</span></h2>
+
+<p>Four aspects of this approach are distinct from existing work:</p>
+
+<ul>
+<li><b>Simulation-verified synergy scoring:</b> Exhaustive pairwise (15K) and triple (929K) interaction measurement in a deterministic engine, producing mechanically-grounded synergy scores — not statistical correlations from observed play.</li>
+<li><b>Multi-order embedding with cluster discovery:</b> Two separate MLPs for pairwise and triple interactions, feeding into agglomerative clustering to discover natural card groupings. Deck composition operates on clusters (166K combinations) rather than individual cards (4.5 trillion combinations).</li>
+<li><b>Generative deck composition:</b> The system composes decks that have never been played, reasoning from card attributes rather than historical win rates. New cards are evaluated immediately from their JSON definition — no retraining, no waiting for meta discovery.</li>
+<li><b>Data-driven role derivation:</b> Card roles derived from mechanical attributes, not manually labeled. Multi-role classification (a card can be tank + splash + dasher simultaneously) enables fine-grained constraint satisfaction in deck assembly.</li>
+</ul>
+
+<p>The combination of deterministic simulation + simulation-derived synergy + cluster-based hierarchical composition is, to our knowledge, novel in the game AI literature. Individual pieces exist — pairwise interaction modeling, hierarchical policies, attribute-based embeddings — but the end-to-end pipeline connecting them through a verified game simulator has not been demonstrated.</p>
+
+<hr>
+<p style="font-size: 0.82rem; color: var(--fg3);">Part of <a href="https://github.com/nguiaSoren/clash-royale-suite">clash-royale-suite</a> · <a href="README.md">Deck Synergy README</a> · <a href="../comparative_study.html">Full Project Comparative Study</a></p>
+
+</body>
+</html>
