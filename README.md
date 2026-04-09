@@ -2,6 +2,18 @@
 
 A research-oriented framework combining high-performance systems programming and deep learning to build a real-time autonomous decision agent.
 
+<div align="center">
+
+### 🔬 [**Interactive Telemetry Dashboard →**](https://clash-telemetry-web.vercel.app)
+
+*Watch the inference pipeline process real gameplay — frame-synced video with per-frame latency breakdown, slot-level classification, and gatekeeper state transitions across 7 matches.*
+
+[![Dashboard Demo](https://github.com/user-attachments/assets/2e93d051-486e-4029-9ecf-2856f89cd06d)](https://clash-telemetry-web.vercel.app)
+
+</div>
+
+---
+
 ## 🚀 Key Technical Pillars
 
 * **[High-Performance System Programming (Rust)](https://nguiasoren.github.io/clash-royale-suite/cr-data-engine/data_engine_writeup.html):** Engineered a high-speed data processing engine in **Rust** to perform bit-level deduplication and temporal redundancy filtering on a **440,000-frame dataset**, achieving a 10x performance increase over Python-based alternatives and a 61% dataset reduction through zero-copy memory management and multi-threaded I/O.
@@ -18,6 +30,8 @@ See the [Comparative Study](https://nguiasoren.github.io/clash-royale-suite/comp
 
 ### [Real-Time Inference Pipeline →](https://nguiasoren.github.io/clash-royale-suite/cr-perception/card-classifier/inference_pipeline_overview.html)
 
+> **[▶ See it run — Interactive Telemetry Dashboard](https://clash-telemetry-web.vercel.app)** — 7 real gameplay recordings processed through both pipeline modes. Frame-synced video playback with real-time latency graphs, per-slot inference decisions, and cumulative performance stats. All telemetry captured from actual Rust pipeline runs on M-series silicon.
+
 
 ![Pipeline Architecture](cr-perception/card-classifier/pipeline_architecture.svg)
 
@@ -29,6 +43,7 @@ Two Rust binaries, same model — different strategies for when to run inference
 | **Inferences/frame** | 5 (fixed) | 0–5 (variable) |
 | **Inferences skipped** | 0 | 21,304 (49%) |
 | **Overlay color** | White (all slots inferred) | Green = locked (cached), White = unlocked |
+| **Live telemetry** | [▶ Dashboard](https://clash-telemetry-web.vercel.app) | [▶ Dashboard](https://clash-telemetry-web.vercel.app) |
 
 #### Batch mode — all overlays white, every slot inferred every frame
 
@@ -80,6 +95,22 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 | **Determinism** | 100× identical runs, bit-identical after 9,600 ticks |
 | **Test coverage** | 28 batches, 1,900+ assertions, ~95% pass rate |
 
+#### Live Knowledge Graph — 1,054 nodes / 1,731 edges
+
+<img width="1512" alt="Knowledge Graph" src="https://github.com/user-attachments/assets/b9d2cb55-dec4-48da-aee0-2bdb1e88c74e" />
+
+[![Watch it rotate](https://github.com/user-attachments/assets/e08807d7-ffe8-458c-9ce6-b802e53624c2)](https://github.com/user-attachments/assets/e08807d7-ffe8-458c-9ce6-b802e53624c2)
+
+Built a hierarchical domain knowledge architecture 
+(Global physics laws → System mechanics → Entity behaviors) layered on 
+top of an AST-derived code graph to enable systematic verification against 
+ground-truth game data. This approach localizes bugs to the correct 
+abstraction level before code inspection — a system-level rule violation 
+affecting 20 cards is caught once at L1 instead of rediscovered 20 times 
+in per-card audits.
+
+*Every function, struct, and call edge across 38,000 lines of Rust — auto-indexed with [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp).*
+
 > **Engine subsystems tested:** attack timing (windup/backswing state machine), splash damage, charge mechanics (Prince/Dark Prince/Battle Ram), shield absorption, death spawns (Golem→Golemites, Lava Hound→Pups), building spawners (Witch, Tombstone, Furnace), champion abilities (Skeleton King graveyard, Archer Queen rapid fire, Monk deflect, Golden Knight dash, Mighty Miner lane switch), evolution abilities (Evo Knight passive shield, Evo PEKKA heal-on-kill), spell interactions (Freeze, Rage, Poison DOT, Tornado pull, Lightning top-3 targeting), projectile mechanics (homing, multi-projectile Hunter/Princess, chain lightning E-Dragon), collision separation (mass-based N-body), bridge pathing, river jumping, and full match lifecycle (regular → double elixir → overtime → sudden death).
 
 #### Deep-dive writeups
@@ -108,6 +139,7 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 - [x] Rust inference pipeline with stateful gatekeeper (22 FPS, 49% inference reduction)
 - [x] Temporal deduplication engine (440K frames, 61% reduction, 221 FPS)
 - [x] Deterministic simulation engine (3K agents, 10K parallel sims, 1,900+ test assertions)
+- [x] Interactive telemetry dashboard — frame-synced video + real-time performance graphs ([live](https://clash-telemetry-web.vercel.app))
 - [ ] Attribute-based deck composition model — learn card synergy from simulated interactions + top-ladder win-rate validation (hierarchical policy prior for self-play)
 - [ ] Self-play RL training at scale (millions of simulated matches via Rayon parallelism)
 - [ ] Imitation learning from top-ladder player replays

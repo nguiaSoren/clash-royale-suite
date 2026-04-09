@@ -1,6 +1,5 @@
 #!/bin/bash
 # Scaffold the Clash Royale Simulator project structure
-# Run from the simulator/ root directory (where data/ and scripts/ already exist)
 
 set -e
 echo "Scaffolding simulator project..."

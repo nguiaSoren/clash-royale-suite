@@ -3,6 +3,10 @@ name = "clash-tracker"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "clash_tracker"
+path = "src/lib.rs"
+
 [[bin]]
 name = "batch"
 path = "src/batch.rs"
@@ -21,4 +25,3 @@ image = "0.25"
 indicatif = "0.17"
 rayon = "1.10"
 anyhow = "1"
-clap = { version = "4", features = ["derive"] }
