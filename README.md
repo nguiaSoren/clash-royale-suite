@@ -101,15 +101,16 @@ A tick-deterministic, integer-only combat simulation engine in Rust, modeling 12
 
 [![Watch it rotate](https://github.com/user-attachments/assets/e08807d7-ffe8-458c-9ce6-b802e53624c2)](https://github.com/user-attachments/assets/e08807d7-ffe8-458c-9ce6-b802e53624c2)
 
+
 Built a hierarchical domain knowledge architecture 
 (Global physics laws → System mechanics → Entity behaviors) layered on 
-top of an AST-derived code graph to enable systematic verification against 
-ground-truth game data. This approach localizes bugs to the correct 
-abstraction level before code inspection — a system-level rule violation 
-affecting 20 cards is caught once at L1 instead of rediscovered 20 times 
-in per-card audits.
+an AST-derived code graph, enabling systematic verification against 
+ground-truth game data. This reduced debugging complexity by localizing 
+faults to the correct abstraction layer (e.g., a system-level rule violation 
+affecting 20+ entities identified once at L1 instead of repeated per-entity debugging), 
+significantly accelerating root-cause analysis.
 
-*Every function, struct, and call edge across 38,000 lines of Rust — auto-indexed with [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp).*
+*Complete function, struct, and call-edge graph over 38,000 lines of Rust — maintained via [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp).*
 
 > **Engine subsystems tested:** attack timing (windup/backswing state machine), splash damage, charge mechanics (Prince/Dark Prince/Battle Ram), shield absorption, death spawns (Golem→Golemites, Lava Hound→Pups), building spawners (Witch, Tombstone, Furnace), champion abilities (Skeleton King graveyard, Archer Queen rapid fire, Monk deflect, Golden Knight dash, Mighty Miner lane switch), evolution abilities (Evo Knight passive shield, Evo PEKKA heal-on-kill), spell interactions (Freeze, Rage, Poison DOT, Tornado pull, Lightning top-3 targeting), projectile mechanics (homing, multi-projectile Hunter/Princess, chain lightning E-Dragon), collision separation (mass-based N-body), bridge pathing, river jumping, and full match lifecycle (regular → double elixir → overtime → sudden death).
 
